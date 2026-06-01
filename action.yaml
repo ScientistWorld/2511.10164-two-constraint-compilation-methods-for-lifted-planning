@@ -1,8 +1,8 @@
 # IMPORTANT: Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends. Sleeping blocks the entire pipeline.
-action: submit
+action: done
 gpus: 0
-test: true
-milestone: method_runs
-notes: "CPU validation after continuation fixes: run planning regressions, reproduce artifacts, and compare scores before restoring core_claim."
+test: false
+milestone: core_claim
+notes: "Core claim restored after CPU job 0ca61d79-64b passed regression tests, reproduction, artifact-based evaluation, and validate.py --compare."

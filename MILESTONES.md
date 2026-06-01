@@ -1,6 +1,6 @@
 # Reproduction Milestones
 
-**Current: method_runs**
+**Current: core_claim**
 
 ## Progress Log
 
@@ -15,5 +15,11 @@
 - Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
 - Submitting a fresh CPU validation job before restoring `core_claim`.
 
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
 ## Stop Justification
-- Not stopped. Fresh validation is pending after continuation fixes.
+- Completed at milestone `core_claim`.
+- Higher milestones would require packaging and running the full IPC 2024 benchmark generation and LAMA planner stack; the current environment packages the paper's actual compilers and a reusable scaled benchmark for the core claim.

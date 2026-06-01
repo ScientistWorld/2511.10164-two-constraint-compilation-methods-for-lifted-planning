@@ -30,11 +30,13 @@ Local continuation checks pass after the initial-state monitoring and evaluator-
 - `bash scripts/reproduce.sh`
 - `python validate.py --compare`
 
-A fresh CPU validation job is being submitted to verify the same path inside the compute container.
+A fresh CPU validation job verified the same path inside the compute container.
 
-Current milestone during this continuation: `method_runs`, pending the validation job to restore `core_claim`.
+Current milestone: `core_claim`.
 
 Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.
+
+Compute job `0ca61d79-64b` completed with exit code 0 after the continuation fixes. It ran the full `scripts/run.sh` path in the container: planning regression tests, artifact generation through `scripts/reproduce.sh`, and `python validate.py --compare`. The validator reported all structure checks passed and all scored semantic-preservation rates were 1.0.
 
 ## Audit Notes
 
