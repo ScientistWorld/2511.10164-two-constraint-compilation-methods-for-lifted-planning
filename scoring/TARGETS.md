@@ -3,14 +3,14 @@
 ## Primary: ground_constraints_size
 
 Tests whether a compiler keeps the constraint-free planning specification compact on tasks with ground constraints.
-- **Metric**: `actions`, `effects`, and `formula_atoms` (lower is better)
-- **Constraint metric**: `plan_valid_rate` must remain high
+- **Primary metric**: `plan_valid_rate` must remain high
+- **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
 
 ## Primary: nonground_constraints_size
 
 Tests whether compactness is maintained when constraints contain quantifiers.
-- **Metric**: `actions`, `effects`, and `formula_atoms` (lower is better)
-- **Constraint metric**: `plan_valid_rate` must remain high
+- **Primary metric**: `plan_valid_rate` must remain high
+- **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
 
 ## Constraint: constraint_semantics
 

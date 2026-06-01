@@ -2,9 +2,9 @@
 
 ## Metrics
 
-The benchmark measures compiled action count, compiled effect count, formula-size proxy (`formula_atoms`), compile time, and semantic validity. Lower counts and lower compile time are better. `plan_valid_rate`, `valid_plan_accepted`, `invalid_plan_rejected`, `valid_accept_rate`, and `invalid_reject_rate` should be 1.0.
+The benchmark measures compiled action count, compiled effect count, formula-size proxy (`formula_atoms`), action ratio versus the ground baseline, compile time, and semantic validity. Lower counts, lower ratios, and lower compile time are better. `plan_valid_rate`, `valid_plan_accepted`, `invalid_plan_rejected`, `valid_accept_rate`, and `invalid_reject_rate` should be 1.0.
 
-The main constraint metric is semantic preservation: a compact compiler is not useful if it accepts an invalid trajectory or rejects a valid one.
+The main constraint metric is semantic preservation: a compact compiler is not useful if it accepts an invalid trajectory or rejects a valid one. The generated benchmark is intentionally smaller than the paper's full IPC suite, so compactness should be interpreted through the reproduced counts and ratios rather than exact IPC-scale action counts.
 
 ## Baselines and Targets
 

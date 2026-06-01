@@ -3,7 +3,7 @@
     "ground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on ground-constrained tasks, corresponding to the paper's Ground benchmark summary.",
       "weight": 0.3,
-      "primary_metric": "actions",
+      "primary_metric": "plan_valid_rate",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0},
         "effects": {"higher_is_better": false, "coefficient": -0.8},
@@ -21,7 +21,7 @@
     "nonground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on non-ground constrained tasks, corresponding to the paper's Non-Ground benchmark summary.",
       "weight": 0.3,
-      "primary_metric": "actions",
+      "primary_metric": "plan_valid_rate",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0},
         "effects": {"higher_is_better": false, "coefficient": -0.8},

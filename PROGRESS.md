@@ -30,6 +30,8 @@ The current environment reaches `core_claim` on generated symbolic benchmark tas
 
 The paper's full benchmark depends on external planner infrastructure and IPC generators. To keep the first runnable environment robust, I used generated planning tasks that preserve the same high-arity grounding pressure and trajectory-constraint semantics.
 
+Validation note: the generated benchmark is smaller than the paper's full IPC evaluation, so the size experiments use semantic validity as their primary metric in `reference.json`; action/effect counts and action ratios remain reported as compactness metrics.
+
 ## Deviations from Paper
 
 The paper evaluates on 280 IPC-derived PDDL problems solved by LAMA with 1800s/8GB limits. This reproduction uses generated symbolic planning tasks and direct plan-validity checks because the full IPC/planner stack is large for a first core-claim reproduction. The algorithmic compilation procedures themselves are implemented directly: lifted regression for LiftedTCORE, delayed shared monitoring for LCC, and a ground-first TCORE-style baseline.
