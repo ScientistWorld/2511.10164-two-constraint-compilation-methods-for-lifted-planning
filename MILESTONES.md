@@ -24,5 +24,4 @@
 - Lifted compilation remains compact on the generated high-arity benchmarks while the ground-first baseline grows to hundreds or thousands of grounded actions.
 
 ## Stop Justification
-
-Reached `core_claim`: the paper's actual lifted compilation algorithms run end-to-end in the packaged environment and demonstrate semantic preservation plus the expected lifted-vs-ground compactness effect on generated symbolic benchmarks.
+- Completed at milestone `core_claim`.
