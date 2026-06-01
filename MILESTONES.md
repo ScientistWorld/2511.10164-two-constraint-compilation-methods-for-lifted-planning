@@ -15,3 +15,7 @@
 ### [2026-06-01 00:00] - core_claim
 - Continuing-agent audit confirmed the implementation is the paper's actual compiler family, not a surrogate.
 - Fixed lifted unification for repeated variables so lifted gamma/regression emits equality conditions required by the paper's weakest-condition definitions.
+
+### [2026-06-01 07:35] - core_claim
+- Compute job `f285ea84-69a` completed successfully in the container.
+- The job ran repeated-variable lifted unification tests, regenerated reproduction scores, and passed validation.

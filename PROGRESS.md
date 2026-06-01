@@ -13,7 +13,7 @@ Implemented a self-contained symbolic planning reproduction of the paper's two l
 
 ## Results
 
-Local smoke run and compute job `7b3735e5-05b` both preserve constraint semantics:
+Local smoke runs and compute jobs `7b3735e5-05b` and `f285ea84-69a` preserve constraint semantics:
 
 - Valid plans are accepted by LiftedTCORE, LCC, and the ground baseline.
 - Invalid at-most-once trajectories are rejected.
@@ -22,6 +22,8 @@ Local smoke run and compute job `7b3735e5-05b` both preserve constraint semantic
 - In the all-constraint semantic suite, LiftedTCORE, LCC, and the ground baseline all achieve `valid_accept_rate = 1.0` and `invalid_reject_rate = 1.0` across five constraint families.
 
 `python validate.py --compare` passes.
+
+Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.
 
 ## Audit Notes
 
