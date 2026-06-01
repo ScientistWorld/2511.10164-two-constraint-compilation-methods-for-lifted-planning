@@ -68,14 +68,14 @@
       "results": {
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
-          "actions": 4096,
-          "effects": 28672,
-          "formula_atoms": 148368,
+          "actions": 21952,
+          "effects": 153664,
+          "formula_atoms": 802620,
           "plan_valid_rate": 1.0,
-          "slice_structural_units": 124560
+          "slice_structural_units": 673260
         },
         "lcc": {
-          "action_ratio_vs_ground": 0.00048828125,
+          "action_ratio_vs_ground": 9.110787172011662e-05,
           "actions": 2,
           "effects": 12,
           "formula_atoms": 35,
@@ -83,7 +83,7 @@
           "slice_structural_units": 30
         },
         "lifted_tcore": {
-          "action_ratio_vs_ground": 0.000244140625,
+          "action_ratio_vs_ground": 4.555393586005831e-05,
           "actions": 1,
           "effects": 7,
           "formula_atoms": 54,
@@ -124,14 +124,14 @@
       "results": {
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
-          "actions": 343,
-          "effects": 1715,
-          "formula_atoms": 9436,
+          "actions": 21952,
+          "effects": 109760,
+          "formula_atoms": 612220,
           "plan_valid_rate": 1.0,
-          "slice_structural_units": 6496
+          "slice_structural_units": 417004
         },
         "lcc": {
-          "action_ratio_vs_ground": 0.0058309037900874635,
+          "action_ratio_vs_ground": 9.110787172011662e-05,
           "actions": 2,
           "effects": 8,
           "formula_atoms": 29,
@@ -139,7 +139,7 @@
           "slice_structural_units": 18
         },
         "lifted_tcore": {
-          "action_ratio_vs_ground": 0.0029154518950437317,
+          "action_ratio_vs_ground": 4.555393586005831e-05,
           "actions": 1,
           "effects": 5,
           "formula_atoms": 34,

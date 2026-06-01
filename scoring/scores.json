@@ -4,7 +4,7 @@
       "results": {
         "ground_tcore": {
           "actions": 1029,
-          "compile_seconds": 0.021177585003897548,
+          "compile_seconds": 0.022638052003458142,
           "effects": 2744,
           "invalid_plan_rejected": 1.0,
           "slice_structural_units": 9114.0,
@@ -12,7 +12,7 @@
         },
         "lcc": {
           "actions": 4,
-          "compile_seconds": 3.289803862571716e-05,
+          "compile_seconds": 3.683893010020256e-05,
           "effects": 14,
           "invalid_plan_rejected": 1.0,
           "slice_structural_units": 36.5,
@@ -20,7 +20,7 @@
         },
         "lifted_tcore": {
           "actions": 3,
-          "compile_seconds": 8.3529157564044e-05,
+          "compile_seconds": 0.00012205610983073711,
           "effects": 8,
           "invalid_plan_rejected": 1.0,
           "slice_structural_units": 29.5,
@@ -32,7 +32,7 @@
       "results": {
         "ground_tcore": {
           "actions": 20,
-          "compile_seconds": 0.0005075833760201931,
+          "compile_seconds": 0.0004805710632354021,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
@@ -41,7 +41,7 @@
         },
         "lcc": {
           "actions": 25,
-          "compile_seconds": 0.00014453590847551823,
+          "compile_seconds": 0.00013789907097816467,
           "constraint_types_tested": 5,
           "effects": 55,
           "invalid_reject_rate": 1.0,
@@ -50,7 +50,7 @@
         },
         "lifted_tcore": {
           "actions": 20,
-          "compile_seconds": 0.0004475612659007311,
+          "compile_seconds": 0.0004442422650754452,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
@@ -63,26 +63,26 @@
       "results": {
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
-          "actions": 4096,
-          "compile_seconds": 0.35198926902376115,
-          "effects": 28672,
-          "formula_atoms": 148368,
+          "actions": 21952,
+          "compile_seconds": 3.2245693928562105,
+          "effects": 153664,
+          "formula_atoms": 802620,
           "plan_valid_rate": 1.0,
-          "slice_structural_units": 90568.0
+          "slice_structural_units": 489118.0
         },
         "lcc": {
-          "action_ratio_vs_ground": 0.00048828125,
+          "action_ratio_vs_ground": 9.110787172011662e-05,
           "actions": 2,
-          "compile_seconds": 3.825896419584751e-05,
+          "compile_seconds": 4.3126055970788e-05,
           "effects": 12,
           "formula_atoms": 35,
           "plan_valid_rate": 1.0,
           "slice_structural_units": 24.5
         },
         "lifted_tcore": {
-          "action_ratio_vs_ground": 0.000244140625,
+          "action_ratio_vs_ground": 4.555393586005831e-05,
           "actions": 1,
-          "compile_seconds": 0.00021575391292572021,
+          "compile_seconds": 0.0004175771027803421,
           "effects": 7,
           "formula_atoms": 54,
           "plan_valid_rate": 1.0,
@@ -94,7 +94,7 @@
       "results": {
         "ground_tcore": {
           "actions": 4,
-          "compile_seconds": 0.00010929396376013756,
+          "compile_seconds": 0.0001024219673126936,
           "edge_cases_tested": 2,
           "effects": 8,
           "invalid_reject_rate": 1.0,
@@ -103,7 +103,7 @@
         },
         "lcc": {
           "actions": 6,
-          "compile_seconds": 4.694610834121704e-05,
+          "compile_seconds": 5.160924047231674e-05,
           "edge_cases_tested": 2,
           "effects": 16,
           "invalid_reject_rate": 1.0,
@@ -112,7 +112,7 @@
         },
         "lifted_tcore": {
           "actions": 4,
-          "compile_seconds": 9.440514259040356e-05,
+          "compile_seconds": 9.255204349756241e-05,
           "edge_cases_tested": 2,
           "effects": 8,
           "invalid_reject_rate": 1.0,
@@ -125,26 +125,26 @@
       "results": {
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
-          "actions": 343,
-          "compile_seconds": 0.017766148084774613,
-          "effects": 1715,
-          "formula_atoms": 9436,
+          "actions": 21952,
+          "compile_seconds": 2.4271426647901535,
+          "effects": 109760,
+          "formula_atoms": 612220,
           "plan_valid_rate": 1.0,
-          "slice_structural_units": 5747.0
+          "slice_structural_units": 371966.0
         },
         "lcc": {
-          "action_ratio_vs_ground": 0.0058309037900874635,
+          "action_ratio_vs_ground": 9.110787172011662e-05,
           "actions": 2,
-          "compile_seconds": 2.9325950890779495e-05,
+          "compile_seconds": 3.490690141916275e-05,
           "effects": 8,
           "formula_atoms": 29,
           "plan_valid_rate": 1.0,
           "slice_structural_units": 19.5
         },
         "lifted_tcore": {
-          "action_ratio_vs_ground": 0.0029154518950437317,
+          "action_ratio_vs_ground": 4.555393586005831e-05,
           "actions": 1,
-          "compile_seconds": 0.0001861010678112507,
+          "compile_seconds": 0.00029290420934557915,
           "effects": 5,
           "formula_atoms": 34,
           "plan_valid_rate": 1.0,
