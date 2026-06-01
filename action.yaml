@@ -1,5 +1,5 @@
-action: done
+action: submit
 gpus: 0
-test: false
+test: true
 milestone: core_claim
-notes: "Packaging audit complete: no external artifacts required, download.sh is a clean no-op, and data/downloads/.gitkeep is now tracked for fresh clones."
+notes: "CPU validation job for 28-object size benchmarks, which should bring the ground-first comparator to 21K-scale actions before claiming core_claim_plus."

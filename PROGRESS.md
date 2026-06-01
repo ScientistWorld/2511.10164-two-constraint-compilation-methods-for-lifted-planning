@@ -34,6 +34,8 @@ A fresh CPU validation job verified the same path inside the compute container.
 
 After the train/test split audit, `scripts/run.sh` was restored to the full core-claim path: planning regression tests, `scripts/reproduce.sh`, train/test split scoring, and `python validate.py --compare`. The paper-level evaluator now emits the same `slice_structural_units` compactness primary used by `reference.json`, so `scores.json`, `scores_train.json`, and `scores_test.json` all validate against the current scoring schema.
 
+Continuation scaling update: the size experiments now default to 28 objects, so the ground-first baseline expands to `28^3 = 21952` grounded actions, matching the order of magnitude reported in the paper's Table 3. Semantic accept/reject checks keep their smaller object count because they test constraint preservation rather than grounding blow-up.
+
 Current milestone: `core_claim`.
 
 Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.
@@ -55,7 +57,7 @@ The evaluator was also strengthened to replay serialized compiled artifacts inde
 
 ## Remaining
 
-The current environment reaches `core_claim` on generated symbolic benchmark tasks rather than the full IPC benchmark and LAMA planner stack. Higher milestones would require downloading/building the IPC domains and planner toolchain and reproducing Table 1 coverage.
+The current environment reaches `core_claim` on generated symbolic benchmark tasks rather than the full IPC benchmark and LAMA planner stack. The submitted scaling job tests a stronger size setting; if it passes, the next milestone can be raised to `core_claim_plus`. Higher milestones would require downloading/building the IPC domains and planner toolchain and reproducing Table 1 coverage.
 
 ## Issues
 

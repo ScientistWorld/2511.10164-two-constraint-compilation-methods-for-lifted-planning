@@ -274,14 +274,24 @@ def initial_monitoring_edge_case_experiment() -> Dict[str, Any]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", default="outputs/method_results.json")
-    parser.add_argument("--n-small", type=int, default=7)
-    parser.add_argument("--n-large", type=int, default=16)
+    parser.add_argument(
+        "--n-size",
+        type=int,
+        default=28,
+        help="Object count for high-arity size experiments; 28^3 ~= 21K grounded actions, matching the paper's Table 3 scale.",
+    )
+    parser.add_argument(
+        "--n-semantic",
+        type=int,
+        default=7,
+        help="Object count for semantic accept/reject checks, kept small because these tests do not rely on grounding blow-up.",
+    )
     args = parser.parse_args()
 
     results = {
-        "ground_constraints_size": compile_size_experiment(args.n_large, quantified=False),
-        "nonground_constraints_size": compile_size_experiment(args.n_small, quantified=True),
-        "constraint_semantics": at_most_once_experiment(args.n_small),
+        "ground_constraints_size": compile_size_experiment(args.n_size, quantified=False),
+        "nonground_constraints_size": compile_size_experiment(args.n_size, quantified=True),
+        "constraint_semantics": at_most_once_experiment(args.n_semantic),
         "constraint_type_suite": constraint_suite_experiment(),
         "initial_monitoring_edge_cases": initial_monitoring_edge_case_experiment(),
     }

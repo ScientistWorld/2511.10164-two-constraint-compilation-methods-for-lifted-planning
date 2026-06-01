@@ -25,5 +25,10 @@
 - Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
 - Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
 
+### [2026-06-01 09:20] - core_claim
+- Increased the default size benchmark to 28 objects so the ground-first comparator reaches 21K-scale grounded actions, matching the order of magnitude in the paper's compiled-size table.
+- Local smoke validation passed at a small scale.
+- Submitting a CPU validation job before claiming `core_claim_plus`.
+
 ## Stop Justification
 - Completed at milestone `core_claim`.
