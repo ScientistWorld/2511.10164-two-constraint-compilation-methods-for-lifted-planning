@@ -11,7 +11,7 @@
 
 ## Changes
 
-- Removed `compile_seconds` from active train/test score outputs and from active metric definitions in `scoring/reference.json`. Wall-clock timing is hardware-dependent and would let infrastructure variation look like scientific improvement.
+- Removed `compile_seconds` from active train/test score outputs and kept it zero-weighted in `scoring/reference.json` only so legacy result files validate. Wall-clock timing is hardware-dependent and must not affect scoring.
 - Added required `description` fields to every active metric in `scoring/reference.json`.
 - Reweighted compactness slightly toward machine-independent structural measures: `formula_atoms` and `action_ratio_vs_ground` now carry more of the removed timing pressure.
 - Made case coverage strict in both slices. A method now fails the slice if it omits any selected train or held-out test constraint case instead of receiving rates computed on a partial subset.
@@ -19,5 +19,5 @@
 ## Runtime Concerns For Runner Iteration
 
 - The size experiments are global artifact rescoring rather than a true data split because the method currently emits one ground and one non-ground size task. They still measure the paper's compactness claim, but they will not create a train/test gap for a method that only overfits the semantic case names.
-- `compile_seconds` remains in historical reference results and method artifacts, but it is no longer an active scoring metric and the split evaluators do not emit it.
+- `compile_seconds` remains in historical reference results, existing `scores.json`, and method artifacts. It has `coefficient: 0.0`, so it is schema-known but not an active scoring signal; the split evaluators do not emit it.
 - The semantic rates may saturate for correct methods. The train/test distinction therefore depends mainly on held-out constraint families and strict coverage, while compactness metrics guard against bloated encodings.

@@ -9,7 +9,8 @@
         "effects": {"higher_is_better": false, "coefficient": -0.8, "description": "Number of compiled conditional effects; lower values catch methods that hide grounding cost inside oversized actions."},
         "formula_atoms": {"higher_is_better": false, "coefficient": -0.6, "description": "Atomic formula occurrences in compiled preconditions and effect conditions; lower values penalize bloated monitoring logic."},
         "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Fraction of reference valid plans still accepted by the compiled task."},
-        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline; lower values measure the paper's compactness claim."}
+        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline; lower values measure the paper's compactness claim."},
+        "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
         "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 58, "formula_atoms": 58, "compile_seconds": 0.023, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
@@ -26,7 +27,8 @@
         "effects": {"higher_is_better": false, "coefficient": -0.8, "description": "Number of compiled conditional effects under quantified constraints; lower values penalize expanded encodings."},
         "formula_atoms": {"higher_is_better": false, "coefficient": -0.6, "description": "Atomic formula occurrences in compiled quantified-task logic; lower values catch formula-size shortcuts."},
         "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Fraction of valid plans still accepted after compiling non-ground constraints."},
-        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline on the non-ground task."}
+        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline on the non-ground task."},
+        "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
         "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 60, "formula_atoms": 60, "compile_seconds": 0.081, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
@@ -42,7 +44,8 @@
         "valid_plan_accepted": {"higher_is_better": true, "coefficient": 1.0, "description": "Whether the compiled task accepts a trajectory that satisfies the original constraint."},
         "invalid_plan_rejected": {"higher_is_better": true, "coefficient": 1.0, "description": "Whether the compiled task rejects a trajectory that violates the original constraint."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Compiled action count used as a compactness constraint while preserving semantics."},
-        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Compiled effect count used as a compactness constraint while preserving semantics."}
+        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Compiled effect count used as a compactness constraint while preserving semantics."},
+        "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
         "lifted_tcore": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 7, "effects": 58, "compile_seconds": 0.023},
@@ -59,7 +62,8 @@
         "valid_accept_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which valid trajectories are accepted across qualitative constraint families."},
         "invalid_reject_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which invalid trajectories are rejected across qualitative constraint families."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled action count across the selected family cases."},
-        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected family cases."}
+        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected family cases."},
+        "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
         "lifted_tcore": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "compile_seconds": 0.001},
@@ -76,7 +80,8 @@
         "valid_accept_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which valid initial-state edge-case trajectories are accepted."},
         "invalid_reject_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which invalid initial-state edge-case trajectories are rejected when an invalid trajectory exists."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled action count across the selected edge cases."},
-        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected edge cases."}
+        "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected edge cases."},
+        "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
         "lifted_tcore": {"type": "proposed", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 4, "effects": 8, "compile_seconds": 0.001},
