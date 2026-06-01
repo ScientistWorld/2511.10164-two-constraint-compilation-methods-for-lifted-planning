@@ -36,6 +36,8 @@ After the train/test split audit, `scripts/run.sh` was restored to the full core
 
 Continuation scaling update: the size experiments now default to 28 objects, so the ground-first baseline expands to `28^3 = 21952` grounded actions, matching the order of magnitude reported in the paper's Table 3. Semantic accept/reject checks keep their smaller object count because they test constraint preservation rather than grounding blow-up.
 
+Submission update: `scripts/run.sh` now asserts that both size benchmarks generate at least 20K ground-first actions before split scoring and validation. This prevents stale smaller artifacts from passing unnoticed when claiming the scaled setting.
+
 Current milestone: `core_claim`.
 
 Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.

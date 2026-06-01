@@ -1,5 +1,5 @@
-action: done
+action: submit
 gpus: 0
-test: false
+test: true
 milestone: core_claim
-notes: "Final verification passed; workspace is ready as a core-claim gym with generated symbolic benchmarks."
+notes: "CPU validation for the 28-object paper-scale size benchmark; run.sh now fails unless both size slices regenerate at least 20K ground baseline actions."

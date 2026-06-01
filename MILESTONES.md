@@ -30,5 +30,9 @@
 - Local smoke validation passed at a small scale.
 - Submitting a CPU validation job before claiming `core_claim_plus`.
 
+### [2026-06-01 09:35] - core_claim
+- Added an explicit compute-job assertion that both ground and non-ground size benchmarks generate at least 20K grounded baseline actions.
+- Re-submitting the full CPU reproduction path because the checked score artifact still reflected an older smaller size run.
+
 ## Stop Justification
 - Completed at milestone `core_claim`.
