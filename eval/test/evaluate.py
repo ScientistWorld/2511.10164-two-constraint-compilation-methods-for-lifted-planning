@@ -149,7 +149,6 @@ def size_stats(problem: Mapping[str, Any]) -> Dict[str, float]:
 
 def item_stats(item: Mapping[str, Any]) -> Dict[str, float]:
     stats = size_stats(item["compiled_problem"])
-    stats["compile_seconds"] = float(item.get("compile_seconds", 0.0))
     return stats
 
 
@@ -208,7 +207,6 @@ def score_semantics(exp: Mapping[str, Any], desired: Sequence[str] | None = None
             "invalid_plan_rejected": 1.0 if invalid_plan and not plan_valid(item["compiled_problem"], invalid_plan) else 0.0,
             "actions": stats["actions"],
             "effects": stats["effects"],
-            "compile_seconds": stats["compile_seconds"],
         }
     return out
 
@@ -224,14 +222,14 @@ def score_case_suite(
         item = exp[method]
         cases = item["cases"]
         selected = [name for name in case_names if name in cases]
-        if not selected:
-            raise ValueError(f"no selected cases found for {method}")
+        missing = sorted(set(case_names) - set(selected))
+        if missing:
+            raise ValueError(f"{method} is missing required test cases: {missing}")
         valid = 0
         invalid = 0
         invalid_cases = 0
         actions = 0
         effects = 0
-        compile_seconds = 0.0
         for name in selected:
             case = cases[name]
             valid += int(plan_valid(case["compiled_problem"], case["valid_plan"]))
@@ -241,14 +239,12 @@ def score_case_suite(
             stats = item_stats(case)
             actions += stats["actions"]
             effects += stats["effects"]
-            compile_seconds += stats["compile_seconds"]
         out[method] = {
             count_metric: len(selected),
             "valid_accept_rate": valid / len(selected),
             "invalid_reject_rate": invalid / invalid_cases if invalid_cases else 1.0,
             "actions": actions,
             "effects": effects,
-            "compile_seconds": compile_seconds,
         }
     return out
 
