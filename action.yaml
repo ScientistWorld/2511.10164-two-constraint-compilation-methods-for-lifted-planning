@@ -1,4 +1,4 @@
-action: submit
+action: done
 gpus: 0
 test: false
-notes: "Re-run split scoring after adding the slice_structural_units compactness primary and zero-weighting constant coverage counters."
+notes: "Constraint-case plus metric-axis split; 87 train metric values and 87 test metric values; primary compactness differs across slices while semantic rates remain saturated at 1.0 as active constraints. Caveat: size tasks are global artifact rescoring, so the held-out signal there comes from structural metric axis rather than separate size instances."
