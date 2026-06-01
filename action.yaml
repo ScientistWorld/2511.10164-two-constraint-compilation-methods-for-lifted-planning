@@ -1,5 +1,5 @@
-action: submit
+action: done
 gpus: 0
-test: true
+test: false
 milestone: core_claim
-notes: "CPU validation job for 28-object size benchmarks, which should bring the ground-first comparator to 21K-scale actions before claiming core_claim_plus."
+notes: "Final verification passed; workspace is ready as a core-claim gym with generated symbolic benchmarks."
