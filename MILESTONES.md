@@ -22,4 +22,3 @@
 
 ## Stop Justification
 - Completed at milestone `core_claim`.
-- Higher milestones would require packaging and running the full IPC 2024 benchmark generation and LAMA planner stack; the current environment packages the paper's actual compilers and a reusable scaled benchmark for the core claim.
