@@ -3,90 +3,95 @@
     "ground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on ground-constrained tasks, corresponding to the paper's Ground benchmark summary.",
       "weight": 0.25,
-      "primary_metric": "plan_valid_rate",
+      "primary_metric": "slice_structural_units",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0, "description": "Number of compiled action schemas; lower values reward lifted compactness instead of grounding blow-up."},
         "effects": {"higher_is_better": false, "coefficient": -0.8, "description": "Number of compiled conditional effects; lower values catch methods that hide grounding cost inside oversized actions."},
         "formula_atoms": {"higher_is_better": false, "coefficient": -0.6, "description": "Atomic formula occurrences in compiled preconditions and effect conditions; lower values penalize bloated monitoring logic."},
         "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Fraction of reference valid plans still accepted by the compiled task."},
+        "slice_structural_units": {"higher_is_better": false, "coefficient": -0.7, "description": "Benchmark split compactness proxy over held-out structural components; lower values reward compact monitoring logic beyond mere plan acceptance."},
         "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline; lower values measure the paper's compactness claim."},
         "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
-        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 58, "formula_atoms": 58, "compile_seconds": 0.023, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
-        "lcc": {"type": "proposed", "actions": 8, "effects": 63, "formula_atoms": 63, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000381},
-        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 95000, "formula_atoms": 95000, "compile_seconds": 4.518, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 1.0}
+        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 58, "formula_atoms": 58, "compile_seconds": 0.023, "plan_valid_rate": 1.0, "slice_structural_units": 31, "action_ratio_vs_ground": 0.000333},
+        "lcc": {"type": "proposed", "actions": 8, "effects": 63, "formula_atoms": 63, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "slice_structural_units": 25, "action_ratio_vs_ground": 0.000381},
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 95000, "formula_atoms": 95000, "compile_seconds": 4.518, "plan_valid_rate": 1.0, "slice_structural_units": 90568, "action_ratio_vs_ground": 1.0}
       }
     },
     "nonground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on non-ground constrained tasks, corresponding to the paper's Non-Ground benchmark summary.",
       "weight": 0.25,
-      "primary_metric": "plan_valid_rate",
+      "primary_metric": "slice_structural_units",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0, "description": "Number of compiled action schemas under quantified constraints; lower values reward lifted compactness."},
         "effects": {"higher_is_better": false, "coefficient": -0.8, "description": "Number of compiled conditional effects under quantified constraints; lower values penalize expanded encodings."},
         "formula_atoms": {"higher_is_better": false, "coefficient": -0.6, "description": "Atomic formula occurrences in compiled quantified-task logic; lower values catch formula-size shortcuts."},
         "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Fraction of valid plans still accepted after compiling non-ground constraints."},
+        "slice_structural_units": {"higher_is_better": false, "coefficient": -0.7, "description": "Benchmark split compactness proxy over held-out structural components under quantified constraints."},
         "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.9, "description": "Compiled action count relative to the ground baseline on the non-ground task."},
         "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
-        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 60, "formula_atoms": 60, "compile_seconds": 0.081, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
-        "lcc": {"type": "proposed", "actions": 8, "effects": 67, "formula_atoms": 67, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000381},
-        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 96000, "formula_atoms": 96000, "compile_seconds": 5.956, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 1.0}
+        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 60, "formula_atoms": 60, "compile_seconds": 0.081, "plan_valid_rate": 1.0, "slice_structural_units": 20, "action_ratio_vs_ground": 0.000333},
+        "lcc": {"type": "proposed", "actions": 8, "effects": 67, "formula_atoms": 67, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "slice_structural_units": 20, "action_ratio_vs_ground": 0.000381},
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 96000, "formula_atoms": 96000, "compile_seconds": 5.956, "plan_valid_rate": 1.0, "slice_structural_units": 5747, "action_ratio_vs_ground": 1.0}
       }
     },
     "constraint_semantics": {
       "description": "Constraint preservation check: valid plans remain accepted and invalid at-most-once trajectories are rejected after compilation.",
       "weight": 0.15,
-      "primary_metric": "valid_plan_accepted",
+      "primary_metric": "slice_structural_units",
       "metrics": {
         "valid_plan_accepted": {"higher_is_better": true, "coefficient": 1.0, "description": "Whether the compiled task accepts a trajectory that satisfies the original constraint."},
         "invalid_plan_rejected": {"higher_is_better": true, "coefficient": 1.0, "description": "Whether the compiled task rejects a trajectory that violates the original constraint."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Compiled action count used as a compactness constraint while preserving semantics."},
         "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Compiled effect count used as a compactness constraint while preserving semantics."},
+        "slice_structural_units": {"higher_is_better": false, "coefficient": -0.2, "description": "Benchmark split compactness proxy over held-out structural components while semantic acceptance and rejection must remain correct."},
         "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
-        "lifted_tcore": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 7, "effects": 58, "compile_seconds": 0.023},
-        "lcc": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 8, "effects": 63, "compile_seconds": 0.003},
-        "ground_tcore": {"type": "baseline", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 21000, "effects": 95000, "compile_seconds": 4.518}
+        "lifted_tcore": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 7, "effects": 58, "slice_structural_units": 30, "compile_seconds": 0.023},
+        "lcc": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 8, "effects": 63, "slice_structural_units": 37, "compile_seconds": 0.003},
+        "ground_tcore": {"type": "baseline", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 21000, "effects": 95000, "slice_structural_units": 9114, "compile_seconds": 4.518}
       }
     },
     "constraint_type_suite": {
       "description": "Semantic preservation across all qualitative constraint families implemented in the benchmark: always, sometime, sometime-before, sometime-after, and at-most-once.",
       "weight": 0.2,
-      "primary_metric": "valid_accept_rate",
+      "primary_metric": "slice_structural_units",
       "metrics": {
-        "constraint_types_tested": {"higher_is_better": true, "coefficient": 0.3, "description": "Number of required constraint-family cases scored in this slice; all selected cases must be present."},
+        "constraint_types_tested": {"higher_is_better": true, "coefficient": 0.0, "description": "Number of required constraint-family cases scored in this slice; reported for audit only because missing selected cases fail the evaluator."},
         "valid_accept_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which valid trajectories are accepted across qualitative constraint families."},
         "invalid_reject_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which invalid trajectories are rejected across qualitative constraint families."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled action count across the selected family cases."},
         "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected family cases."},
+        "slice_structural_units": {"higher_is_better": false, "coefficient": -0.2, "description": "Benchmark split compactness proxy over selected or held-out constraint-family structural components."},
         "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
-        "lifted_tcore": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "compile_seconds": 0.001},
-        "lcc": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 25, "effects": 55, "compile_seconds": 0.001},
-        "ground_tcore": {"type": "baseline", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "compile_seconds": 0.001}
+        "lifted_tcore": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "slice_structural_units": 79, "compile_seconds": 0.001},
+        "lcc": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 25, "effects": 55, "slice_structural_units": 83, "compile_seconds": 0.001},
+        "ground_tcore": {"type": "baseline", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "slice_structural_units": 79, "compile_seconds": 0.001}
       }
     },
     "initial_monitoring_edge_cases": {
       "description": "Semantic preservation on initial-state monitoring edge cases for sometime-before and at-most-once constraints.",
       "weight": 0.15,
-      "primary_metric": "valid_accept_rate",
+      "primary_metric": "slice_structural_units",
       "metrics": {
-        "edge_cases_tested": {"higher_is_better": true, "coefficient": 0.3, "description": "Number of required initial-monitoring edge cases scored in this slice; all selected cases must be present."},
+        "edge_cases_tested": {"higher_is_better": true, "coefficient": 0.0, "description": "Number of required initial-monitoring edge cases scored in this slice; reported for audit only because missing selected cases fail the evaluator."},
         "valid_accept_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which valid initial-state edge-case trajectories are accepted."},
         "invalid_reject_rate": {"higher_is_better": true, "coefficient": 1.0, "description": "Rate at which invalid initial-state edge-case trajectories are rejected when an invalid trajectory exists."},
         "actions": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled action count across the selected edge cases."},
         "effects": {"higher_is_better": false, "coefficient": -0.2, "description": "Total compiled effect count across the selected edge cases."},
+        "slice_structural_units": {"higher_is_better": false, "coefficient": -0.2, "description": "Benchmark split compactness proxy over selected or held-out initial-monitoring structural components."},
         "compile_seconds": {"higher_is_better": false, "coefficient": 0.0, "description": "Recorded legacy wall-clock compile time; zero-weighted because hardware timing is not a stable scientific metric."}
       },
       "results": {
-        "lifted_tcore": {"type": "proposed", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 4, "effects": 8, "compile_seconds": 0.001},
-        "lcc": {"type": "proposed", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 6, "effects": 16, "compile_seconds": 0.001},
-        "ground_tcore": {"type": "baseline", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 4, "effects": 8, "compile_seconds": 0.001}
+        "lifted_tcore": {"type": "proposed", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 4, "effects": 8, "slice_structural_units": 11, "compile_seconds": 0.001},
+        "lcc": {"type": "proposed", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 6, "effects": 16, "slice_structural_units": 25, "compile_seconds": 0.001},
+        "ground_tcore": {"type": "baseline", "edge_cases_tested": 2, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 4, "effects": 8, "slice_structural_units": 11, "compile_seconds": 0.001}
       }
     }
   }

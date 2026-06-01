@@ -1,4 +1,4 @@
 action: submit
 gpus: 0
 test: false
-notes: "CPU post-hoc run of evaluate_train.sh and evaluate_test.sh against outputs/method_results.json to populate split scores."
+notes: "Re-run split scoring after adding the slice_structural_units compactness primary and zero-weighting constant coverage counters."

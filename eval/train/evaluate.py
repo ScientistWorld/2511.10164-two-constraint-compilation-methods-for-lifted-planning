@@ -147,6 +147,10 @@ def size_stats(problem: Mapping[str, Any]) -> Dict[str, float]:
     }
 
 
+def slice_structural_units(problem: Mapping[str, Any]) -> int:
+    return len(problem["actions"]) + sum(formula_size(a["precondition"]) for a in problem["actions"])
+
+
 def item_stats(item: Mapping[str, Any]) -> Dict[str, float]:
     stats = size_stats(item["compiled_problem"])
     return stats
@@ -179,6 +183,7 @@ def score_compile_size(exp: Mapping[str, Any], desired: Sequence[str] | None = N
         out[method] = {
             **stats,
             "plan_valid_rate": 1.0 if plan_valid(item["compiled_problem"], item["valid_plan"]) else 0.0,
+            "slice_structural_units": slice_structural_units(item["compiled_problem"]),
         }
     ground_actions = out.get("ground_tcore", {}).get("actions")
     if ground_actions is None:
@@ -199,6 +204,7 @@ def score_semantics(exp: Mapping[str, Any], desired: Sequence[str] | None = None
             "invalid_plan_rejected": 1.0 if invalid_plan and not plan_valid(item["compiled_problem"], invalid_plan) else 0.0,
             "actions": stats["actions"],
             "effects": stats["effects"],
+            "slice_structural_units": slice_structural_units(item["compiled_problem"]),
         }
     return out
 
@@ -222,6 +228,7 @@ def score_case_suite(
         invalid_cases = 0
         actions = 0
         effects = 0
+        structural_units = 0
         for name in selected:
             case = cases[name]
             valid += int(plan_valid(case["compiled_problem"], case["valid_plan"]))
@@ -231,12 +238,14 @@ def score_case_suite(
             stats = item_stats(case)
             actions += stats["actions"]
             effects += stats["effects"]
+            structural_units += slice_structural_units(case["compiled_problem"])
         out[method] = {
             count_metric: len(selected),
             "valid_accept_rate": valid / len(selected),
             "invalid_reject_rate": invalid / invalid_cases if invalid_cases else 1.0,
             "actions": actions,
             "effects": effects,
+            "slice_structural_units": structural_units,
         }
     return out
 
