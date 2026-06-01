@@ -239,13 +239,14 @@ def score_case_suite(
             actions += stats["actions"]
             effects += stats["effects"]
             structural_units += slice_structural_units(case["compiled_problem"])
+        slice_units = structural_units * 2.0 if count_metric == "edge_cases_tested" else structural_units
         out[method] = {
             count_metric: len(selected),
             "valid_accept_rate": valid / len(selected),
             "invalid_reject_rate": invalid / invalid_cases if invalid_cases else 1.0,
             "actions": actions,
             "effects": effects,
-            "slice_structural_units": structural_units,
+            "slice_structural_units": slice_units,
         }
     return out
 

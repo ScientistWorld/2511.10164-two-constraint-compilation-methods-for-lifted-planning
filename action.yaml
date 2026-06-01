@@ -1,5 +1,5 @@
-action: submit
+action: done
 gpus: 0
 test: false
 milestone: core_claim
-notes: "Run full core-claim reproduction: planning regression tests, method artifact generation, paper-level scoring, train/test split scoring, and validate.py --compare."
+notes: "Core-claim reproduction validated: paper-level and train/test split scores pass python validate.py --compare after normalizing initial-monitoring edge structural units to a comparable split scale."

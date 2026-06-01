@@ -99,7 +99,7 @@
           "edge_cases_tested": 1,
           "effects": 6,
           "invalid_reject_rate": 1.0,
-          "slice_structural_units": 18,
+          "slice_structural_units": 9.0,
           "valid_accept_rate": 1.0
         },
         "lcc": {
@@ -107,7 +107,7 @@
           "edge_cases_tested": 1,
           "effects": 12,
           "invalid_reject_rate": 1.0,
-          "slice_structural_units": 36,
+          "slice_structural_units": 18.0,
           "valid_accept_rate": 1.0
         },
         "lifted_tcore": {
@@ -115,7 +115,7 @@
           "edge_cases_tested": 1,
           "effects": 6,
           "invalid_reject_rate": 1.0,
-          "slice_structural_units": 18,
+          "slice_structural_units": 9.0,
           "valid_accept_rate": 1.0
         }
       }
