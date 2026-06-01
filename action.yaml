@@ -1,6 +1,8 @@
 # IMPORTANT: Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends. Sleeping blocks the entire pipeline.
-action: done
-milestone: core_claim
-notes: "Compute job 7b3735e5-05b passed. Reproduced the core claim with packaged LiftedTCORE/LCC/ground-TCORE benchmarks and semantic evaluation."
+action: pending
+gpus: 1
+test: false
+milestone: method_runs
+notes: ""

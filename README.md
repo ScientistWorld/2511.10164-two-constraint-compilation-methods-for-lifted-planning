@@ -130,7 +130,7 @@ The included benchmark uses generated symbolic planning tasks with high-arity ac
 
 # Reproduction Milestones
 
-**Current: core_claim**
+**Current: method_runs**
 
 ## Stop Justification
-- Completed at milestone `core_claim`.
+- Completed at milestone `method_runs`.
