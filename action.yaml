@@ -1,5 +1,3 @@
-action: submit
-gpus: 0
-test: true
+action: done
 milestone: core_claim
-notes: "CPU validation for the 28-object paper-scale size benchmark; run.sh now fails unless both size slices regenerate at least 20K ground baseline actions."
+notes: "Final verification passed: CPU job regenerated 28-object scores, confirmed both size benchmarks at 21,952 ground-first actions, and validation passed."

@@ -34,5 +34,10 @@
 - Added an explicit compute-job assertion that both ground and non-ground size benchmarks generate at least 20K grounded baseline actions.
 - Re-submitting the full CPU reproduction path because the checked score artifact still reflected an older smaller size run.
 
+### [2026-06-01 09:45] - core_claim
+- Final verification job `50dd2235-44c` completed with exit code 0.
+- The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
+- Train/test scoring and `python validate.py --compare` passed inside the compute container.
+
 ## Stop Justification
 - Completed at milestone `core_claim`.
