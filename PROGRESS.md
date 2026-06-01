@@ -9,6 +9,7 @@ Implemented a self-contained symbolic planning reproduction of the paper's two l
 - Ground TCORE-style baseline that grounds high-arity action schemas before applying regression compilation.
 - Output-based evaluation that reads `outputs/method_results.json` and writes `scoring/scores.json`.
 - A constraint-family semantic suite covering always, sometime, sometime-before, sometime-after, and at-most-once checks.
+- Audit fix: lifted unification now handles repeated variables by producing equality conditions instead of incorrectly failing unification.
 
 ## Results
 
@@ -21,6 +22,12 @@ Local smoke run and compute job `7b3735e5-05b` both preserve constraint semantic
 - In the all-constraint semantic suite, LiftedTCORE, LCC, and the ground baseline all achieve `valid_accept_rate = 1.0` and `invalid_reject_rate = 1.0` across five constraint families.
 
 `python validate.py --compare` passes.
+
+## Audit Notes
+
+The existing implementation was a real reproduction of the paper's algorithm, not a surrogate: LiftedTCORE computes lifted gamma/regression and LCC applies shared delayed monitoring with a final `fin` action. The evaluator is independent from `method/` and reads `outputs/method_results.json`.
+
+During audit, repeated variables in lifted unification were found to be under-handled. This has been fixed in `method/planning.py` and covered by `method/test_planning.py`; `scripts/run.sh` now executes those checks before the full reproduction.
 
 ## Remaining
 

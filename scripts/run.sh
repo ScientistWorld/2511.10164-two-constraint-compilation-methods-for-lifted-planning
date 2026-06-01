@@ -13,5 +13,15 @@ set -e
 
 cd /home/user
 
+PYTHONPATH=method python - <<'PY'
+from test_planning import (
+    test_lifted_gamma_repeated_effect_variable_adds_equality,
+    test_lifted_gamma_repeated_query_variable_adds_equality,
+)
+
+test_lifted_gamma_repeated_effect_variable_adds_equality()
+test_lifted_gamma_repeated_query_variable_adds_equality()
+print("lifted unification tests passed")
+PY
 bash scripts/reproduce.sh
 python validate.py --compare

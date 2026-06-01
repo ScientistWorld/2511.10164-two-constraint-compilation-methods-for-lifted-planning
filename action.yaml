@@ -5,4 +5,4 @@ action: submit
 gpus: 0
 test: true
 milestone: core_claim
-notes: "CPU smoke job: run the packaged reproduction and validate scores inside the compute container."
+notes: "CPU smoke job after audit fix: run lifted unification tests, reproduce results, and validate scores."

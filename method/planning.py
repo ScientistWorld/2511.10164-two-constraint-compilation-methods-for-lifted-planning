@@ -6,6 +6,7 @@ from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
 Term = str
 Substitution = Dict[str, str]
+Unification = Tuple[Substitution, Tuple[Tuple[Term, Term], ...]]
 
 
 def is_var(term: str) -> bool:
@@ -272,36 +273,49 @@ class Problem:
         return Problem(self.objects, self.actions, set(self.init), self.goal, (), set(self.predicates))
 
 
-def unify_literals(query: Literal, effect: Literal) -> Optional[Substitution]:
+def unify_literals(query: Literal, effect: Literal) -> Optional[Unification]:
     if query.pred != effect.pred or query.negated != effect.negated or len(query.args) != len(effect.args):
         return None
     subst: Substitution = {}
+    equalities: List[Tuple[Term, Term]] = []
     for q, e in zip(query.args, effect.args):
         if q == e:
             continue
         if is_var(e):
             current = subst.get(e)
-            if current is not None and current != q:
-                return None
+            if current is not None:
+                if current == q:
+                    continue
+                if not is_var(current) and not is_var(q):
+                    return None
+                equalities.append((current, q))
+                continue
             subst[e] = q
         elif is_var(q):
             current = subst.get(q)
-            if current is not None and current != e:
-                return None
+            if current is not None:
+                if current == e:
+                    continue
+                if not is_var(current) and not is_var(e):
+                    return None
+                equalities.append((current, e))
+                continue
             subst[q] = e
         else:
             return None
-    return subst
+    return subst, tuple(equalities)
 
 
 def lifted_gamma(lit: Literal, action: Action) -> Formula:
     pieces: List[Formula] = []
     for eff in action.effects:
-        subst = unify_literals(lit, eff.literal)
-        if subst is None:
+        unification = unify_literals(lit, eff.literal)
+        if unification is None:
             continue
+        subst, equality_terms = unification
         z_subst = {k: v for k, v in subst.items() if k in eff.forall}
         equalities = [Eq(v, k) for k, v in subst.items() if k not in eff.forall]
+        equalities.extend(Eq(left, right) for left, right in equality_terms)
         free_z = tuple(z for z in eff.forall if z not in z_subst and _var_occurs(z, eff.condition))
         cond = eff.condition.substitute(z_subst)
         if free_z:
