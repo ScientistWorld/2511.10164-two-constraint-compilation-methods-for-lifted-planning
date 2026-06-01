@@ -1,21 +1,18 @@
 # Reproduction Milestones
 
-**Current: none**
-
-<!-- Milestone levels (update "Current" above as you progress):
-  none             — just started, no meaningful progress yet
-  method_runs      — the paper's method executes end-to-end without errors
-  core_claim       — minimum experiment supports the paper's central claim
-  core_claim_plus  — core claim reproduced on additional settings
-  secondary_claims — secondary results or contributions reproduced
-  majority         — more than half of reported results reproduced
-  near_complete    — most results reproduced, only minor gaps remain
-  full             — all reported results reproduced
--->
+**Current: method_runs**
 
 ## Progress Log
 
-<!-- Write your progress here -->
+### [2026-06-01 00:00] - none
+- Started from scaffold and read the paper markdown.
+- Identified the central claim: lifted constraint compilation preserves plan validity while avoiding ground-action blow-up.
+
+### [2026-06-01 00:00] - method_runs
+- Implemented symbolic planning representation, LiftedTCORE, LCC, and a ground TCORE-style baseline.
+- Ran local smoke tests showing valid trajectories execute and invalid at-most-once trajectories are rejected by the compiled tasks.
+- Added evaluation, reference metrics, documentation, and scripts.
 
 ## Stop Justification
-- Completed at milestone `none`.
+
+Not stopping; submitting a CPU job to verify the packaged reproduction in the compute environment.

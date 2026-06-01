@@ -16,4 +16,4 @@
 
 set -e
 
-# uv pip install --system <packages>
+# Pure-Python reproduction; no Python packages beyond the standard library.

@@ -1,0 +1,85 @@
+{
+  "experiments": {
+    "constraint_semantics": {
+      "results": {
+        "ground_tcore": {
+          "actions": 1029,
+          "compile_seconds": 0.02491834992542863,
+          "effects": 2744,
+          "invalid_plan_rejected": 1.0,
+          "valid_plan_accepted": 1.0
+        },
+        "lcc": {
+          "actions": 4,
+          "compile_seconds": 3.614090383052826e-05,
+          "effects": 14,
+          "invalid_plan_rejected": 1.0,
+          "valid_plan_accepted": 1.0
+        },
+        "lifted_tcore": {
+          "actions": 3,
+          "compile_seconds": 7.641292177140713e-05,
+          "effects": 8,
+          "invalid_plan_rejected": 1.0,
+          "valid_plan_accepted": 1.0
+        }
+      }
+    },
+    "ground_constraints_size": {
+      "results": {
+        "ground_tcore": {
+          "action_ratio_vs_ground": 1.0,
+          "actions": 4096,
+          "compile_seconds": 0.3588406031485647,
+          "effects": 28672,
+          "formula_atoms": 148368,
+          "plan_valid_rate": 1.0
+        },
+        "lcc": {
+          "action_ratio_vs_ground": 0.00048828125,
+          "actions": 2,
+          "compile_seconds": 4.3223146349191666e-05,
+          "effects": 12,
+          "formula_atoms": 35,
+          "plan_valid_rate": 1.0
+        },
+        "lifted_tcore": {
+          "action_ratio_vs_ground": 0.000244140625,
+          "actions": 1,
+          "compile_seconds": 0.00020525185391306877,
+          "effects": 7,
+          "formula_atoms": 54,
+          "plan_valid_rate": 1.0
+        }
+      }
+    },
+    "nonground_constraints_size": {
+      "results": {
+        "ground_tcore": {
+          "action_ratio_vs_ground": 1.0,
+          "actions": 343,
+          "compile_seconds": 0.017541700042784214,
+          "effects": 1715,
+          "formula_atoms": 9436,
+          "plan_valid_rate": 1.0
+        },
+        "lcc": {
+          "action_ratio_vs_ground": 0.0058309037900874635,
+          "actions": 2,
+          "compile_seconds": 2.9720133170485497e-05,
+          "effects": 8,
+          "formula_atoms": 29,
+          "plan_valid_rate": 1.0
+        },
+        "lifted_tcore": {
+          "action_ratio_vs_ground": 0.0029154518950437317,
+          "actions": 1,
+          "compile_seconds": 0.00017913011834025383,
+          "effects": 5,
+          "formula_atoms": 34,
+          "plan_valid_rate": 1.0
+        }
+      }
+    }
+  }
+}

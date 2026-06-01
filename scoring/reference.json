@@ -1,0 +1,57 @@
+{
+  "experiments": {
+    "ground_constraints_size": {
+      "description": "Compiled problem succinctness and planning validity on ground-constrained tasks, corresponding to the paper's Ground benchmark summary.",
+      "weight": 0.4,
+      "primary_metric": "actions",
+      "metrics": {
+        "actions": {"higher_is_better": false, "coefficient": -1.0},
+        "effects": {"higher_is_better": false, "coefficient": -0.8},
+        "formula_atoms": {"higher_is_better": false, "coefficient": -0.4},
+        "compile_seconds": {"higher_is_better": false, "coefficient": -0.3},
+        "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0},
+        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.8}
+      },
+      "results": {
+        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 58, "formula_atoms": 58, "compile_seconds": 0.023, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
+        "lcc": {"type": "proposed", "actions": 8, "effects": 63, "formula_atoms": 63, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000381},
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 95000, "formula_atoms": 95000, "compile_seconds": 4.518, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 1.0}
+      }
+    },
+    "nonground_constraints_size": {
+      "description": "Compiled problem succinctness and planning validity on non-ground constrained tasks, corresponding to the paper's Non-Ground benchmark summary.",
+      "weight": 0.4,
+      "primary_metric": "actions",
+      "metrics": {
+        "actions": {"higher_is_better": false, "coefficient": -1.0},
+        "effects": {"higher_is_better": false, "coefficient": -0.8},
+        "formula_atoms": {"higher_is_better": false, "coefficient": -0.4},
+        "compile_seconds": {"higher_is_better": false, "coefficient": -0.3},
+        "plan_valid_rate": {"higher_is_better": true, "coefficient": 1.0},
+        "action_ratio_vs_ground": {"higher_is_better": false, "coefficient": -0.8}
+      },
+      "results": {
+        "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 60, "formula_atoms": 60, "compile_seconds": 0.081, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000333},
+        "lcc": {"type": "proposed", "actions": 8, "effects": 67, "formula_atoms": 67, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 0.000381},
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 96000, "formula_atoms": 96000, "compile_seconds": 5.956, "plan_valid_rate": 1.0, "action_ratio_vs_ground": 1.0}
+      }
+    },
+    "constraint_semantics": {
+      "description": "Constraint preservation check: valid plans remain accepted and invalid at-most-once trajectories are rejected after compilation.",
+      "weight": 0.2,
+      "primary_metric": "valid_plan_accepted",
+      "metrics": {
+        "valid_plan_accepted": {"higher_is_better": true, "coefficient": 1.0},
+        "invalid_plan_rejected": {"higher_is_better": true, "coefficient": 1.0},
+        "actions": {"higher_is_better": false, "coefficient": -0.2},
+        "effects": {"higher_is_better": false, "coefficient": -0.2},
+        "compile_seconds": {"higher_is_better": false, "coefficient": -0.1}
+      },
+      "results": {
+        "lifted_tcore": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 7, "effects": 58, "compile_seconds": 0.023},
+        "lcc": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 8, "effects": 63, "compile_seconds": 0.003},
+        "ground_tcore": {"type": "baseline", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 21000, "effects": 95000, "compile_seconds": 4.518}
+      }
+    }
+  }
+}

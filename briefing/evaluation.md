@@ -1,15 +1,19 @@
 # Evaluation
 
-How success is measured. Describe only the metrics, targets, and evaluation procedure — do NOT describe the paper's method or how they achieved these results. Think of this as a general evaluation protocal for other scientists trying to solve the same problem, where they should not see this paper's solution.
-
 ## Metrics
 
-<!-- What metrics are used? How are they computed? What does higher/lower mean? -->
+The benchmark measures compiled action count, compiled effect count, formula-size proxy (`formula_atoms`), compile time, and semantic validity. Lower counts and lower compile time are better. `plan_valid_rate`, `valid_plan_accepted`, and `invalid_plan_rejected` should be 1.0.
+
+The main constraint metric is semantic preservation: a compact compiler is not useful if it accepts an invalid trajectory or rejects a valid one.
 
 ## Baselines and Targets
 
-<!-- What performance levels exist as reference points? Include the paper's reported numbers as targets, and any standard baselines. A scientist agent should know what "good" looks like. -->
+The reference baseline is a ground TCORE-style compilation that first grounds action schemas and then applies constraint compilation. The target behavior is to preserve semantics while producing substantially smaller constraint-free specifications.
+
+Paper targets in `scoring/reference.json` summarize Table 3 for compiled size and compilation time and include semantic-preservation targets from the paper's correctness claim.
 
 ## Evaluation Protocol
 
-<!-- How should evaluation be run? What data split, what conditions? Any important details about how to compare fairly (e.g., fixed seeds, specific test sets, averaging over runs). -->
+Run `bash scripts/reproduce.sh` to generate method artifacts in `outputs/method_results.json`, then run `bash scripts/evaluate.sh outputs/method_results.json`. The evaluator only reads the output artifact and writes `scoring/scores.json`.
+
+The included benchmark uses generated symbolic planning tasks with high-arity actions, ground and quantified constraints, and explicit valid/invalid plan probes. Future methods should emit the same JSON artifact format.

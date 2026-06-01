@@ -10,5 +10,5 @@ set -e
 
 cd /home/user
 
-# TODO: run the paper's method
-# TODO: call scripts/evaluate.sh to score
+python method/run_experiments.py --output outputs/method_results.json "$@"
+bash scripts/evaluate.sh outputs/method_results.json

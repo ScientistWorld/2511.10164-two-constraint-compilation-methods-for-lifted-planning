@@ -17,4 +17,5 @@ set -e
 
 cd /home/user
 
-# TODO: run baseline
+python method/run_experiments.py --output outputs/method_results.json "$@"
+bash scripts/evaluate.sh outputs/method_results.json
