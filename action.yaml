@@ -2,4 +2,4 @@ action: done
 gpus: 0
 test: false
 milestone: core_claim
-notes: "Core-claim reproduction validated: paper-level and train/test split scores pass python validate.py --compare after normalizing initial-monitoring edge structural units to a comparable split scale."
+notes: "Packaging audit complete: no external artifacts required, download.sh is a clean no-op, and data/downloads/.gitkeep is now tracked for fresh clones."
