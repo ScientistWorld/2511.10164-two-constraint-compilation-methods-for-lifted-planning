@@ -4,23 +4,26 @@
       "results": {
         "ground_tcore": {
           "actions": 1029,
-          "compile_seconds": 0.019824419869109988,
+          "compile_seconds": 0.021177585003897548,
           "effects": 2744,
           "invalid_plan_rejected": 1.0,
+          "slice_structural_units": 9114.0,
           "valid_plan_accepted": 1.0
         },
         "lcc": {
           "actions": 4,
-          "compile_seconds": 3.0935974791646004e-05,
+          "compile_seconds": 3.289803862571716e-05,
           "effects": 14,
           "invalid_plan_rejected": 1.0,
+          "slice_structural_units": 36.5,
           "valid_plan_accepted": 1.0
         },
         "lifted_tcore": {
           "actions": 3,
-          "compile_seconds": 7.483595982193947e-05,
+          "compile_seconds": 8.3529157564044e-05,
           "effects": 8,
           "invalid_plan_rejected": 1.0,
+          "slice_structural_units": 29.5,
           "valid_plan_accepted": 1.0
         }
       }
@@ -29,26 +32,29 @@
       "results": {
         "ground_tcore": {
           "actions": 20,
-          "compile_seconds": 0.00046112295240163803,
+          "compile_seconds": 0.0005075833760201931,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 79.0,
           "valid_accept_rate": 1.0
         },
         "lcc": {
           "actions": 25,
-          "compile_seconds": 0.00013298168778419495,
+          "compile_seconds": 0.00014453590847551823,
           "constraint_types_tested": 5,
           "effects": 55,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 82.5,
           "valid_accept_rate": 1.0
         },
         "lifted_tcore": {
           "actions": 20,
-          "compile_seconds": 0.00042198016308248043,
+          "compile_seconds": 0.0004475612659007311,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 79.0,
           "valid_accept_rate": 1.0
         }
       }
@@ -58,26 +64,29 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 4096,
-          "compile_seconds": 0.33360283984802663,
+          "compile_seconds": 0.35198926902376115,
           "effects": 28672,
           "formula_atoms": 148368,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 90568.0
         },
         "lcc": {
           "action_ratio_vs_ground": 0.00048828125,
           "actions": 2,
-          "compile_seconds": 4.5490916818380356e-05,
+          "compile_seconds": 3.825896419584751e-05,
           "effects": 12,
           "formula_atoms": 35,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 24.5
         },
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.000244140625,
           "actions": 1,
-          "compile_seconds": 0.0003008730709552765,
+          "compile_seconds": 0.00021575391292572021,
           "effects": 7,
           "formula_atoms": 54,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 31.0
         }
       }
     },
@@ -85,26 +94,29 @@
       "results": {
         "ground_tcore": {
           "actions": 4,
-          "compile_seconds": 0.00010366295464336872,
+          "compile_seconds": 0.00010929396376013756,
           "edge_cases_tested": 2,
           "effects": 8,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 11.0,
           "valid_accept_rate": 1.0
         },
         "lcc": {
           "actions": 6,
-          "compile_seconds": 4.2700907215476036e-05,
+          "compile_seconds": 4.694610834121704e-05,
           "edge_cases_tested": 2,
           "effects": 16,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 25.0,
           "valid_accept_rate": 1.0
         },
         "lifted_tcore": {
           "actions": 4,
-          "compile_seconds": 8.809706196188927e-05,
+          "compile_seconds": 9.440514259040356e-05,
           "edge_cases_tested": 2,
           "effects": 8,
           "invalid_reject_rate": 1.0,
+          "slice_structural_units": 11.0,
           "valid_accept_rate": 1.0
         }
       }
@@ -114,26 +126,29 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 343,
-          "compile_seconds": 0.017328386893495917,
+          "compile_seconds": 0.017766148084774613,
           "effects": 1715,
           "formula_atoms": 9436,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 5747.0
         },
         "lcc": {
           "action_ratio_vs_ground": 0.0058309037900874635,
           "actions": 2,
-          "compile_seconds": 3.212597221136093e-05,
+          "compile_seconds": 2.9325950890779495e-05,
           "effects": 8,
           "formula_atoms": 29,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 19.5
         },
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.0029154518950437317,
           "actions": 1,
-          "compile_seconds": 0.00015971786342561245,
+          "compile_seconds": 0.0001861010678112507,
           "effects": 5,
           "formula_atoms": 34,
-          "plan_valid_rate": 1.0
+          "plan_valid_rate": 1.0,
+          "slice_structural_units": 20.0
         }
       }
     }

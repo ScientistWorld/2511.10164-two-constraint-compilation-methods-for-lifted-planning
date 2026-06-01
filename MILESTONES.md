@@ -20,5 +20,10 @@
 - The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
 - All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
 
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
 ## Stop Justification
 - Completed at milestone `core_claim`.

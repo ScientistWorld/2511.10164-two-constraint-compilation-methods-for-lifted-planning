@@ -13,5 +13,8 @@ set -e
 
 cd /home/user
 
+PYTHONPATH=method python method/test_planning.py
+bash scripts/reproduce.sh
 bash scripts/evaluate_train.sh
 bash scripts/evaluate_test.sh
+python validate.py --compare

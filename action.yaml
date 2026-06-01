@@ -1,4 +1,5 @@
-action: done
+action: submit
 gpus: 0
 test: false
-notes: "Constraint-case plus metric-axis split; 87 train metric values and 87 test metric values; primary compactness differs across slices while semantic rates remain saturated at 1.0 as active constraints. Caveat: size tasks are global artifact rescoring, so the held-out signal there comes from structural metric axis rather than separate size instances."
+milestone: core_claim
+notes: "Run full core-claim reproduction: planning regression tests, method artifact generation, paper-level scoring, train/test split scoring, and validate.py --compare."

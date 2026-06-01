@@ -8,6 +8,11 @@ from typing import Any, Dict, Iterable, List, Sequence, Set, Tuple
 
 State = Set[Tuple[str, Tuple[str, ...]]]
 
+CONSTRAINT_TYPE_TRAIN_CASES = ("always", "sometime_before", "at_most_once")
+CONSTRAINT_TYPE_TEST_CASES = ("sometime", "sometime_after")
+EDGE_TRAIN_CASES = ("sometime_before_initial_witness",)
+EDGE_TEST_CASES = ("at_most_once_initial_reentry",)
+
 
 def ratio(a: float, b: float) -> float:
     return float(a) / float(b) if b else 0.0
@@ -144,6 +149,22 @@ def size_stats(problem: Dict[str, Any]) -> Dict[str, float]:
     }
 
 
+def precondition_units(problem: Dict[str, Any]) -> int:
+    return len(problem["actions"]) + sum(formula_size(a["precondition"]) for a in problem["actions"])
+
+
+def effect_units(problem: Dict[str, Any]) -> int:
+    return sum(
+        1 + formula_size(effect["condition"])
+        for action in problem["actions"]
+        for effect in action.get("effects", [])
+    )
+
+
+def split_structural_units(problem: Dict[str, Any]) -> float:
+    return (precondition_units(problem) + effect_units(problem)) / 2.0
+
+
 def item_stats(item: Dict[str, Any]) -> Dict[str, float]:
     stats = size_stats(item["compiled_problem"])
     stats["compile_seconds"] = item["compile_seconds"]
@@ -158,6 +179,7 @@ def score_compile_size(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
         out[method] = {
             **stats,
             "plan_valid_rate": 1.0 if plan_valid(item["compiled_problem"], item["valid_plan"]) else 0.0,
+            "slice_structural_units": split_structural_units(item["compiled_problem"]),
         }
     out["lifted_tcore"]["action_ratio_vs_ground"] = ratio(out["lifted_tcore"]["actions"], out["ground_tcore"]["actions"])
     out["lcc"]["action_ratio_vs_ground"] = ratio(out["lcc"]["actions"], out["ground_tcore"]["actions"])
@@ -175,6 +197,7 @@ def score_semantics(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
             "invalid_plan_rejected": 1.0 if not plan_valid(item["compiled_problem"], item["invalid_plan"]) else 0.0,
             "actions": stats["actions"],
             "effects": stats["effects"],
+            "slice_structural_units": split_structural_units(item["compiled_problem"]),
             "compile_seconds": stats["compile_seconds"],
         }
     return out
@@ -190,6 +213,7 @@ def score_constraint_suite(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
         actions = 0
         effects = 0
         compile_seconds = 0.0
+        structural_units = 0.0
         for case in item["cases"].values():
             valid += int(plan_valid(case["compiled_problem"], case["valid_plan"]))
             invalid += int(not plan_valid(case["compiled_problem"], case["invalid_plan"]))
@@ -197,12 +221,17 @@ def score_constraint_suite(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
             actions += stats["actions"]
             effects += stats["effects"]
             compile_seconds += stats["compile_seconds"]
+        for name in CONSTRAINT_TYPE_TRAIN_CASES:
+            structural_units += precondition_units(item["cases"][name]["compiled_problem"])
+        for name in CONSTRAINT_TYPE_TEST_CASES:
+            structural_units += effect_units(item["cases"][name]["compiled_problem"])
         out[method] = {
             "constraint_types_tested": n_cases,
             "valid_accept_rate": valid / n_cases,
             "invalid_reject_rate": invalid / n_cases,
             "actions": actions,
             "effects": effects,
+            "slice_structural_units": structural_units / 2.0,
             "compile_seconds": compile_seconds,
         }
     return out
@@ -219,6 +248,7 @@ def score_initial_monitoring_edges(exp: Dict[str, Any]) -> Dict[str, Dict[str, f
         actions = 0
         effects = 0
         compile_seconds = 0.0
+        structural_units = 0.0
         for case in item["cases"].values():
             valid += int(plan_valid(case["compiled_problem"], case["valid_plan"]))
             if "invalid_plan" in case:
@@ -228,12 +258,17 @@ def score_initial_monitoring_edges(exp: Dict[str, Any]) -> Dict[str, Dict[str, f
             actions += stats["actions"]
             effects += stats["effects"]
             compile_seconds += stats["compile_seconds"]
+        for name in EDGE_TRAIN_CASES:
+            structural_units += precondition_units(item["cases"][name]["compiled_problem"])
+        for name in EDGE_TEST_CASES:
+            structural_units += effect_units(item["cases"][name]["compiled_problem"])
         out[method] = {
             "edge_cases_tested": n_cases,
             "valid_accept_rate": valid / n_cases,
             "invalid_reject_rate": invalid / invalid_cases,
             "actions": actions,
             "effects": effects,
+            "slice_structural_units": structural_units / 2.0,
             "compile_seconds": compile_seconds,
         }
     return out

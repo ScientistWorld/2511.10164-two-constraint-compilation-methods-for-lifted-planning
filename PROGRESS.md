@@ -32,6 +32,8 @@ Local continuation checks pass after the initial-state monitoring and evaluator-
 
 A fresh CPU validation job verified the same path inside the compute container.
 
+After the train/test split audit, `scripts/run.sh` was restored to the full core-claim path: planning regression tests, `scripts/reproduce.sh`, train/test split scoring, and `python validate.py --compare`. The paper-level evaluator now emits the same `slice_structural_units` compactness primary used by `reference.json`, so `scores.json`, `scores_train.json`, and `scores_test.json` all validate against the current scoring schema.
+
 Current milestone: `core_claim`.
 
 Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.
