@@ -41,6 +41,22 @@ def score_semantics(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
     return out
 
 
+def score_constraint_suite(exp: Dict[str, Any]) -> Dict[str, Dict[str, float]]:
+    out: Dict[str, Dict[str, float]] = {}
+    n_cases = len(exp["constraint_types"])
+    for method in ("lifted_tcore", "lcc", "ground_tcore"):
+        item = exp[method]
+        out[method] = {
+            "constraint_types_tested": n_cases,
+            "valid_accept_rate": item["valid_accept_rate"],
+            "invalid_reject_rate": item["invalid_reject_rate"],
+            "actions": item["actions"],
+            "effects": item["effects"],
+            "compile_seconds": item["compile_seconds"],
+        }
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("results", nargs="?", default="outputs/method_results.json")
@@ -53,6 +69,7 @@ def main() -> None:
             "ground_constraints_size": {"results": score_compile_size(raw["ground_constraints_size"])},
             "nonground_constraints_size": {"results": score_compile_size(raw["nonground_constraints_size"])},
             "constraint_semantics": {"results": score_semantics(raw["constraint_semantics"])},
+            "constraint_type_suite": {"results": score_constraint_suite(raw["constraint_type_suite"])},
         }
     }
     output = Path(args.output)

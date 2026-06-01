@@ -8,6 +8,7 @@ Implemented a self-contained symbolic planning reproduction of the paper's two l
 - LCC with shared monitoring preconditions/effects and a final `fin` action.
 - Ground TCORE-style baseline that grounds high-arity action schemas before applying regression compilation.
 - Output-based evaluation that reads `outputs/method_results.json` and writes `scoring/scores.json`.
+- A constraint-family semantic suite covering always, sometime, sometime-before, sometime-after, and at-most-once checks.
 
 ## Results
 
@@ -15,6 +16,7 @@ Local smoke run and full default run both preserve constraint semantics:
 
 - Valid plans are accepted by LiftedTCORE, LCC, and the ground baseline.
 - Invalid at-most-once trajectories are rejected.
+- Valid and invalid trajectories are classified correctly for all five supported qualitative constraint families.
 - Lifted compiled tasks remain at 1-4 lifted actions in the included generated benchmarks, while the ground baseline grows to hundreds or thousands of actions depending on object count.
 
 `python validate.py --compare` passes.

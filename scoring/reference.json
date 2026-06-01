@@ -2,7 +2,7 @@
   "experiments": {
     "ground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on ground-constrained tasks, corresponding to the paper's Ground benchmark summary.",
-      "weight": 0.4,
+      "weight": 0.3,
       "primary_metric": "actions",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0},
@@ -20,7 +20,7 @@
     },
     "nonground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on non-ground constrained tasks, corresponding to the paper's Non-Ground benchmark summary.",
-      "weight": 0.4,
+      "weight": 0.3,
       "primary_metric": "actions",
       "metrics": {
         "actions": {"higher_is_better": false, "coefficient": -1.0},
@@ -51,6 +51,24 @@
         "lifted_tcore": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 7, "effects": 58, "compile_seconds": 0.023},
         "lcc": {"type": "proposed", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 8, "effects": 63, "compile_seconds": 0.003},
         "ground_tcore": {"type": "baseline", "valid_plan_accepted": 1.0, "invalid_plan_rejected": 1.0, "actions": 21000, "effects": 95000, "compile_seconds": 4.518}
+      }
+    },
+    "constraint_type_suite": {
+      "description": "Semantic preservation across all qualitative constraint families implemented in the benchmark: always, sometime, sometime-before, sometime-after, and at-most-once.",
+      "weight": 0.2,
+      "primary_metric": "valid_accept_rate",
+      "metrics": {
+        "constraint_types_tested": {"higher_is_better": true, "coefficient": 0.3},
+        "valid_accept_rate": {"higher_is_better": true, "coefficient": 1.0},
+        "invalid_reject_rate": {"higher_is_better": true, "coefficient": 1.0},
+        "actions": {"higher_is_better": false, "coefficient": -0.2},
+        "effects": {"higher_is_better": false, "coefficient": -0.2},
+        "compile_seconds": {"higher_is_better": false, "coefficient": -0.1}
+      },
+      "results": {
+        "lifted_tcore": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "compile_seconds": 0.001},
+        "lcc": {"type": "proposed", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 25, "effects": 55, "compile_seconds": 0.001},
+        "ground_tcore": {"type": "baseline", "constraint_types_tested": 5, "valid_accept_rate": 1.0, "invalid_reject_rate": 1.0, "actions": 20, "effects": 40, "compile_seconds": 0.001}
       }
     }
   }

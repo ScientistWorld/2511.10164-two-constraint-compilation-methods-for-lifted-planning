@@ -17,4 +17,5 @@ Do not improve scores by reducing object counts, omitting high-arity actions, or
 - [ ] Uses the provided benchmark task families and constraint types
 - [ ] Reports all metrics required by `scoring/reference.json`
 - [ ] Keeps semantic-preservation checks enabled
+- [ ] Keeps all five constraint-family checks in `constraint_type_suite`
 - [ ] Does not edit `eval/` to import from `method/`

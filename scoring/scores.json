@@ -4,24 +4,52 @@
       "results": {
         "ground_tcore": {
           "actions": 1029,
-          "compile_seconds": 0.02491834992542863,
+          "compile_seconds": 0.025532987900078297,
           "effects": 2744,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
         },
         "lcc": {
           "actions": 4,
-          "compile_seconds": 3.614090383052826e-05,
+          "compile_seconds": 3.35171353071928e-05,
           "effects": 14,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
         },
         "lifted_tcore": {
           "actions": 3,
-          "compile_seconds": 7.641292177140713e-05,
+          "compile_seconds": 7.609394378960133e-05,
           "effects": 8,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
+        }
+      }
+    },
+    "constraint_type_suite": {
+      "results": {
+        "ground_tcore": {
+          "actions": 20,
+          "compile_seconds": 0.000516131054610014,
+          "constraint_types_tested": 5,
+          "effects": 40,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
+        },
+        "lcc": {
+          "actions": 25,
+          "compile_seconds": 0.00015049846842885017,
+          "constraint_types_tested": 5,
+          "effects": 55,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
+        },
+        "lifted_tcore": {
+          "actions": 20,
+          "compile_seconds": 0.0004642701242119074,
+          "constraint_types_tested": 5,
+          "effects": 40,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
         }
       }
     },
@@ -30,7 +58,7 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 4096,
-          "compile_seconds": 0.3588406031485647,
+          "compile_seconds": 0.36029020487330854,
           "effects": 28672,
           "formula_atoms": 148368,
           "plan_valid_rate": 1.0
@@ -38,7 +66,7 @@
         "lcc": {
           "action_ratio_vs_ground": 0.00048828125,
           "actions": 2,
-          "compile_seconds": 4.3223146349191666e-05,
+          "compile_seconds": 4.204106517136097e-05,
           "effects": 12,
           "formula_atoms": 35,
           "plan_valid_rate": 1.0
@@ -46,7 +74,7 @@
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.000244140625,
           "actions": 1,
-          "compile_seconds": 0.00020525185391306877,
+          "compile_seconds": 0.00020609400235116482,
           "effects": 7,
           "formula_atoms": 54,
           "plan_valid_rate": 1.0
@@ -58,7 +86,7 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 343,
-          "compile_seconds": 0.017541700042784214,
+          "compile_seconds": 0.017675614915788174,
           "effects": 1715,
           "formula_atoms": 9436,
           "plan_valid_rate": 1.0
@@ -66,7 +94,7 @@
         "lcc": {
           "action_ratio_vs_ground": 0.0058309037900874635,
           "actions": 2,
-          "compile_seconds": 2.9720133170485497e-05,
+          "compile_seconds": 3.059208393096924e-05,
           "effects": 8,
           "formula_atoms": 29,
           "plan_valid_rate": 1.0
@@ -74,7 +102,7 @@
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.0029154518950437317,
           "actions": 1,
-          "compile_seconds": 0.00017913011834025383,
+          "compile_seconds": 0.00019387807697057724,
           "effects": 5,
           "formula_atoms": 34,
           "plan_valid_rate": 1.0

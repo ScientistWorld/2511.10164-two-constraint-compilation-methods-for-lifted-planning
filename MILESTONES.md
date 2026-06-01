@@ -13,6 +13,11 @@
 - Ran local smoke tests showing valid trajectories execute and invalid at-most-once trajectories are rejected by the compiled tasks.
 - Added evaluation, reference metrics, documentation, and scripts.
 
+### [2026-06-01 07:26] - method_runs
+- Audited the existing implementation and confirmed it implements the paper's compilation algorithms directly rather than a surrogate.
+- Added a semantic suite covering all five supported qualitative constraint families.
+- Re-ran `scripts/reproduce.sh` and `python validate.py --compare` locally; both pass.
+
 ## Stop Justification
 
 Not stopping; submitting a CPU job to verify the packaged reproduction in the compute environment.

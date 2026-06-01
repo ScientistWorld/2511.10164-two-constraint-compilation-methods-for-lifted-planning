@@ -16,3 +16,9 @@ Tests whether compactness is maintained when constraints contain quantifiers.
 
 Tests whether the transformed task preserves trajectory-constraint meaning.
 - **Metric**: `valid_plan_accepted` and `invalid_plan_rejected` (higher is better)
+
+## Constraint: constraint_type_suite
+
+Tests semantic preservation across every supported qualitative constraint family.
+- **Metric**: `valid_accept_rate` and `invalid_reject_rate` (higher is better)
+- **Coverage metric**: `constraint_types_tested` should remain at 5

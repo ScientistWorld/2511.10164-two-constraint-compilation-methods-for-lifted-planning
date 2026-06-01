@@ -5,4 +5,4 @@ action: submit
 gpus: 0
 test: true
 milestone: method_runs
-notes: "CPU smoke job: run the packaged reproduction and evaluator for LiftedTCORE/LCC/ground-TCORE symbolic benchmarks."
+notes: "CPU smoke job: run the packaged reproduction and evaluator, including the all-constraint semantic suite."

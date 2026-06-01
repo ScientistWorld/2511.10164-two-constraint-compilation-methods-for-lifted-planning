@@ -11,3 +11,7 @@ Tests whether the same compactness and semantic preservation hold when the const
 ## constraint_semantics
 
 Tests whether the converted task accepts a valid trajectory and rejects a trajectory that violates an at-most-once requirement.
+
+## constraint_type_suite
+
+Tests whether converted tasks accept valid trajectories and reject invalid trajectories for each supported temporal constraint family.

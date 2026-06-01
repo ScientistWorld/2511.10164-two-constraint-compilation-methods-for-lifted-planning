@@ -6,7 +6,7 @@ import time
 from pathlib import Path
 from typing import Any, Dict
 
-from benchmarks import make_at_most_once_problem, make_transfer_problem
+from benchmarks import make_at_most_once_problem, make_constraint_suite, make_transfer_problem
 from planning import (
     compile_ground_tcore,
     compile_lcc,
@@ -87,6 +87,54 @@ def at_most_once_experiment(n_objects: int) -> Dict[str, Any]:
     }
 
 
+def constraint_suite_experiment() -> Dict[str, Any]:
+    cases = make_constraint_suite()
+    totals: Dict[str, Dict[str, Any]] = {
+        method: {
+            "valid_accepted": 0,
+            "invalid_rejected": 0,
+            "actions": 0,
+            "effects": 0,
+            "compile_seconds": 0.0,
+            "cases": {},
+        }
+        for method in ("lifted_tcore", "lcc", "ground_tcore")
+    }
+    for name, problem, valid_plan, invalid_plan in cases:
+        compiled = {}
+        compiled["lifted_tcore"], lifted_t = timed_compile(compile_lifted_tcore, problem)
+        compiled["lcc"], lcc_t = timed_compile(compile_lcc, problem)
+        compiled["ground_tcore"], ground_t = timed_compile(compile_ground_tcore, problem)
+        compile_times = {"lifted_tcore": lifted_t, "lcc": lcc_t, "ground_tcore": ground_t}
+        for method, compiled_problem in compiled.items():
+            if method == "lcc":
+                valid = valid_plan + [("fin", ())]
+                invalid = invalid_plan + [("fin", ())]
+            elif method == "ground_tcore":
+                valid = [(ground_name(n, a), ()) for n, a in valid_plan]
+                invalid = [(ground_name(n, a), ()) for n, a in invalid_plan]
+            else:
+                valid = valid_plan
+                invalid = invalid_plan
+            valid_ok = plan_valid(compiled_problem, valid)
+            invalid_rejected = not plan_valid(compiled_problem, invalid)
+            totals[method]["valid_accepted"] += int(valid_ok)
+            totals[method]["invalid_rejected"] += int(invalid_rejected)
+            stats = size_stats(compiled_problem)
+            totals[method]["actions"] += stats["actions"]
+            totals[method]["effects"] += stats["effects"]
+            totals[method]["compile_seconds"] += compile_times[method]
+            totals[method]["cases"][name] = {
+                "valid_plan_accepted": valid_ok,
+                "invalid_plan_rejected": invalid_rejected,
+                **stats,
+            }
+    for method in totals:
+        totals[method]["valid_accept_rate"] = totals[method]["valid_accepted"] / len(cases)
+        totals[method]["invalid_reject_rate"] = totals[method]["invalid_rejected"] / len(cases)
+    return {"constraint_types": [case[0] for case in cases], **totals}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", default="outputs/method_results.json")
@@ -98,6 +146,7 @@ def main() -> None:
         "ground_constraints_size": compile_size_experiment(args.n_large, quantified=False),
         "nonground_constraints_size": compile_size_experiment(args.n_small, quantified=True),
         "constraint_semantics": at_most_once_experiment(args.n_small),
+        "constraint_type_suite": constraint_suite_experiment(),
     }
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)

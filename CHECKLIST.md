@@ -19,6 +19,7 @@
 - [x] Evaluation code in `eval/`
 - [x] Method implementation in `method/`
 - [x] Baseline implementation via ground TCORE-style baseline
+- [x] Semantic suite covers all five supported qualitative constraint families
 
 ## Scripts
 - [x] `scripts/evaluate.sh`

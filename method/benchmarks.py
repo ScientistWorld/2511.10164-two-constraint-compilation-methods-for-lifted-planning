@@ -2,11 +2,9 @@ from __future__ import annotations
 
 from planning import (
     Action,
-    And,
     Atom,
     Constraint,
     Effect,
-    Eq,
     Exists,
     ForAll,
     Literal,
@@ -91,3 +89,60 @@ def make_at_most_once_problem(n_objects: int = 7) -> tuple[Problem, list[tuple[s
         ("done", (target, objects[1], objects[2])),
     ]
     return Problem(objects, (toggle_on, toggle_off, done), init, goal, constraints, {"flag", "noise", "finished"}), valid, invalid
+
+
+def make_constraint_suite() -> list[tuple[str, Problem, list[tuple[str, tuple[str, ...]]], list[tuple[str, tuple[str, ...]]]]]:
+    """Small semantic checks for all trajectory constraint families used here."""
+
+    actions = (
+        Action("set_p", (), TRUE, (Effect(TRUE, Literal("p")),)),
+        Action("clear_p", (), TRUE, (Effect(TRUE, Literal("p", (), True)),)),
+        Action("set_q", (), TRUE, (Effect(TRUE, Literal("q")),)),
+        Action("finish", (), TRUE, (Effect(TRUE, Literal("finished")),)),
+    )
+    objects = ("o0",)
+    goal = atom("finished")
+    predicates = {"p", "q", "finished"}
+
+    def problem(kind: str, phi, psi=None, init=None) -> Problem:
+        return Problem(
+            objects,
+            actions,
+            set() if init is None else set(init),
+            goal,
+            (Constraint(kind, phi, psi, name=kind),),
+            predicates,
+        )
+
+    return [
+        (
+            "always",
+            problem("always", atom("p"), init={("p", ())}),
+            [("finish", ())],
+            [("clear_p", ()), ("finish", ())],
+        ),
+        (
+            "sometime",
+            problem("sometime", atom("p")),
+            [("set_p", ()), ("finish", ())],
+            [("finish", ())],
+        ),
+        (
+            "sometime_before",
+            problem("sometime_before", atom("p"), atom("q")),
+            [("set_q", ()), ("set_p", ()), ("finish", ())],
+            [("set_p", ()), ("set_q", ()), ("finish", ())],
+        ),
+        (
+            "sometime_after",
+            problem("sometime_after", atom("p"), atom("q")),
+            [("set_p", ()), ("set_q", ()), ("finish", ())],
+            [("set_p", ()), ("finish", ())],
+        ),
+        (
+            "at_most_once",
+            problem("at_most_once", atom("p")),
+            [("set_p", ()), ("finish", ())],
+            [("set_p", ()), ("clear_p", ()), ("set_p", ()), ("finish", ())],
+        ),
+    ]
