@@ -36,7 +36,7 @@
 
 ## Milestones
 - [x] `method_runs` — executes end-to-end locally
-- [ ] `core_claim` — pending submitted job result
+- [x] `core_claim` — packaged CPU job completed successfully
 - [ ] `core_claim_plus`
 - [ ] `secondary_claims`
 - [ ] `majority`

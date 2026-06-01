@@ -1,6 +1,6 @@
 # Reproduction Milestones
 
-**Current: method_runs**
+**Current: core_claim**
 
 ## Progress Log
 
@@ -18,6 +18,11 @@
 - Added a semantic suite covering all five supported qualitative constraint families.
 - Re-ran `scripts/reproduce.sh` and `python validate.py --compare` locally; both pass.
 
+### [2026-06-01 07:30] - core_claim
+- Compute job `7b3735e5-05b` completed with exit code 0 inside the packaged container.
+- The reproduced artifacts show valid plan acceptance and invalid plan rejection at 1.0 for the at-most-once semantic check and the all-constraint semantic suite.
+- Lifted compilation remains compact on the generated high-arity benchmarks while the ground-first baseline grows to hundreds or thousands of grounded actions.
+
 ## Stop Justification
 
-Not stopping; submitting a CPU job to verify the packaged reproduction in the compute environment.
+Reached `core_claim`: the paper's actual lifted compilation algorithms run end-to-end in the packaged environment and demonstrate semantic preservation plus the expected lifted-vs-ground compactness effect on generated symbolic benchmarks.

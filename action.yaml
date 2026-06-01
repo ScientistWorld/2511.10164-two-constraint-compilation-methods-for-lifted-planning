@@ -1,8 +1,6 @@
 # IMPORTANT: Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends. Sleeping blocks the entire pipeline.
-action: submit
-gpus: 0
-test: true
-milestone: method_runs
-notes: "CPU smoke job: run the packaged reproduction and evaluator, including the all-constraint semantic suite."
+action: done
+milestone: core_claim
+notes: "Compute job 7b3735e5-05b passed. Reproduced the core claim with packaged LiftedTCORE/LCC/ground-TCORE benchmarks and semantic evaluation."
