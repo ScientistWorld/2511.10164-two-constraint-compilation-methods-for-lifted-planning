@@ -15,3 +15,7 @@ Tests whether the converted task accepts a valid trajectory and rejects a trajec
 ## constraint_type_suite
 
 Tests whether converted tasks accept valid trajectories and reject invalid trajectories for each supported temporal constraint family.
+
+## initial_monitoring_edge_cases
+
+Tests whether converted tasks correctly handle constraints whose relevant witness or protected condition is true before the first action.

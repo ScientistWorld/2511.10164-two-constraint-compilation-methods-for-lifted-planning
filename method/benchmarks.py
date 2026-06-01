@@ -146,3 +146,34 @@ def make_constraint_suite() -> list[tuple[str, Problem, list[tuple[str, tuple[st
             [("set_p", ()), ("clear_p", ()), ("set_p", ()), ("finish", ())],
         ),
     ]
+
+
+def make_initial_monitoring_edge_cases() -> list[tuple[str, Problem, list[tuple[str, tuple[str, ...]]], list[tuple[str, tuple[str, ...]]] | None]]:
+    """Edge cases where monitoring atoms must reflect the initial state."""
+
+    sb_problem = Problem(
+        ("o0",),
+        (Action("make_p", (), TRUE, (Effect(TRUE, Literal("p")),)),),
+        {("q", ())},
+        atom("p"),
+        (Constraint("sometime_before", atom("p"), atom("q"), name="q_before_p"),),
+        {"p", "q"},
+    )
+
+    amo_problem = Problem(
+        ("o0",),
+        (
+            Action("clear_p", (), atom("p"), (Effect(TRUE, Literal("p", (), True)),)),
+            Action("make_p", (), TRUE, (Effect(TRUE, Literal("p")),)),
+            Action("finish", (), TRUE, (Effect(TRUE, Literal("done")),)),
+        ),
+        {("p", ())},
+        atom("done"),
+        (Constraint("at_most_once", atom("p"), name="p_once"),),
+        {"p", "done"},
+    )
+
+    return [
+        ("sometime_before_initial_witness", sb_problem, [("make_p", ())], None),
+        ("at_most_once_initial_reentry", amo_problem, [("finish", ())], [("clear_p", ()), ("make_p", ()), ("finish", ())]),
+    ]

@@ -22,3 +22,9 @@ Tests whether the transformed task preserves trajectory-constraint meaning.
 Tests semantic preservation across every supported qualitative constraint family.
 - **Metric**: `valid_accept_rate` and `invalid_reject_rate` (higher is better)
 - **Coverage metric**: `constraint_types_tested` should remain at 5
+
+## Constraint: initial_monitoring_edge_cases
+
+Tests semantic preservation when a monitoring condition is already true in the initial state.
+- **Metric**: `valid_accept_rate` and `invalid_reject_rate` (higher is better)
+- **Coverage metric**: `edge_cases_tested` should remain at 2

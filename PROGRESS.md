@@ -8,8 +8,11 @@ Implemented a self-contained symbolic planning reproduction of the paper's two l
 - LCC with shared monitoring preconditions/effects and a final `fin` action.
 - Ground TCORE-style baseline that grounds high-arity action schemas before applying regression compilation.
 - Output-based evaluation that reads `outputs/method_results.json` and writes `scoring/scores.json`.
+- Evaluator-side plan replay over serialized compiled tasks, so scores are recomputed from artifacts rather than trusted method-reported flags.
 - A constraint-family semantic suite covering always, sometime, sometime-before, sometime-after, and at-most-once checks.
+- Initial-state monitoring edge cases for sometime-before and at-most-once constraints.
 - Audit fix: lifted unification now handles repeated variables by producing equality conditions instead of incorrectly failing unification.
+- Continuation audit fix: LiftedTCORE now initializes monitoring state when sometime-before witnesses or at-most-once protected formulas already hold initially.
 
 ## Results
 
@@ -21,7 +24,15 @@ Local smoke runs and compute jobs `7b3735e5-05b` and `f285ea84-69a` preserve con
 - Lifted compiled tasks remain at 1-3 lifted actions in the generated high-arity size benchmarks, while the ground baseline grows to 343 actions on the quantified small task and 4096 actions on the larger ground task.
 - In the all-constraint semantic suite, LiftedTCORE, LCC, and the ground baseline all achieve `valid_accept_rate = 1.0` and `invalid_reject_rate = 1.0` across five constraint families.
 
-`python validate.py --compare` passes.
+Local continuation checks pass after the initial-state monitoring and evaluator-artifact replay fixes:
+
+- `PYTHONPATH=method python method/test_planning.py`
+- `bash scripts/reproduce.sh`
+- `python validate.py --compare`
+
+A fresh CPU validation job is being submitted to verify the same path inside the compute container.
+
+Current milestone during this continuation: `method_runs`, pending the validation job to restore `core_claim`.
 
 Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ran the lifted repeated-variable unification tests, reproduced all method outputs, and passed `python validate.py --compare` inside the container.
 
@@ -29,7 +40,14 @@ Compute job `f285ea84-69a` completed with exit code 0 after the audit fix. It ra
 
 The existing implementation was a real reproduction of the paper's algorithm, not a surrogate: LiftedTCORE computes lifted gamma/regression and LCC applies shared delayed monitoring with a final `fin` action. The evaluator is independent from `method/` and reads `outputs/method_results.json`.
 
-During audit, repeated variables in lifted unification were found to be under-handled. This has been fixed in `method/planning.py` and covered by `method/test_planning.py`; `scripts/run.sh` now executes those checks before the full reproduction.
+During the first audit, repeated variables in lifted unification were found to be under-handled. This has been fixed in `method/planning.py` and covered by `method/test_planning.py`; `scripts/run.sh` now executes those checks before the full reproduction.
+
+During the continuation audit, two lifted monitoring edge cases were found and fixed:
+
+- `sometime-before(phi, psi)` must count `psi` as already seen when `psi` is true in the initial state.
+- `at-most-once(phi)` must count `phi` as already seen when `phi` is true in the initial state, so later re-entry is rejected.
+
+The evaluator was also strengthened to replay serialized compiled artifacts independently instead of trusting method-emitted validity booleans.
 
 ## Remaining
 
@@ -40,6 +58,8 @@ The current environment reaches `core_claim` on generated symbolic benchmark tas
 The paper's full benchmark depends on external planner infrastructure and IPC generators. To keep the first runnable environment robust, I used generated planning tasks that preserve the same high-arity grounding pressure and trajectory-constraint semantics.
 
 Validation note: the generated benchmark is smaller than the paper's full IPC evaluation, so the size experiments use semantic validity as their primary metric in `reference.json`; action/effect counts and action ratios remain reported as compactness metrics.
+
+Workspace note: the root `README.md` appears as a busy character device in this environment and could not be replaced with normal markdown. Reproduction instructions are provided in `README_REPRODUCTION.md` instead.
 
 ## Deviations from Paper
 

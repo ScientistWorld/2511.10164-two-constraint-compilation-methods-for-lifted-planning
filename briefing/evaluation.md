@@ -16,4 +16,4 @@ Paper targets in `scoring/reference.json` summarize Table 3 for compiled size an
 
 Run `bash scripts/reproduce.sh` to generate method artifacts in `outputs/method_results.json`, then run `bash scripts/evaluate.sh outputs/method_results.json`. The evaluator only reads the output artifact and writes `scoring/scores.json`.
 
-The included benchmark uses generated symbolic planning tasks with high-arity actions, ground and quantified constraints, and explicit valid/invalid plan probes. It also includes a constraint-family suite for always, sometime, sometime-before, sometime-after, and at-most-once requirements. Future methods should emit the same JSON artifact format.
+The included benchmark uses generated symbolic planning tasks with high-arity actions, ground and quantified constraints, and explicit valid/invalid plan probes. It also includes a constraint-family suite for always, sometime, sometime-before, sometime-after, and at-most-once requirements, plus initial-state monitoring edge cases. Future methods should emit the same JSON artifact format: serialized compiled tasks, valid plans, optional invalid plans, and compile-time measurements.

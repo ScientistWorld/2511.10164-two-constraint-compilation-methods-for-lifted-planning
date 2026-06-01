@@ -4,21 +4,21 @@
       "results": {
         "ground_tcore": {
           "actions": 1029,
-          "compile_seconds": 0.023160562152042985,
+          "compile_seconds": 0.021003922913223505,
           "effects": 2744,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
         },
         "lcc": {
           "actions": 4,
-          "compile_seconds": 3.0209077522158623e-05,
+          "compile_seconds": 3.3014919608831406e-05,
           "effects": 14,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
         },
         "lifted_tcore": {
           "actions": 3,
-          "compile_seconds": 6.98950607329607e-05,
+          "compile_seconds": 8.990289643406868e-05,
           "effects": 8,
           "invalid_plan_rejected": 1.0,
           "valid_plan_accepted": 1.0
@@ -29,7 +29,7 @@
       "results": {
         "ground_tcore": {
           "actions": 20,
-          "compile_seconds": 0.00044524832628667355,
+          "compile_seconds": 0.0005012280307710171,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
@@ -37,7 +37,7 @@
         },
         "lcc": {
           "actions": 25,
-          "compile_seconds": 0.00013299216516315937,
+          "compile_seconds": 0.0001421642955392599,
           "constraint_types_tested": 5,
           "effects": 55,
           "invalid_reject_rate": 1.0,
@@ -45,7 +45,7 @@
         },
         "lifted_tcore": {
           "actions": 20,
-          "compile_seconds": 0.00038544880226254463,
+          "compile_seconds": 0.00044698547571897507,
           "constraint_types_tested": 5,
           "effects": 40,
           "invalid_reject_rate": 1.0,
@@ -58,7 +58,7 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 4096,
-          "compile_seconds": 0.3240507689770311,
+          "compile_seconds": 0.3543327918741852,
           "effects": 28672,
           "formula_atoms": 148368,
           "plan_valid_rate": 1.0
@@ -66,7 +66,7 @@
         "lcc": {
           "action_ratio_vs_ground": 0.00048828125,
           "actions": 2,
-          "compile_seconds": 3.7841033190488815e-05,
+          "compile_seconds": 4.156515933573246e-05,
           "effects": 12,
           "formula_atoms": 35,
           "plan_valid_rate": 1.0
@@ -74,10 +74,38 @@
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.000244140625,
           "actions": 1,
-          "compile_seconds": 0.00028888508677482605,
+          "compile_seconds": 0.00021835695952177048,
           "effects": 7,
           "formula_atoms": 54,
           "plan_valid_rate": 1.0
+        }
+      }
+    },
+    "initial_monitoring_edge_cases": {
+      "results": {
+        "ground_tcore": {
+          "actions": 4,
+          "compile_seconds": 0.0001109810546040535,
+          "edge_cases_tested": 2,
+          "effects": 8,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
+        },
+        "lcc": {
+          "actions": 6,
+          "compile_seconds": 4.63719479739666e-05,
+          "edge_cases_tested": 2,
+          "effects": 16,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
+        },
+        "lifted_tcore": {
+          "actions": 4,
+          "compile_seconds": 9.654182940721512e-05,
+          "edge_cases_tested": 2,
+          "effects": 8,
+          "invalid_reject_rate": 1.0,
+          "valid_accept_rate": 1.0
         }
       }
     },
@@ -86,7 +114,7 @@
         "ground_tcore": {
           "action_ratio_vs_ground": 1.0,
           "actions": 343,
-          "compile_seconds": 0.0162682649679482,
+          "compile_seconds": 0.017695340095087886,
           "effects": 1715,
           "formula_atoms": 9436,
           "plan_valid_rate": 1.0
@@ -94,7 +122,7 @@
         "lcc": {
           "action_ratio_vs_ground": 0.0058309037900874635,
           "actions": 2,
-          "compile_seconds": 3.0905939638614655e-05,
+          "compile_seconds": 2.7836067602038383e-05,
           "effects": 8,
           "formula_atoms": 29,
           "plan_valid_rate": 1.0
@@ -102,7 +130,7 @@
         "lifted_tcore": {
           "action_ratio_vs_ground": 0.0029154518950437317,
           "actions": 1,
-          "compile_seconds": 0.00014283694326877594,
+          "compile_seconds": 0.00018988410010933876,
           "effects": 5,
           "formula_atoms": 34,
           "plan_valid_rate": 1.0

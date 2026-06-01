@@ -1,9 +1,9 @@
 #!/bin/bash
 # Reproduce the paper's results end-to-end.
 #
-# This script runs inside the compute container and should call
-# scripts/baseline.sh and scripts/method.sh to run baselines and
-# the paper's method, each of which calls scripts/evaluate.sh.
+# This script runs inside the compute container. The method runner emits
+# proposed compiler outputs and the ground-first baseline in one artifact,
+# then calls scripts/evaluate.sh to score all methods from that artifact.
 #
 # Assumes:
 #   - Container is built (environment/container.sif)

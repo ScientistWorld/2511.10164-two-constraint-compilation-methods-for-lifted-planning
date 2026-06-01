@@ -372,6 +372,12 @@ def compile_lifted_tcore(problem: Problem) -> Problem:
             assert constraint.psi is not None
             if constraint.psi.eval(problem.init, problem.objects) or not constraint.phi.eval(problem.init, problem.objects):
                 new_init.add(mon.atom())
+        if constraint.kind == "at_most_once" and constraint.phi.eval(problem.init, problem.objects):
+            new_init.add(_seen(constraint.phi).atom())
+        if constraint.kind == "sometime_before":
+            assert constraint.psi is not None
+            if constraint.psi.eval(problem.init, problem.objects):
+                new_init.add(_seen(constraint.psi).atom())
         if constraint.kind in {"sometime", "sometime_after"}:
             hold_goals.append(Atom(mon))
     for action in problem.actions:
