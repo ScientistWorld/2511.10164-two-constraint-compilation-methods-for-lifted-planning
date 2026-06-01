@@ -3,14 +3,14 @@
 ## Primary: ground_constraints_size
 
 Tests whether a compiler keeps the constraint-free planning specification compact on tasks with ground constraints.
-- **Primary metric**: `slice_structural_units` (lower is better)
+- **Primary metric**: `slice_structural_units` (lower is better; local generated-benchmark proxy, not a paper-reported table value)
 - **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
 - **Semantic gate**: `plan_valid_rate` must remain 1.0
 
 ## Primary: nonground_constraints_size
 
 Tests whether compactness is maintained when constraints contain quantifiers.
-- **Primary metric**: `slice_structural_units` (lower is better)
+- **Primary metric**: `slice_structural_units` (lower is better; local generated-benchmark proxy, not a paper-reported table value)
 - **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
 - **Semantic gate**: `plan_valid_rate` must remain 1.0
 

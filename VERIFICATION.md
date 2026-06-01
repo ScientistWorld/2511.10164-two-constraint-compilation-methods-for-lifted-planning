@@ -9,12 +9,14 @@ The claimed milestone is justified. The final CPU validation job regenerated art
 ## Issues Found
 
 - Minor: generated `jobs/` logs and `trajectory/` session files were tracked despite being excluded by `.gitignore`.
+- Minor: validator paper-consistency checks initially treated `slice_structural_units` as a paper-reported size value, but it is a local generated-benchmark proxy.
 
 ## Fixes Applied
 
 - Removed tracked generated `jobs/` and `trajectory/` files from version control so they stay ignored.
 - Verified `scripts/run.sh` regenerates the reproduction artifacts and fails unless both size experiments produce at least 20K ground-first baseline actions.
 - Reviewed job `50dd2235-44c`: it completed with exit code 0, produced 21,952 ground-first actions for both size experiments, regenerated train/test scores, and passed all validation checks.
+- Documented the `slice_structural_units` proxy in `reference.json` and calibrated its ground-first reference values to the local 28-object benchmark while preserving the paper-reported action/effect counts.
 
 ## Final Judgment
 

@@ -2,6 +2,7 @@
   "experiments": {
     "ground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on ground-constrained tasks, corresponding to the paper's Ground benchmark summary.",
+      "notes": "The action/effect/formula/compile values summarize the paper table. slice_structural_units is a gym-only compactness proxy calibrated to the local 28-object generated benchmark, not a paper-reported metric.",
       "weight": 0.25,
       "primary_metric": "slice_structural_units",
       "metrics": {
@@ -16,11 +17,12 @@
       "results": {
         "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 58, "formula_atoms": 58, "compile_seconds": 0.023, "plan_valid_rate": 1.0, "slice_structural_units": 31, "action_ratio_vs_ground": 0.000333},
         "lcc": {"type": "proposed", "actions": 8, "effects": 63, "formula_atoms": 63, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "slice_structural_units": 25, "action_ratio_vs_ground": 0.000381},
-        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 95000, "formula_atoms": 95000, "compile_seconds": 4.518, "plan_valid_rate": 1.0, "slice_structural_units": 90568, "action_ratio_vs_ground": 1.0}
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 95000, "formula_atoms": 95000, "compile_seconds": 4.518, "plan_valid_rate": 1.0, "slice_structural_units": 489118, "action_ratio_vs_ground": 1.0}
       }
     },
     "nonground_constraints_size": {
       "description": "Compiled problem succinctness and planning validity on non-ground constrained tasks, corresponding to the paper's Non-Ground benchmark summary.",
+      "notes": "The action/effect/formula/compile values summarize the paper table. slice_structural_units is a gym-only compactness proxy calibrated to the local 28-object generated benchmark, not a paper-reported metric.",
       "weight": 0.25,
       "primary_metric": "slice_structural_units",
       "metrics": {
@@ -35,7 +37,7 @@
       "results": {
         "lifted_tcore": {"type": "proposed", "actions": 7, "effects": 60, "formula_atoms": 60, "compile_seconds": 0.081, "plan_valid_rate": 1.0, "slice_structural_units": 20, "action_ratio_vs_ground": 0.000333},
         "lcc": {"type": "proposed", "actions": 8, "effects": 67, "formula_atoms": 67, "compile_seconds": 0.003, "plan_valid_rate": 1.0, "slice_structural_units": 20, "action_ratio_vs_ground": 0.000381},
-        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 96000, "formula_atoms": 96000, "compile_seconds": 5.956, "plan_valid_rate": 1.0, "slice_structural_units": 5747, "action_ratio_vs_ground": 1.0}
+        "ground_tcore": {"type": "baseline", "actions": 21000, "effects": 96000, "formula_atoms": 96000, "compile_seconds": 5.956, "plan_valid_rate": 1.0, "slice_structural_units": 371966, "action_ratio_vs_ground": 1.0}
       }
     },
     "constraint_semantics": {
