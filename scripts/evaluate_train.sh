@@ -1,12 +1,7 @@
 #!/bin/bash
-# Train-slice evaluation entry point. Mirrors scripts/evaluate.sh by reading
-# a method-produced result artifact and writing a scoring JSON file.
-
+# Train-slice evaluation: every compiler registered in outputs/compilers/ is
+# run on the public train instances; writes scoring/scores_train.json.
 set -e
-
 cd /home/user
-
 mkdir -p scoring
-
-RESULTS="${1:-outputs/method_results.json}"
-python eval/train/evaluate.py "$RESULTS" --output scoring/scores_train.json
+python3 eval/train/evaluate.py --output scoring/scores_train.json

@@ -1,16 +1,14 @@
 #!/bin/bash
-# Run the ground-first baseline from the paper reproduction.
+# Register the ground-first TCORE baseline (baseline/ground_tcore.py) with the evaluator.
+# It grounds every action schema before compiling the constraints away and
+# refuses tasks whose grounding exceeds its ground-action budget.
 #
-# The experiment generator emits LiftedTCORE, LCC, and ground_tcore results
-# together so all methods share identical tasks and plans. This script keeps a
-# standalone baseline entry point while using the same artifact contract.
-#
-# Usage:
-#   bash scripts/baseline.sh <name>
+# Usage: bash scripts/baseline.sh
 
 set -e
-
 cd /home/user
-
-python method/run_experiments.py --output outputs/method_results.json "$@"
-bash scripts/evaluate.sh outputs/method_results.json
+mkdir -p outputs/compilers
+cat > outputs/compilers/ground_tcore.json <<'JSON'
+{"command": ["python3", "baseline/ground_tcore.py"]}
+JSON
+echo "registered: ground_tcore"

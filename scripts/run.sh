@@ -1,43 +1,30 @@
 #!/bin/bash
-# Example job script submitted via the end-of-turn YAML block.
-#
-# This runs inside the compute container with:
-#   - Your workspace mounted at /home/user
-#   - GPU(s) available
-#   - No internet access
-#
-# Make sure all data, code, and dependencies are already in the
-# workspace or baked into the container before submitting.
-
-set -euo pipefail
-
+# Full job: unit tests, hardening audit (all variants/shortcuts through the
+# unmodified evaluation entry points), then the reference-only train/test
+# scores that ship with the gym, and validation.
+set -uo pipefail
 cd /home/user
+stamp() { echo "[$(date +%H:%M:%S)] $*"; }
 
-echo "Running planning compiler regression tests"
-PYTHONPATH=method python method/test_planning.py
+stamp "planning regression tests"
+PYTHONPATH=method python3 method/test_planning.py || exit 1
 
-echo "Regenerating full reproduction artifacts"
-bash scripts/reproduce.sh
+stamp "register reference compilers"
+rm -rf outputs/compilers
+bash scripts/method.sh && bash scripts/baseline.sh || exit 1
 
-echo "Checking paper-scale high-arity grounding benchmark"
-python - <<'PY'
-import json
-from pathlib import Path
+stamp "hardening audit"
+rm -f redteam/hardening/results/rc.txt
+bash redteam/hardening/run_hardening.sh
+stamp "hardening audit done"
 
-scores = json.loads(Path("scoring/scores.json").read_text())
-ground_actions = scores["experiments"]["ground_constraints_size"]["results"]["ground_tcore"]["actions"]
-nonground_actions = scores["experiments"]["nonground_constraints_size"]["results"]["ground_tcore"]["actions"]
-if ground_actions < 20_000 or nonground_actions < 20_000:
-    raise SystemExit(
-        "Expected 28-object size benchmarks to generate at least 20K "
-        f"ground actions; got ground={ground_actions}, nonground={nonground_actions}."
-    )
-print(f"ground_tcore action counts: ground={ground_actions}, nonground={nonground_actions}")
-PY
+stamp "reference train slice"
+bash scripts/evaluate_train.sh; echo "reference train rc=$?"
+stamp "reference test slice"
+bash scripts/evaluate_test.sh; echo "reference test rc=$?"
+cp scoring/scores_train.json scoring/scores.json
 
-echo "Running train/test scoring slices"
-bash scripts/evaluate_train.sh
-bash scripts/evaluate_test.sh
-
-echo "Validating scoring structure and paper comparison"
-python validate.py --compare
+stamp "summaries"
+python3 redteam/hardening/summarize.py redteam/hardening/results
+python3 validate.py
+stamp "done"

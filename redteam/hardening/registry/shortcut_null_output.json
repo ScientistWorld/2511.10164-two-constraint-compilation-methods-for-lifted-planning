@@ -1,0 +1,1 @@
+{"command": ["python3", "redteam/hardening/variants.py", "--variant", "null_output"]}
