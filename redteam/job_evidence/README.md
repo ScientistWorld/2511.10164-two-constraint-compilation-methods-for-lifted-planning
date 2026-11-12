@@ -1,0 +1,1 @@
+These scheduler logs were copied before restoring the jobs/ directory to its pre-audit state. The first wrapper failed during brute-force staging; the second failed after successful test completion while restoring its running script. Individual redteam/*/status.json and scores_test.json record the evaluator outcomes.

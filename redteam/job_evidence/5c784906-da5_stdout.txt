@@ -1,0 +1,28 @@
+[hive] This stdout log is managed by Hive.
+[hive] job_id: 067fac9e
+[hive] host: node
+[hive] node_id: 4d19877780a2a013e6098ec4c80546af739cefe04cab0507e6c9db89
+[hive] user: nexus/user (remote)
+[hive] resource: gpu-cpu-test
+[hive] gpus: 0
+[hive] cpus: 1
+[hive] workdir: /home/user
+[hive] timeout_sec: 21600
+[hive] started_at: 2026-11-12 10:02:23 EST
+[hive] command: apptainer exec --containall --cleanenv --env HF_HOME=/home/user/shared/hf_cache --env TRANSFORMERS_CACHE=/home/user/shared/hf_cache --env HF_DATASETS_CACHE=/home/user/shared/hf_cache/datasets --env TORCH_HOME=/home/user/shared/hf_cache/torch --bind /home/user/scratch/AgentWorkspaces/workspaces/2511.10164:/home/user --overlay /home/user/scratch/AgentWorkspaces/workspaces/2511.10164/environment/overlay.img:ro --bind /home/user/scratch/AgentWorkspaces/shared/datasets:/home/user/shared/datasets:ro --bind /home/user/scratch/AgentWorkspaces/shared/models:/home/user/shared/models:ro --bind /home/user/scratch/AgentWorkspaces/shared/hf_cache:/home/user/shared/hf_cache /home/user/scratch/AgentWorkspaces/workspaces/2511.10164/environment/container.sif bash -c 'cd /home/user && bash /home/user/scripts/run.sh'
+{"name": "bruteforce_ground", "candidate_key": "lifted_tcore", "stage": {"staged": "bruteforce_ground"}, "train": {"returncode": 0, "seconds": 24.513627000997076}, "test": {"returncode": 0, "seconds": 26.0410556870047}, "test_wrote_scores": true}
+name	audit_population_gain	two_attempt_gain	better/worse/equal/missing
+reference_seed_0	0.000000	0.000000	0/0/27/0
+reference_seed_1	0.000000	0.000000	0/0/27/0
+reference_seed_2	0.000000	0.000000	0/0/27/0
+better_boolean_optimizer	0.111528	1.640000	9/0/18/0
+shortcut_drop_constraints	-1.514749	1.500000	12/3/12/0
+bruteforce_ground	-7.548925	-4.180000	0/13/14/0
+shortcut_known_plan	0.319025	2.700000	15/0/12/0
+shortcut_constant_empty	0.524957	4.600000	19/0/8/0
+shortcut_reject_everything	-3.023364	2.600000	19/5/3/0
+shortcut_self_report_fields	0.000000	0.000000	0/0/27/0
+shortcut_replace_baseline	0.000058	0.900000	2/0/25/0
+shortcut_empty_results	0.000000	0.000000	0/0/0/27
+shortcut_registration	0.000367	4.000000	10/0/2/15
+shortcut_null_artifact	FAILED	FAILED	no worst-value record

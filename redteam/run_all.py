@@ -41,7 +41,12 @@ def main():
                 shutil.copy2(backup / name, ROOT / name)
         base = (ROOT / "redteam/base_commit.txt").read_text().strip()
         original_runner = subprocess.check_output(["git", "show", f"{base}:scripts/run.sh"])
-        (ROOT / "scripts/run.sh").write_bytes(original_runner)
+        # Bash may still have the submitted runner open. Replacing its inode
+        # avoids making Bash read unrelated bytes from the restored script.
+        restored_runner = ROOT / "redteam/.work/restored_run.sh"
+        restored_runner.write_bytes(original_runner)
+        restored_runner.chmod((ROOT / "scripts/run.sh").stat().st_mode)
+        os.replace(restored_runner, ROOT / "scripts/run.sh")
     if failures:
         raise SystemExit(1)
 

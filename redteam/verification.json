@@ -1,0 +1,10 @@
+{
+  "audit_status": "complete",
+  "successful_evaluations": 13,
+  "expected_failed_evaluations": 1,
+  "scored_metric_seed_spread": 0,
+  "optimizer_trajectory_checks": 8257,
+  "checks": "passed",
+  "reproduction_milestone": "core_claim",
+  "milestone_change": "none; audit only"
+}

@@ -1,4 +1,2 @@
-action: submit
-gpus: 0
-test: false
-notes: "Finish gym audit: rerun only exhaustive-grounding trial after fixing summary handling of case suites; retain all completed trials and recompute explicit rank populations."
+action: done
+notes: "Audit complete: honest optimization improves, seed spread is zero, but task substitution, baseline replacement and omission shortcuts pay; evidence and report committed, gym files restored."

@@ -1,4 +1,4 @@
-This audit uses one CPU job. `python3 redteam/run_all.py` runs every individual
+This audit batches trials into CPU jobs. `python3 redteam/run_all.py` runs every individual
 `redteam/<name>/run.sh`, then computes `rank_report.json` from actual hidden-test
 output. Heavy work must run through the scheduler, not on the login node.
 
@@ -45,3 +45,12 @@ devices, and five tracked trajectory files are pre-existing deletions. The audit
 does not change those system-managed paths. `base_commit.txt` records the start
 commit; only the job runner and action signal are changed outside this folder
 to submit the requested computation.
+
+The completed audit needed two jobs: the first finished all trials except a
+brute-force staging summary, and the second finished that trial. The latter
+wrapper exited 127 after successful scoring because restoring an open shell
+script in place changed the bytes Bash subsequently read. The runner now uses
+atomic replacement; a lightweight shell check verified that restoration fix.
+See `job_evidence/` and the root `REDTEAM.md` for the exact execution history.
+`python3 redteam/verify_evidence.py` checks all saved outcomes without running
+any method, and writes `verification.json`.
