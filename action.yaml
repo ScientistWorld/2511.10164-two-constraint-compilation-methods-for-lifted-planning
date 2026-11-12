@@ -1,8 +1,8 @@
 # Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends.
-action: pending
+action: submit
 gpus: 0
 test: false
 milestone: core_claim
-notes: ""
+notes: "Hardening job: unit tests; all variants/shortcuts through the no-argument train/test evaluators (redteam/hardening/run_hardening.sh); then reference-only scores_train/test, summary and validate."

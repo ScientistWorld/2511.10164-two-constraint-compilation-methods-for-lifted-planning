@@ -1,0 +1,159 @@
+{
+  "_metadata": {
+    "experiments": {
+      "constraint_type_suite": {
+        "constraint_kinds": {
+          "always": 9,
+          "at_most_once": 8,
+          "sometime": 12,
+          "sometime_after": 11,
+          "sometime_before": 10
+        },
+        "instances": 24,
+        "mean_constraints": 2.0833333333333335,
+        "mean_ground_actions": 31.5,
+        "mean_objects": 3.4166666666666665,
+        "mode": "exhaustive",
+        "quantified_constraints": 28
+      },
+      "ground_constraints_size": {
+        "constraint_kinds": {
+          "always": 19,
+          "at_most_once": 6,
+          "sometime": 5,
+          "sometime_after": 17,
+          "sometime_before": 17
+        },
+        "instances": 16,
+        "mean_constraints": 4.0,
+        "mean_ground_actions": 44733251.0625,
+        "mean_invalid_probes": 12.1875,
+        "mean_objects": 28.5625,
+        "mean_probes": 23.1875,
+        "mode": "probes",
+        "quantified_constraints": 0
+      },
+      "initial_monitoring_edge_cases": {
+        "constraint_kinds": {
+          "always": 0,
+          "at_most_once": 4,
+          "sometime": 6,
+          "sometime_after": 13,
+          "sometime_before": 1
+        },
+        "instances": 16,
+        "mean_constraints": 1.5,
+        "mean_ground_actions": 32.25,
+        "mean_objects": 3.375,
+        "mode": "exhaustive",
+        "quantified_constraints": 15
+      },
+      "many_constraints_size": {
+        "constraint_kinds": {
+          "always": 71,
+          "at_most_once": 33,
+          "sometime": 32,
+          "sometime_after": 73,
+          "sometime_before": 71
+        },
+        "instances": 8,
+        "mean_constraints": 35.0,
+        "mean_ground_actions": 13869897.125,
+        "mean_invalid_probes": 40.25,
+        "mean_objects": 22.625,
+        "mean_probes": 51.25,
+        "mode": "probes",
+        "quantified_constraints": 142
+      },
+      "nonground_constraints_size": {
+        "constraint_kinds": {
+          "always": 15,
+          "at_most_once": 8,
+          "sometime": 5,
+          "sometime_after": 18,
+          "sometime_before": 18
+        },
+        "instances": 16,
+        "mean_constraints": 4.0,
+        "mean_ground_actions": 43714133.375,
+        "mean_invalid_probes": 11.9375,
+        "mean_objects": 28.125,
+        "mean_probes": 22.9375,
+        "mode": "probes",
+        "quantified_constraints": 64
+      }
+    },
+    "methods": {
+      "missing_submission": {
+        "reason": "no compiler registered in outputs/compilers",
+        "status": "failed"
+      }
+    },
+    "registry": "/home/user/outputs/compilers",
+    "slice": "test",
+    "worst_values": {
+      "actions_vs_ground_log10": 1.0,
+      "effects_vs_ground_log10": 1.0,
+      "formula_nodes_log10": 7.0,
+      "max_formula_nodes_log10": 7.0,
+      "semantic_agreement": 0.0
+    }
+  },
+  "experiments": {
+    "constraint_type_suite": {
+      "results": {
+        "missing_submission": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "ground_constraints_size": {
+      "results": {
+        "missing_submission": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "initial_monitoring_edge_cases": {
+      "results": {
+        "missing_submission": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "many_constraints_size": {
+      "results": {
+        "missing_submission": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "nonground_constraints_size": {
+      "results": {
+        "missing_submission": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    }
+  }
+}

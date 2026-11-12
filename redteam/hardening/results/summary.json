@@ -1,0 +1,3691 @@
+{
+ "empty_registry": {
+  "constraint_type_suite": {
+   "results": {
+    "missing_submission": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    }
+   }
+  },
+  "ground_constraints_size": {
+   "results": {
+    "missing_submission": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    }
+   }
+  },
+  "initial_monitoring_edge_cases": {
+   "results": {
+    "missing_submission": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    }
+   }
+  },
+  "many_constraints_size": {
+   "results": {
+    "missing_submission": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    }
+   }
+  },
+  "nonground_constraints_size": {
+   "results": {
+    "missing_submission": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    }
+   }
+  }
+ },
+ "test": {
+  "metrics": {
+   "constraint_type_suite": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -0.8253637034229296,
+     "effects_vs_ground_log10": -0.7320282398948779,
+     "formula_nodes_log10": 1.961813656551765,
+     "max_formula_nodes_log10": 0.9732040021396199,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.060455927258342,
+     "max_formula_nodes_log10": 1.3566411224606398,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.060455927258342,
+     "max_formula_nodes_log10": 1.3566411224606398,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.060455927258342,
+     "max_formula_nodes_log10": 1.3566411224606398,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.028496686018432,
+     "max_formula_nodes_log10": 1.3315621465261003,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8387478016287201,
+     "formula_nodes_log10": 2.0883603024720694,
+     "max_formula_nodes_log10": 1.3566411224606398,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.0476828001903393,
+     "max_formula_nodes_log10": 1.34655561680628,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -0.9351202147477643,
+     "effects_vs_ground_log10": -0.8815355484151083,
+     "formula_nodes_log10": 2.060455927258342,
+     "max_formula_nodes_log10": 1.3566411224606398,
+     "semantic_agreement": 1.0
+    }
+   },
+   "ground_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.806764537306947,
+     "effects_vs_ground_log10": -6.75336464672751,
+     "formula_nodes_log10": 2.2217944897810424,
+     "max_formula_nodes_log10": 1.156231696692433,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.323466637483651,
+     "max_formula_nodes_log10": 1.4506677036335904,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.323466637483651,
+     "max_formula_nodes_log10": 1.4506677036335904,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.323466637483651,
+     "max_formula_nodes_log10": 1.4506677036335904,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.280115568966879,
+     "max_formula_nodes_log10": 1.3915447111033181,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.835586566139221,
+     "formula_nodes_log10": 2.393142665868593,
+     "max_formula_nodes_log10": 1.4655444113394815,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.320483169311594,
+     "max_formula_nodes_log10": 1.4506677036335904,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.888427408925454,
+     "effects_vs_ground_log10": -6.953831973698861,
+     "formula_nodes_log10": 2.323466637483651,
+     "max_formula_nodes_log10": 1.4506677036335904,
+     "semantic_agreement": 1.0
+    }
+   },
+   "initial_monitoring_edge_cases": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -0.8202645270745793,
+     "effects_vs_ground_log10": -0.7062043717303078,
+     "formula_nodes_log10": 1.9675083562265958,
+     "max_formula_nodes_log10": 0.8856329220436648,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.1175186188430946,
+     "max_formula_nodes_log10": 1.4282363711829384,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.1175186188430946,
+     "max_formula_nodes_log10": 1.4282363711829384,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.1175186188430946,
+     "max_formula_nodes_log10": 1.4282363711829384,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.0866121300620573,
+     "max_formula_nodes_log10": 1.3797800538349514,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8134019543489249,
+     "formula_nodes_log10": 2.149907511361998,
+     "max_formula_nodes_log10": 1.4282363711829384,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.097046105042861,
+     "max_formula_nodes_log10": 1.3983931168491948,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -0.9259335162077118,
+     "effects_vs_ground_log10": -0.8538587032488248,
+     "formula_nodes_log10": 2.1175186188430946,
+     "max_formula_nodes_log10": 1.4282363711829384,
+     "semantic_agreement": 1.0
+    }
+   },
+   "many_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.282601213235462,
+     "effects_vs_ground_log10": -5.680434414934528,
+     "formula_nodes_log10": 3.1974152133720426,
+     "max_formula_nodes_log10": 1.9541991882872085,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.3845154987128354,
+     "max_formula_nodes_log10": 2.3877590142491076,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.3845154987128354,
+     "max_formula_nodes_log10": 2.3877590142491076,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.3845154987128354,
+     "max_formula_nodes_log10": 2.3877590142491076,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.349458371065698,
+     "max_formula_nodes_log10": 2.3080219237539867,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.7963456698791065,
+     "formula_nodes_log10": 3.4409304980030155,
+     "max_formula_nodes_log10": 2.421311302025098,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.379920371926336,
+     "max_formula_nodes_log10": 2.3858188847459187,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.358568115762562,
+     "effects_vs_ground_log10": -5.941894979409762,
+     "formula_nodes_log10": 3.3845154987128354,
+     "max_formula_nodes_log10": 2.3877590142491076,
+     "semantic_agreement": 1.0
+    }
+   },
+   "nonground_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.746906673516472,
+     "effects_vs_ground_log10": -6.973698165697269,
+     "formula_nodes_log10": 2.3990065714005255,
+     "max_formula_nodes_log10": 1.246427436321309,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4768249412248116,
+     "max_formula_nodes_log10": 1.5113797785283896,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4768249412248116,
+     "max_formula_nodes_log10": 1.5113797785283896,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4768249412248116,
+     "max_formula_nodes_log10": 1.5113797785283896,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4620136747890986,
+     "max_formula_nodes_log10": 1.4835309304668498,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.064544936194346,
+     "formula_nodes_log10": 2.530272104588424,
+     "max_formula_nodes_log10": 1.5218010581505987,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4732068548672625,
+     "max_formula_nodes_log10": 1.50891049469816,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.827040238082851,
+     "effects_vs_ground_log10": -7.134217178754913,
+     "formula_nodes_log10": 2.4768249412248116,
+     "max_formula_nodes_log10": 1.5113797785283896,
+     "semantic_agreement": 1.0
+    }
+   }
+  },
+  "paired_vs_reference": {
+   "ground_tcore": null,
+   "lcc": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.10975649999999999,
+     "n": 24,
+     "se": 0.00291201519259156,
+     "t": 37.69090912685856,
+     "worse": 24
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.1495075416666667,
+     "n": 24,
+     "se": 0.012914739822010137,
+     "t": 11.57650434520301,
+     "worse": 24
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 21,
+     "mean_diff": -0.0986421666666667,
+     "n": 24,
+     "se": 0.021146171205211048,
+     "t": -4.664776696897182,
+     "worse": 2
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 24,
+     "mean_diff": -0.38343720833333333,
+     "n": 24,
+     "se": 0.026059708752138835,
+     "t": -14.713794846301303,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.08166312499999989,
+     "n": 16,
+     "se": 0.0029380624140678876,
+     "t": 27.79489115308936,
+     "worse": 16
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.20046737500000006,
+     "n": 16,
+     "se": 0.015079501892158965,
+     "t": 13.29403162210809,
+     "worse": 16
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 14,
+     "mean_diff": -0.10167206250000002,
+     "n": 16,
+     "se": 0.028125026461242195,
+     "t": -3.6150032655119317,
+     "worse": 1
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 15,
+     "mean_diff": -0.2944360625000001,
+     "n": 16,
+     "se": 0.04226416125389894,
+     "t": -6.966565850702595,
+     "worse": 1
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.10566900000000001,
+     "n": 16,
+     "se": 0.003354441615231954,
+     "t": 31.501219016653888,
+     "worse": 16
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.14765425,
+     "n": 16,
+     "se": 0.014400386402078472,
+     "t": 10.253492224256453,
+     "worse": 16
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 14,
+     "mean_diff": -0.15001031250000002,
+     "n": 16,
+     "se": 0.0314498161923244,
+     "t": -4.769831136139083,
+     "worse": 1
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.5426034375,
+     "n": 16,
+     "se": 0.03746596906671538,
+     "t": -14.48256780796968,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.075967,
+     "n": 8,
+     "se": 0.00480763955669968,
+     "t": 15.801309375228907,
+     "worse": 8
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.261460625,
+     "n": 8,
+     "se": 0.01532573779736172,
+     "t": 17.060230865036047,
+     "worse": 8
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.18710037499999993,
+     "n": 8,
+     "se": 0.021872190480752916,
+     "t": -8.554258667628396,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.433559625,
+     "n": 8,
+     "se": 0.038817211081894294,
+     "t": -11.169262626449415,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.08013368749999994,
+     "n": 16,
+     "se": 0.0031983813597906367,
+     "t": 25.05445051281984,
+     "worse": 16
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.16051900000000013,
+     "n": 16,
+     "se": 0.013196723400463233,
+     "t": 12.163549627354135,
+     "worse": 16
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.077818375,
+     "n": 16,
+     "se": 0.01193602075368049,
+     "t": -6.519624639225311,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.26495231250000006,
+     "n": 16,
+     "se": 0.02397387674458019,
+     "t": -11.051709130017873,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_hashseed1": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_hashseed2": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_invariant": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 17,
+     "mean_diff": -0.03195925000000005,
+     "n": 24,
+     "se": 0.009651505085798573,
+     "t": -3.311322919678669,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.025078999999999987,
+     "n": 24,
+     "se": 0.009660869337439171,
+     "t": -2.595936154814794,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 14,
+     "mean_diff": -0.04335099999999997,
+     "n": 16,
+     "se": 0.006891574338156215,
+     "t": -6.290434938789064,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 11,
+     "mean_diff": -0.059122999999999995,
+     "n": 16,
+     "se": 0.014833581351110051,
+     "t": -3.985753581725266,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 11,
+     "mean_diff": -0.030906500000000045,
+     "n": 16,
+     "se": 0.009838539038309174,
+     "t": -3.141370876271032,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.04845631249999999,
+     "n": 16,
+     "se": 0.017955595521479916,
+     "t": -2.6986747636430484,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.03505724999999993,
+     "n": 8,
+     "se": 0.005515472129609587,
+     "t": -6.356164835245293,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.079736625,
+     "n": 8,
+     "se": 0.02379256569508443,
+     "t": -3.351325200563539,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 10,
+     "mean_diff": -0.014811187499999962,
+     "n": 16,
+     "se": 0.0032575778594158304,
+     "t": -4.546687182683639,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 7,
+     "mean_diff": -0.02784887500000001,
+     "n": 16,
+     "se": 0.009654479005395629,
+     "t": -2.8845549287989565,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_no_omission": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.042787833333333324,
+     "n": 24,
+     "se": 0.00999795250645131,
+     "t": 4.279659590873623,
+     "worse": 16
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.027904499999999943,
+     "n": 24,
+     "se": 0.00792384291191803,
+     "t": 3.52158672378898,
+     "worse": 18
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.1182454375000001,
+     "n": 16,
+     "se": 0.011867681058926634,
+     "t": 9.963651442339549,
+     "worse": 16
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.06967593750000006,
+     "n": 16,
+     "se": 0.007560767406194481,
+     "t": 9.215458399489327,
+     "worse": 16
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.014876749999999994,
+     "n": 16,
+     "se": 0.007295769668958855,
+     "t": 2.0390926077745797,
+     "worse": 5
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.04045656249999997,
+     "n": 16,
+     "se": 0.007860538121935812,
+     "t": 5.1467929895411215,
+     "worse": 12
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0323888125,
+     "n": 16,
+     "se": 0.006714972006158304,
+     "t": 4.823372676802853,
+     "worse": 12
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.14554937499999976,
+     "n": 8,
+     "se": 0.013458600345049499,
+     "t": 10.81459968112787,
+     "worse": 8
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.05641499999999999,
+     "n": 8,
+     "se": 0.005542828407049988,
+     "t": 10.178016683367845,
+     "worse": 8
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.033552499999999985,
+     "n": 8,
+     "se": 0.010525419733741175,
+     "t": 3.1877588589119403,
+     "worse": 7
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.06967218750000004,
+     "n": 16,
+     "se": 0.009846401838666186,
+     "t": 7.07590332403476,
+     "worse": 15
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.05344725000000006,
+     "n": 16,
+     "se": 0.00740315261195076,
+     "t": 7.219525626652791,
+     "worse": 15
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.010421249999999993,
+     "n": 16,
+     "se": 0.006661034548964598,
+     "t": 1.5645092250151875,
+     "worse": 3
+    }
+   },
+   "lifted_tcore_simplified": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 14,
+     "mean_diff": -0.012773166666666688,
+     "n": 24,
+     "se": 0.003303036467341739,
+     "t": -3.8670982875785334,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 4,
+     "mean_diff": -0.010085499999999992,
+     "n": 24,
+     "se": 0.004895152803643054,
+     "t": -2.060303407177442,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 4,
+     "mean_diff": -0.002983500000000028,
+     "n": 16,
+     "se": 0.0014024450316025572,
+     "t": -2.127356105066605,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 10,
+     "mean_diff": -0.0204725625,
+     "n": 16,
+     "se": 0.005783994914106176,
+     "t": -3.5395194504875716,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 7,
+     "mean_diff": -0.029843187499999993,
+     "n": 16,
+     "se": 0.011093681580904045,
+     "t": -2.6901067316886174,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 7,
+     "mean_diff": -0.004595374999999957,
+     "n": 8,
+     "se": 0.0017706195035465022,
+     "t": -2.5953486849069196,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 2,
+     "mean_diff": -0.0019399999999999973,
+     "n": 8,
+     "se": 0.0015678855757266033,
+     "t": -1.2373351920792723,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 5,
+     "mean_diff": -0.003618124999999972,
+     "n": 16,
+     "se": 0.001560712673415045,
+     "t": -2.3182518227926208,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 1,
+     "mean_diff": -0.002469312500000001,
+     "n": 16,
+     "se": 0.002469312500000001,
+     "t": -1.0,
+     "worse": 0
+    }
+   },
+   "shortcut_bad_registration": null,
+   "shortcut_bruteforce_ground": null,
+   "shortcut_constant_empty": null,
+   "shortcut_drop_constraints": null,
+   "shortcut_known_plan": null,
+   "shortcut_null_output": null,
+   "shortcut_reject_everything": null,
+   "shortcut_self_report": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   }
+  },
+  "ranks": {
+   "ground_tcore": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "compiler exited with code 3: ground-first compilation exceeds the ground-action budget",
+    "status": "failed"
+   },
+   "lcc": {
+    "rank_pair_P": 4.163336342344337e-17,
+    "rank_population_A": -0.005737568571691004,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_hashseed1": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_hashseed2": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_invariant": {
+    "rank_pair_P": 2.4000000000000004,
+    "rank_population_A": 0.01779794690845355,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_no_omission": {
+    "rank_pair_P": -4.12,
+    "rank_population_A": -0.053483344242149206,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_simplified": {
+    "rank_pair_P": 2.2,
+    "rank_population_A": 0.003759879916930515,
+    "reason": null,
+    "status": "ok"
+   },
+   "shortcut_bad_registration": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "invalid registration (need {\"command\": [..]})",
+    "status": "failed"
+   },
+   "shortcut_bruteforce_ground": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "timeout after 30s",
+    "status": "failed"
+   },
+   "shortcut_constant_empty": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_drop_constraints": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_known_plan": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_null_output": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "malformed compiled task: task must be a JSON object",
+    "status": "failed"
+   },
+   "shortcut_reject_everything": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.803439396830351,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_self_report": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   }
+  }
+ },
+ "train": {
+  "metrics": {
+   "constraint_type_suite": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -0.839732296057631,
+     "effects_vs_ground_log10": -0.7224100779747746,
+     "formula_nodes_log10": 1.965529007884572,
+     "max_formula_nodes_log10": 0.9963514849118392,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 2.0264384165286833,
+     "max_formula_nodes_log10": 1.3503148022388636,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 2.0264384165286833,
+     "max_formula_nodes_log10": 1.3503148022388636,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 2.0264384165286833,
+     "max_formula_nodes_log10": 1.3503148022388636,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 1.9809620345482912,
+     "max_formula_nodes_log10": 1.299458609998778,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8514379539831438,
+     "formula_nodes_log10": 2.0638967540638262,
+     "max_formula_nodes_log10": 1.3503148022388636,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 2.0113974517534334,
+     "max_formula_nodes_log10": 1.329764340133174,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -0.9506566708658092,
+     "effects_vs_ground_log10": -0.8908954177431131,
+     "formula_nodes_log10": 2.0264384165286833,
+     "max_formula_nodes_log10": 1.3503148022388636,
+     "semantic_agreement": 1.0
+    }
+   },
+   "ground_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.697114097509102,
+     "effects_vs_ground_log10": -6.749491801477128,
+     "formula_nodes_log10": 2.1902430177491192,
+     "max_formula_nodes_log10": 1.121882164487435,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.261228753945575,
+     "max_formula_nodes_log10": 1.3808056917563665,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.261228753945575,
+     "max_formula_nodes_log10": 1.3808056917563665,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.261228753945575,
+     "max_formula_nodes_log10": 1.3808056917563665,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.2180551406261246,
+     "max_formula_nodes_log10": 1.3060177029197302,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.830850287443259,
+     "formula_nodes_log10": 2.332002051937739,
+     "max_formula_nodes_log10": 1.3877047932902866,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.258968614153571,
+     "max_formula_nodes_log10": 1.3789954607604094,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.779120363536572,
+     "effects_vs_ground_log10": -6.936677768564215,
+     "formula_nodes_log10": 2.261228753945575,
+     "max_formula_nodes_log10": 1.3808056917563665,
+     "semantic_agreement": 1.0
+    }
+   },
+   "initial_monitoring_edge_cases": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -0.8083600083875438,
+     "effects_vs_ground_log10": -0.7000412343129115,
+     "formula_nodes_log10": 1.928799213284211,
+     "max_formula_nodes_log10": 0.902547465469116,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.977931271957672,
+     "max_formula_nodes_log10": 1.3120174693983944,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.977931271957672,
+     "max_formula_nodes_log10": 1.3120174693983944,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.977931271957672,
+     "max_formula_nodes_log10": 1.3120174693983944,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.9501794996021027,
+     "max_formula_nodes_log10": 1.2859672506357314,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8098152150152296,
+     "formula_nodes_log10": 2.028488053031646,
+     "max_formula_nodes_log10": 1.3120174693983944,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.9583253601330406,
+     "max_formula_nodes_log10": 1.305451866951716,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -0.9227879736457525,
+     "effects_vs_ground_log10": -0.8704251454032598,
+     "formula_nodes_log10": 1.977931271957672,
+     "max_formula_nodes_log10": 1.3120174693983944,
+     "semantic_agreement": 1.0
+    }
+   },
+   "many_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.392301106781836,
+     "effects_vs_ground_log10": -5.500463960628625,
+     "formula_nodes_log10": 3.2289524390000546,
+     "max_formula_nodes_log10": 2.0063868858057687,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.363448046358252,
+     "max_formula_nodes_log10": 2.4643532261953136,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.363448046358252,
+     "max_formula_nodes_log10": 2.4643532261953136,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.363448046358252,
+     "max_formula_nodes_log10": 2.4643532261953136,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.335164776658125,
+     "max_formula_nodes_log10": 2.3849217180489504,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.627790185186631,
+     "formula_nodes_log10": 3.4425518925249374,
+     "max_formula_nodes_log10": 2.486547070254042,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.3614959455583744,
+     "max_formula_nodes_log10": 2.46304121076357,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.474229508101171,
+     "effects_vs_ground_log10": -5.816155149172789,
+     "formula_nodes_log10": 3.363448046358252,
+     "max_formula_nodes_log10": 2.4643532261953136,
+     "semantic_agreement": 1.0
+    }
+   },
+   "nonground_constraints_size": {
+    "ground_tcore": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "lcc": {
+     "actions_vs_ground_log10": -6.748465534976439,
+     "effects_vs_ground_log10": -6.9739356361462566,
+     "formula_nodes_log10": 2.4140923103050707,
+     "max_formula_nodes_log10": 1.2465437860127517,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.462655078760687,
+     "max_formula_nodes_log10": 1.5398009146823695,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed1": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.462655078760687,
+     "max_formula_nodes_log10": 1.5398009146823695,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_hashseed2": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.462655078760687,
+     "max_formula_nodes_log10": 1.5398009146823695,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_invariant": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.457770883112499,
+     "max_formula_nodes_log10": 1.5223666896301629,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_no_omission": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.0512020859649,
+     "formula_nodes_log10": 2.542936892026415,
+     "max_formula_nodes_log10": 1.5451808625171428,
+     "semantic_agreement": 1.0
+    },
+    "lifted_tcore_simplified": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.4609941090139844,
+     "max_formula_nodes_log10": 1.5387568088384411,
+     "semantic_agreement": 1.0
+    },
+    "shortcut_bad_registration": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_bruteforce_ground": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_constant_empty": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_drop_constraints": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_known_plan": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_null_output": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_reject_everything": {
+     "actions_vs_ground_log10": 1.0,
+     "effects_vs_ground_log10": 1.0,
+     "formula_nodes_log10": 7.0,
+     "max_formula_nodes_log10": 7.0,
+     "semantic_agreement": 0.0
+    },
+    "shortcut_self_report": {
+     "actions_vs_ground_log10": -6.829020358659918,
+     "effects_vs_ground_log10": -7.154254260834409,
+     "formula_nodes_log10": 2.462655078760687,
+     "max_formula_nodes_log10": 1.5398009146823695,
+     "semantic_agreement": 1.0
+    }
+   }
+  },
+  "paired_vs_reference": {
+   "ground_tcore": null,
+   "lcc": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.11092437499999996,
+     "n": 24,
+     "se": 0.0029221991921985534,
+     "t": 37.95921075337257,
+     "worse": 24
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.16848533333333335,
+     "n": 24,
+     "se": 0.013295203322494677,
+     "t": 12.672640594240962,
+     "worse": 24
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 17,
+     "mean_diff": -0.06090941666666665,
+     "n": 24,
+     "se": 0.0249637967170197,
+     "t": -2.439909976720012,
+     "worse": 6
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 24,
+     "mean_diff": -0.3539633333333334,
+     "n": 24,
+     "se": 0.025404417021417113,
+     "t": -13.933141352345372,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.08200637499999996,
+     "n": 16,
+     "se": 0.0032317171620711497,
+     "t": 25.375480243897194,
+     "worse": 16
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.18718593749999995,
+     "n": 16,
+     "se": 0.019591770923330004,
+     "t": 9.55431432066704,
+     "worse": 16
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 9,
+     "mean_diff": -0.07098575,
+     "n": 16,
+     "se": 0.03696872721295438,
+     "t": -1.9201567203299754,
+     "worse": 7
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 15,
+     "mean_diff": -0.25892343749999996,
+     "n": 16,
+     "se": 0.034520052104171854,
+     "t": -7.5006676327904,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.11442806249999998,
+     "n": 16,
+     "se": 0.003503612500535163,
+     "t": 32.66002232910219,
+     "worse": 16
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.170383875,
+     "n": 16,
+     "se": 0.02286218409402213,
+     "t": 7.452650818455747,
+     "worse": 16
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 10,
+     "mean_diff": -0.04913206249999999,
+     "n": 16,
+     "se": 0.03709216273289959,
+     "t": -1.3245941697657166,
+     "worse": 5
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.40947000000000006,
+     "n": 16,
+     "se": 0.04808292730048092,
+     "t": -8.515912466001307,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.08192849999999985,
+     "n": 8,
+     "se": 0.005662474752387729,
+     "t": 14.468673783570086,
+     "worse": 8
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.31569100000000017,
+     "n": 8,
+     "se": 0.023038036191729266,
+     "t": 13.703034293927114,
+     "worse": 8
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 7,
+     "mean_diff": -0.13449599999999995,
+     "n": 8,
+     "se": 0.03853322523902491,
+     "t": -3.4903904141350663,
+     "worse": 1
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.45796637500000015,
+     "n": 8,
+     "se": 0.04297074285235811,
+     "t": -10.657632253962031,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.08055481250000007,
+     "n": 16,
+     "se": 0.002758154188370029,
+     "t": 29.206058471881555,
+     "worse": 16
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.18031874999999997,
+     "n": 16,
+     "se": 0.012303334049997689,
+     "t": 14.65608828202416,
+     "worse": 16
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 11,
+     "mean_diff": -0.04856287500000009,
+     "n": 16,
+     "se": 0.020499128550354483,
+     "t": -2.369021438189884,
+     "worse": 5
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.293257125,
+     "n": 16,
+     "se": 0.02778375820779036,
+     "t": -10.554984059635707,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_hashseed1": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_hashseed2": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_invariant": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 18,
+     "mean_diff": -0.04547633333333334,
+     "n": 24,
+     "se": 0.010170472212268786,
+     "t": -4.471408247738447,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 13,
+     "mean_diff": -0.050856291666666664,
+     "n": 24,
+     "se": 0.013134102388394783,
+     "t": -3.8720797328032854,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 16,
+     "mean_diff": -0.043173625000000077,
+     "n": 16,
+     "se": 0.005870104963481636,
+     "t": -7.354830155267486,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 11,
+     "mean_diff": -0.07478806249999999,
+     "n": 16,
+     "se": 0.015316510725757338,
+     "t": -4.8828394298860145,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 9,
+     "mean_diff": -0.027751874999999995,
+     "n": 16,
+     "se": 0.009382470184194119,
+     "t": -2.9578431324781946,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 4,
+     "mean_diff": -0.026050249999999997,
+     "n": 16,
+     "se": 0.019411676409766886,
+     "t": -1.3419886799108678,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.028283124999999965,
+     "n": 8,
+     "se": 0.0044410916267347425,
+     "t": -6.368507425007752,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.07943137500000008,
+     "n": 8,
+     "se": 0.018958031879595716,
+     "t": -4.189853435445007,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 5,
+     "mean_diff": -0.004884250000000007,
+     "n": 16,
+     "se": 0.0021214579960882204,
+     "t": -2.3023081338429177,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 4,
+     "mean_diff": -0.01743424999999997,
+     "n": 16,
+     "se": 0.009127501580160539,
+     "t": -1.910079099618554,
+     "worse": 0
+    }
+   },
+   "lifted_tcore_no_omission": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.03945741666666668,
+     "n": 24,
+     "se": 0.006606328461592846,
+     "t": 5.972669523784644,
+     "worse": 17
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.03745837499999999,
+     "n": 24,
+     "se": 0.008644942244174789,
+     "t": 4.332981521679977,
+     "worse": 20
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.10582737499999989,
+     "n": 16,
+     "se": 0.01732731913407143,
+     "t": 6.107544634063276,
+     "worse": 15
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.07077324999999998,
+     "n": 16,
+     "se": 0.011232051792192738,
+     "t": 6.3010081603428505,
+     "worse": 16
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.00689912500000002,
+     "n": 16,
+     "se": 0.004881217357445275,
+     "t": 1.4134025376839343,
+     "worse": 3
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0606099375,
+     "n": 16,
+     "se": 0.010031194710530393,
+     "t": 6.042145452163722,
+     "worse": 14
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.05055681250000002,
+     "n": 16,
+     "se": 0.014183583247372856,
+     "t": 3.5644598137332024,
+     "worse": 14
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.18836474999999986,
+     "n": 8,
+     "se": 0.028026456820648,
+     "t": 6.720961954107072,
+     "worse": 8
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.07910362500000007,
+     "n": 8,
+     "se": 0.012698832557333577,
+     "t": 6.229204507017278,
+     "worse": 8
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.02219387499999992,
+     "n": 8,
+     "se": 0.007593791925075366,
+     "t": 2.9226340699056816,
+     "worse": 7
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.10305224999999985,
+     "n": 16,
+     "se": 0.011546255322794751,
+     "t": 8.925166395424576,
+     "worse": 16
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.08028174999999999,
+     "n": 16,
+     "se": 0.009936804157398902,
+     "t": 8.07923238984463,
+     "worse": 16
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.005379937499999987,
+     "n": 16,
+     "se": 0.0038641984857457185,
+     "t": 1.3922518524463836,
+     "worse": 2
+    }
+   },
+   "lifted_tcore_simplified": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 14,
+     "mean_diff": -0.015040916666666673,
+     "n": 24,
+     "se": 0.0037738075964548683,
+     "t": -3.9856077137573673,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 7,
+     "mean_diff": -0.02055054166666666,
+     "n": 24,
+     "se": 0.0077825422136918445,
+     "t": -2.640594949875382,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 3,
+     "mean_diff": -0.0022601250000000295,
+     "n": 16,
+     "se": 0.0014470503270302623,
+     "t": -1.5618841707035966,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 1,
+     "mean_diff": -0.0018102499999999994,
+     "n": 16,
+     "se": 0.0018102499999999994,
+     "t": -1.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 8,
+     "mean_diff": -0.019606,
+     "n": 16,
+     "se": 0.006555140777155997,
+     "t": -2.990935003001755,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 3,
+     "mean_diff": -0.006565624999999992,
+     "n": 16,
+     "se": 0.0037709064050470654,
+     "t": -1.7411264812121596,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 6,
+     "mean_diff": -0.0019521250000000268,
+     "n": 8,
+     "se": 0.0005872207371989046,
+     "t": -3.3243461552666504,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 2,
+     "mean_diff": -0.0013121249999999973,
+     "n": 8,
+     "se": 0.0008750640065875178,
+     "t": -1.499461742366577,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 2,
+     "mean_diff": -0.0016609999999999958,
+     "n": 16,
+     "se": 0.00116019889458661,
+     "t": -1.4316510796123678,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 1,
+     "mean_diff": -0.001044124999999993,
+     "n": 16,
+     "se": 0.001044124999999993,
+     "t": -1.0,
+     "worse": 0
+    }
+   },
+   "shortcut_bad_registration": null,
+   "shortcut_bruteforce_ground": null,
+   "shortcut_constant_empty": null,
+   "shortcut_drop_constraints": null,
+   "shortcut_known_plan": null,
+   "shortcut_null_output": null,
+   "shortcut_reject_everything": null,
+   "shortcut_self_report": {
+    "constraint_type_suite/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "constraint_type_suite/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 24,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "ground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "initial_monitoring_edge_cases/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "many_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 8,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/actions_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/effects_vs_ground_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    },
+    "nonground_constraints_size/max_formula_nodes_log10": {
+     "better": 0,
+     "mean_diff": 0.0,
+     "n": 16,
+     "se": 0.0,
+     "t": 0.0,
+     "worse": 0
+    }
+   }
+  },
+  "ranks": {
+   "ground_tcore": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "compiler exited with code 3: ground-first compilation exceeds the ground-action budget",
+    "status": "failed"
+   },
+   "lcc": {
+    "rank_pair_P": 1.6653345369377348e-16,
+    "rank_population_A": -0.036134089055915086,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_hashseed1": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_hashseed2": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_invariant": {
+    "rank_pair_P": 2.4000000000000004,
+    "rank_population_A": 0.017491539528059586,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_no_omission": {
+    "rank_pair_P": -4.12,
+    "rank_population_A": -0.06381726673345449,
+    "reason": null,
+    "status": "ok"
+   },
+   "lifted_tcore_simplified": {
+    "rank_pair_P": 2.4000000000000004,
+    "rank_population_A": 0.0032165440516139293,
+    "reason": null,
+    "status": "ok"
+   },
+   "shortcut_bad_registration": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "invalid registration (need {\"command\": [..]})",
+    "status": "failed"
+   },
+   "shortcut_bruteforce_ground": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "timeout after 30s",
+    "status": "failed"
+   },
+   "shortcut_constant_empty": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_drop_constraints": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_known_plan": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_null_output": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "malformed compiled task: task must be a JSON object",
+    "status": "failed"
+   },
+   "shortcut_reject_everything": {
+    "rank_pair_P": -6.800000000000001,
+    "rank_population_A": -6.808571184851715,
+    "reason": "compiled task does not preserve the constrained task's valid plans",
+    "status": "failed"
+   },
+   "shortcut_self_report": {
+    "rank_pair_P": 0.0,
+    "rank_population_A": 0.0,
+    "reason": null,
+    "status": "ok"
+   }
+  }
+ }
+}
