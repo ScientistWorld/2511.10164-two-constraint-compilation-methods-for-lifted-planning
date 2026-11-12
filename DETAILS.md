@@ -7,13 +7,17 @@
 
 ## Short Summary
 
-The paper studies planning tasks with safety, ordering, and intermediate-goal trajectory constraints. It proposes LiftedTCORE, which uses lifted regression, and LCC, which uses shared monitoring logic with a final checking action. The reported experiments show that the lifted compilers preserve constraint semantics and produce compiled tasks with orders-of-magnitude fewer actions and effects than ground-first compilation.
+The paper studies planning tasks with safety, ordering, and intermediate-goal trajectory constraints. It proposes two compilers that remove the constraints without grounding the task, proves that they preserve exactly the valid plans, and shows that the compiled tasks are orders of magnitude more succinct than those of a ground-first compiler while remaining competitive for a standard planner.
 
-## Key Results
+## Key Results (paper)
 
-- On the paper's main benchmark, LCC solved 246/280 tasks and LiftedTCORE solved 238/280, comparable to ground TCORE at 245/280.
-- Average compiled actions/effects were about 7-8 actions and 58-67 effects for lifted methods, versus about 21K actions and 95K-96K effects for ground TCORE.
-- Average compilation time was milliseconds for the lifted compilers, versus several seconds for ground TCORE.
+- On the paper's main benchmark (280 IPC-2023 tasks), LCC solved 246/280 tasks and LiftedTCORE 238/280, comparable to ground TCORE at 245/280.
+- Average compiled actions/effects were about 7-8 actions and 58-67 effects for the lifted methods, versus about 21K actions and 95K-96K effects for ground TCORE.
+- The paper names its own limitation: with many constraints, lifted compilers add monitoring to every action that may affect each constraint.
+
+## This gym
+
+Generated lifted tasks with high-arity actions over 20-32 objects (full grounding: 10^6-10^8 actions), ground and quantified constraints of all five families, a many-constraints regime, and small tasks checked exhaustively. A method is a compiler command; the evaluator runs it on hidden tasks, verifies exact plan preservation and measures compiled size (see `briefing/evaluation.md`).
 
 ---
 
@@ -21,17 +25,18 @@ The paper studies planning tasks with safety, ordering, and intermediate-goal tr
 
 ## Research Question
 
-How can qualitative PDDL state-trajectory constraints be removed from a planning task while preserving exactly the same valid plans and avoiding explosive growth in the planning specification?
+How can qualitative PDDL state-trajectory constraints be removed from a lifted planning task so that the resulting constraint-free task has exactly the same valid plans, while the compiled specification stays small even when actions have high arity and there are many objects?
 
-The constraints considered here are `always`, `sometime`, `at_most_once`, `sometime_before`, and `sometime_after`, including formulas with quantifiers. A solution must transform constrained planning tasks into constraint-free tasks that ordinary planners can consume.
+The constraint families are `always(phi)`, `sometime(phi)`, `at_most_once(phi)`, `sometime_before(phi, psi)` and `sometime_after(phi, psi)` (PDDL3 semantics over the whole state trajectory, initial state included); `phi` and `psi` may contain quantifiers. A solution is a compiler: constrained task in, constraint-free task out, consumable by an ordinary planner that knows nothing about trajectory constraints.
 
 ## Why It Matters
 
-Many planners do not natively support trajectory constraints. A good transformation lets those planners handle safety requirements, intermediate goals, and ordering requirements without first generating an enormous grounded action set.
+Many planners do not support trajectory constraints. Compiling them away lets standard planners handle safety requirements, intermediate goals and ordering requirements. If the compiler must first ground the task, high-arity actions over many objects make the compiled task explode (millions of ground actions), so a useful compiler must work on the lifted representation.
 
 ## Success Criteria
 
-A successful system preserves constraint semantics, accepts plans that satisfy the original constrained task, rejects plans that violate the original constraints, and keeps the compiled specification compact as object counts and action arities grow.
+* **Exactness (hard constraint):** every plan valid for the constrained task is valid for the compiled task and vice versa. A compiler that accepts a violating plan, rejects a valid one, fails, or produces a malformed task fails the benchmark outright.
+* **Succinctness:** among exact compilers, fewer conditional effects and actions, and smaller (total and largest) precondition/effect-condition formulas, are better, including on tasks with many constraints.
 
 ---
 
@@ -43,35 +48,94 @@ The paper introduces two lifted compilers for qualitative PDDL state-trajectory 
 
 ## Approach
 
-LiftedTCORE generalizes TCORE's regression operator to lifted formulas and lifted actions. For each constraint formula and action schema, it computes a lifted regression condition using unification against conditional effects, then adds action-specific monitoring preconditions and effects.
+LiftedTCORE (Algorithm 1) generalizes TCORE's regression operator to lifted formulas and lifted actions. For each constraint formula and action schema it computes the lifted regression R^L(phi, a) via the lifted gamma operator (most general unification of formula literals with possibly universally quantified conditional effects, Definitions 2-6) and adds action-specific monitoring preconditions and effects (`hold`, `seen` atoms). Updates with R^L(phi, a) = phi (the action cannot change phi) are omitted (Section 3.2).
 
-LCC avoids regression. It adds a shared set of constraint-monitoring preconditions and conditional effects to all actions, introduces monitoring atoms such as `hold`, `seen`, and `prevent`, and adds a final `fin` action so the last state is checked despite LCC's one-step monitoring delay.
+LCC (Algorithm 2) avoids regression. It adds one shared set of monitoring preconditions and conditional effects to every action, with `hold`, `seen` and `prevent` atoms, and a final `fin` action so the last state is checked despite LCC's one-step monitoring delay.
+
+## Implementation in this workspace
+
+`method/planning.py` implements both compilers; `method/compile.py --variant {lifted_tcore,lcc,lifted_tcore_no_omission}` is the registered command. Two pseudo-code details are completed so that the correctness propositions hold when a monitored formula is already true initially (LiftedTCORE initialises `seen` for AtMostOnce(phi) and for the witness of SometimeBefore). Quantified constraint variables are renamed apart from action variables before regression.
 
 ## Main Claims
 
-The primary claim is that constraints can be compiled away without grounding while preserving plan validity. The empirical claim is that the lifted compilers produce much more succinct compiled specifications and compile faster than ground-first TCORE, while remaining competitive when solved by a standard planner.
+Constraints can be compiled away without grounding while preserving plan validity (Propositions 1 and 3). The lifted compilers produce much more succinct compiled specifications than ground-first TCORE; LiftedTCORE introduces fewer effects, LCC smaller formulas.
 
 ---
 
 # Evaluation
 
-## Metrics
+## Interface: a method is a compiler command
 
-The benchmark measures compiled action count, compiled effect count, formula-size proxy (`formula_atoms`), action ratio versus the ground baseline, and semantic validity. Lower counts and lower ratios are better. `plan_valid_rate`, `valid_plan_accepted`, `invalid_plan_rejected`, `valid_accept_rate`, and `invalid_reject_rate` should be 1.0. Compile time is recorded for audit only and has zero scoring weight because wall-clock timing is hardware-dependent.
+Register a compiler by writing `outputs/compilers/<method_name>.json`:
 
-The main constraint metric is semantic preservation: a compact compiler is not useful if it accepts an invalid trajectory or rejects a valid one. The generated benchmark is intentionally smaller than the paper's full IPC suite, so compactness should be interpreted through the reproduced counts and ratios rather than exact IPC-scale action counts.
+```json
+{"command": ["python3", "path/to/your_compiler.py", "--any", "flags"]}
+```
 
-## Baselines and Targets
+The evaluator appends two paths and runs the command once per task, from the workspace root:
+`<command...> <input.json> <output.json>`. The input is one constrained task; the compiler must write one constraint-free task to `output.json` and exit 0. Every registered compiler is scored; `scripts/method.sh` and `scripts/baseline.sh` show the registrations of the reference compilers. Per task the compiler gets 30 s, 4 GB of address space and at most 32 MB of output.
 
-The reference baseline is a ground-first compiler that enumerates object-instantiated action schemas before removing trajectory constraints. The target behavior is to preserve semantics while producing substantially smaller constraint-free specifications.
+### Task format (JSON)
 
-Paper targets in `scoring/reference.json` summarize Table 3 for compiled size and compilation time and include semantic-preservation targets from the paper's correctness claim.
+```
+{"objects": ["o0", ...],
+ "predicates": {"f0": 2, ...},                       # informative
+ "actions": [{"name": "act0", "params": ["?x0", ...],
+              "precondition": F,
+              "effects": [{"forall": ["?z0"], "condition": F,
+                           "literal": {"pred": "f1", "args": ["?z0", "?x0"], "negated": false}}]}],
+ "init": [{"pred": "f0", "args": ["o1", "o3"]}, ...],
+ "goal": F,
+ "constraints": [{"name": "c0", "kind": "always|sometime|at_most_once|sometime_before|sometime_after",
+                  "phi": F, "psi": F}]}               # psi only for the two binary kinds
+```
 
-## Evaluation Protocol
+Formulas `F` are `{"op": "bool", "value": b}`, `{"op": "atom", "literal": L}`, `not` (`child`), `and`/`or` (`children`), `imply` (`left`, `right`), `eq` (`left`, `right` terms), `exists`/`forall` (`vars`, `child`). Variables start with `?`; objects are distinct constants (unique names). Effects follow PDDL: all conditions are evaluated in the state before the action, deletes are applied before adds, a `forall` effect applies for every assignment of its variables to objects.
 
-Run `bash scripts/reproduce.sh` to generate method artifacts in `outputs/method_results.json`, then run `bash scripts/evaluate.sh outputs/method_results.json`. The evaluator only reads the output artifact and writes `scoring/scores.json`.
+### What the compiled task must look like
 
-The included benchmark uses generated symbolic planning tasks with high-arity actions, ground and quantified constraints, and explicit valid/invalid plan probes. It also includes a constraint-family suite for always, sometime, sometime-before, sometime-after, and at-most-once requirements, plus initial-state edge cases. Future methods should emit the same JSON artifact format: serialized compiled tasks, valid plans, optional invalid plans, and optional compile-time measurements for audit.
+* Same JSON format, no (or an empty) `constraints` list; `objects` are taken from the input.
+* Every action of the input keeps its name and number of parameters (plans are written in the original action names). Alternatively an input action may be replaced by ground copies named `name(o1,o2,...)` without parameters.
+* Any other action is *auxiliary*: it must have no parameters; a planner may interleave auxiliary actions anywhere in a plan.
+* A plan of the input task is accepted by the compiled task if it can be executed, with auxiliary actions inserted (up to 3 between consecutive steps and at the end), so that the compiled goal holds.
+
+## Instances
+
+All instances are generated by the evaluator in memory from fixed seeds: random lifted domains (static and fluent predicates of arity 0-3, action schemas of arity up to 5, conditional effects and universally quantified effects), a random initial state, a goal reached by a hidden witness plan, and task-aware constraints that the witness satisfies and that other goal-reaching plans violate. `eval/train/` generates the public train instances; the held-out test instances come from different seeds and are never written to disk.
+
+## Semantic gate
+
+* **Large tasks** (size experiments): a set of hidden plans per task -- the witness, goal-reaching plans that violate each constraint, other valid plans, non-goal and inapplicable plans -- is replayed on the original task (with its trajectory constraints) and on the compiled task; the verdicts must agree.
+* **Small tasks** (3-4 objects): the product of the original task, its constraint monitors and the compiled task is explored over every ground action sequence until no new state pair appears (complete; tasks with more than 2500 reachable state pairs are not generated); acceptance must agree in every reached pair.
+
+Any disagreement, crash, timeout, oversized or malformed output fails the method's whole run: every metric of every experiment then gets its worst value (`semantic_agreement` 0, ratio metrics 1.0, formula metrics 7.0). If no compiler is registered at all, a `missing_submission` entry with worst values is written.
+
+## Metrics (per experiment; computed by the evaluator from the compiled tasks)
+
+| metric | better | meaning |
+|---|---|---|
+| `semantic_agreement` | higher | fraction of agreeing checks (1.0 for any run that passes the gate) |
+| `effects_vs_ground_log10` | lower | mean log10(compiled conditional effects / effects of the fully grounded task) |
+| `actions_vs_ground_log10` | lower | mean log10(compiled actions / actions of the fully grounded task) |
+| `formula_nodes_log10` | lower | mean log10(nodes of all preconditions, effect conditions and the goal, + 1 per initial-state atom added or removed) |
+| `max_formula_nodes_log10` | lower | mean log10(nodes of the largest single precondition / effect condition / goal) |
+
+The fully grounded task (every schema instantiated for every object tuple, quantified effects expanded) is computed analytically by the evaluator; it is the ground-first comparator. Compilation time is not scored.
+
+## Baselines
+
+`baseline/ground_tcore.py` grounds the task and compiles the constraints by ground regression (TCORE-style). On the benchmark's tasks (10^6-10^8 ground actions) it exceeds its ground-action budget, so its run is scored as failed.
+
+## Protocol
+
+```
+bash scripts/method.sh          # register the reference compilers (or write your own registration)
+bash scripts/baseline.sh        # register the ground-first baseline
+bash scripts/evaluate_train.sh  # -> scoring/scores_train.json (public instances; failures report a counterexample plan)
+bash scripts/evaluate_test.sh   # -> scoring/scores_test.json  (held-out instances; no counterexamples)
+```
+
+`bash scripts/evaluate.sh` writes the same train-slice report to `scoring/scores.json`.
 
 ---
 
@@ -414,6 +478,56 @@ The included benchmark uses generated symbolic planning tasks with high-arity ac
 - Final verification job `50dd2235-44c` completed with exit code 0.
 - The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
 - Train/test scoring and `python validate.py --compare` passed inside the compute container.
+
+</details>
+
+### Iteration 11: claude-opus-5-5 (hardener)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 1.0h | **GPU**: 0.0h
+- **Jobs**: 6 total (6 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+### [2026-06-01 09:20] - core_claim
+- Increased the default size benchmark to 28 objects so the ground-first comparator reaches 21K-scale grounded actions, matching the order of magnitude in the paper's compiled-size table.
+- Local smoke validation passed at a small scale.
+- Submitting a CPU validation job before claiming `core_claim_plus`.
+
+### [2026-06-01 09:35] - core_claim
+- Added an explicit compute-job assertion that both ground and non-ground size benchmarks generate at least 20K grounded baseline actions.
+- Re-submitting the full CPU reproduction path because the checked score artifact still reflected an older smaller size run.
+
+### [2026-06-01 09:45] - core_claim
+- Final verification job `50dd2235-44c` completed with exit code 0.
+- The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
+- Train/test scoring and `python validate.py --compare` passed inside the compute container.
+
+### [2026-11-12] - core_claim (hardening iteration)
+- Restored the paper's Section 3.2 omission of R^L(phi,a)=phi updates in LiftedTCORE; constraint variables renamed apart.
+- Replaced the artifact-based evaluator with evaluator-owned generated tasks (held-out ones generated at test time), a compiler-command interface, an exact-plan-preservation gate (hidden probes + complete product exploration), worst values for failed/missing runs, and analytic ground-first comparators.
+- Added the many-constraints experiment (paper's stated limitation). Job 7214d826-e8c: reference passes every gate; paper direction reproduced (lifted >> grounded; LiftedTCORE fewer effects, LCC smaller formulas); all shortcuts fail; better variant scores higher, weaker lower. See HARDENING.md.
 
 </details>
 
