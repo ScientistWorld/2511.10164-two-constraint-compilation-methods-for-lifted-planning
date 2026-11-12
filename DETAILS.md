@@ -151,6 +151,272 @@ The included benchmark uses generated symbolic planning tasks with high-arity ac
 
 </details>
 
+### Iteration 3: gpt-5.5
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 13m | **GPU**: 0.0h
+- **Jobs**: 1 total (1 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+</details>
+
+### Iteration 4: gpt-5.5 (designer_stage_1)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 7m | **GPU**: 0.0h
+- **Jobs**: 1 total (1 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+</details>
+
+### Iteration 5: gpt-5.5 (designer_stage_2)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 4m | **GPU**: 0.0h
+- **Jobs**: 1 total (1 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+</details>
+
+### Iteration 6: gpt-5.5 (designer_stage_3)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 7m | **GPU**: 0.0h
+- **Jobs**: 3 total (3 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+</details>
+
+### Iteration 7: gpt-5.5 (packager)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 2m | **GPU**: 0.0h
+- **Jobs**: 3 total (3 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+</details>
+
+### Iteration 8: gpt-5.5 (verifier)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 5m | **GPU**: 0.0h
+- **Jobs**: 3 total (3 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+### [2026-06-01 09:20] - core_claim
+- Increased the default size benchmark to 28 objects so the ground-first comparator reaches 21K-scale grounded actions, matching the order of magnitude in the paper's compiled-size table.
+- Local smoke validation passed at a small scale.
+- Submitting a CPU validation job before claiming `core_claim_plus`.
+
+</details>
+
+### Iteration 9: gpt-5.5 (verifier)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 6m | **GPU**: 0.0h
+- **Jobs**: 4 total (4 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+### [2026-06-01 09:20] - core_claim
+- Increased the default size benchmark to 28 objects so the ground-first comparator reaches 21K-scale grounded actions, matching the order of magnitude in the paper's compiled-size table.
+- Local smoke validation passed at a small scale.
+- Submitting a CPU validation job before claiming `core_claim_plus`.
+
+### [2026-06-01 09:35] - core_claim
+- Added an explicit compute-job assertion that both ground and non-ground size benchmarks generate at least 20K grounded baseline actions.
+- Re-submitting the full CPU reproduction path because the checked score artifact still reflected an older smaller size run.
+
+### [2026-06-01 09:45] - core_claim
+- Final verification job `50dd2235-44c` completed with exit code 0.
+- The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
+- Train/test scoring and `python validate.py --compare` passed inside the compute container.
+
+</details>
+
+### Iteration 10: gpt-6.1-sol (redteam)
+- **Milestone**: `core_claim` | **Status**: done
+- **Working time**: 10m | **GPU**: 0.0h
+- **Jobs**: 4 total (4 completed, 0 failed)
+
+<details>
+<summary>Progress Log</summary>
+
+### [2026-06-01 07:39] - core_claim
+- Implemented LiftedTCORE with lifted regression, LCC with delayed shared monitoring, and a ground-first TCORE-style baseline.
+- Reproduced the core semantic-preservation claim on generated symbolic planning tasks covering ground constraints, quantified constraints, and all five supported trajectory-constraint families.
+- A completed compute job ran the reproduction script and `python validate.py --compare` successfully.
+
+### [2026-06-01 08:30] - method_runs
+- Continuation audit reset the milestone to `method_runs`.
+- Fixed initial-state monitoring edge cases in LiftedTCORE and added regression tests and a scored edge-case experiment.
+- Strengthened evaluation to recompute plan validity from serialized compiled-task artifacts rather than trusting method-reported booleans.
+- Submitting a fresh CPU validation job before restoring `core_claim`.
+
+### [2026-06-01 08:52] - core_claim
+- CPU validation job `0ca61d79-64b` completed with exit code 0.
+- The job ran planning regression tests, `scripts/reproduce.sh`, and `python validate.py --compare` inside the container.
+- All five scored experiments passed semantic-preservation checks, including the initial-state monitoring edge cases.
+
+### [2026-06-01 09:00] - core_claim
+- Restored `scripts/run.sh` to execute the full reproduction path after the split-scoring audit.
+- Added the paper-level `slice_structural_units` primary to `eval/evaluate_outputs.py` and regenerated `scoring/scores.json`.
+- Local full-run validation passed: planning tests, method artifact generation, paper-level scoring, train/test scoring, and `python validate.py --compare`.
+
+### [2026-06-01 09:20] - core_claim
+- Increased the default size benchmark to 28 objects so the ground-first comparator reaches 21K-scale grounded actions, matching the order of magnitude in the paper's compiled-size table.
+- Local smoke validation passed at a small scale.
+- Submitting a CPU validation job before claiming `core_claim_plus`.
+
+### [2026-06-01 09:35] - core_claim
+- Added an explicit compute-job assertion that both ground and non-ground size benchmarks generate at least 20K grounded baseline actions.
+- Re-submitting the full CPU reproduction path because the checked score artifact still reflected an older smaller size run.
+
+### [2026-06-01 09:45] - core_claim
+- Final verification job `50dd2235-44c` completed with exit code 0.
+- The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
+- Train/test scoring and `python validate.py --compare` passed inside the compute container.
+
+</details>
+
 
 ---
 
