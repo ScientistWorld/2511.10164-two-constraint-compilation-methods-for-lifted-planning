@@ -1,0 +1,1 @@
+{"candidate_key":"lifted_tcore","name":"reference_seed_0","stage":{"returncode":0,"seconds":32.0288578440086},"test":{"returncode":0,"seconds":10.952449493983295},"test_wrote_scores":true,"train":{"returncode":0,"seconds":10.52987635199679}}

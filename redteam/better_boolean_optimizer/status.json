@@ -1,0 +1,1 @@
+{"candidate_key":"lifted_tcore","name":"better_boolean_optimizer","stage":{"staged":"better_boolean_optimizer"},"test":{"returncode":0,"seconds":10.711911775986664},"test_wrote_scores":true,"train":{"returncode":0,"seconds":10.484974027989665}}

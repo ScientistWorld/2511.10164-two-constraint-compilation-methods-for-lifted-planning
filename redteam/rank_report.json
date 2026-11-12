@@ -1,0 +1,2583 @@
+{
+  "attempts": {
+    "better_boolean_optimizer": {
+      "audit_population_rank_gain": 0.6140976464981569,
+      "better_metrics": 9,
+      "equal_metrics": 18,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.13132350566004322,
+          "directional_delta": 21,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 33
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.12903747327472936,
+          "directional_delta": 15,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 31
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.12076763402738097,
+          "directional_delta": 12,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 22
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.10646178727380405,
+          "directional_delta": 6,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 17
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.01628042861907949,
+          "directional_delta": 6,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 21
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.01511258305302229,
+          "directional_delta": 3,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 17
+        },
+        {
+          "audit_rank_contribution": 0.05064318090130397,
+          "directional_delta": 45,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 38
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.012456821978060995,
+          "directional_delta": 1,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.03201423171073249,
+          "directional_delta": 4.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 5.0
+        }
+      ],
+      "two_attempt_rank_gain": 1.6400000000000001,
+      "worse_metrics": 0
+    },
+    "bruteforce_ground": {
+      "failed": true,
+      "rank": null
+    },
+    "reference_seed_0": {
+      "audit_population_rank_gain": 0.0,
+      "better_metrics": 0,
+      "equal_metrics": 27,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 54
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 46
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 34
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 23
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 27
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": 0.0,
+      "worse_metrics": 0
+    },
+    "reference_seed_1": {
+      "audit_population_rank_gain": 0.0,
+      "better_metrics": 0,
+      "equal_metrics": 27,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 54
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 46
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 34
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 23
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 27
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": 0.0,
+      "worse_metrics": 0
+    },
+    "reference_seed_2": {
+      "audit_population_rank_gain": 0.0,
+      "better_metrics": 0,
+      "equal_metrics": 27,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 54
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 46
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 34
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 23
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 27
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": 0.0,
+      "worse_metrics": 0
+    },
+    "shortcut_constant_empty": {
+      "audit_population_rank_gain": 5.256167269393945,
+      "better_metrics": 19,
+      "equal_metrics": 8,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.4626481614571045,
+          "directional_delta": 7,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.3376890145543968,
+          "directional_delta": 54,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.39571491804250336,
+          "directional_delta": 46,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.466503911323984,
+          "directional_delta": 5,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.34217496307757944,
+          "directional_delta": 34,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.40810351788291555,
+          "directional_delta": 23,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.07579367289598671,
+          "directional_delta": 3,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07585674494892167,
+          "directional_delta": 8,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07326192878585769,
+          "directional_delta": 27,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.1007405680032894,
+          "directional_delta": 8,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.10075055368681528,
+          "directional_delta": 20,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.09340853366240512,
+          "directional_delta": 83,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0720576692122892,
+          "directional_delta": 3,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07474093186836596,
+          "directional_delta": 6,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0720320213491481,
+          "directional_delta": 9.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 0.0
+        }
+      ],
+      "two_attempt_rank_gain": 4.599999999999998,
+      "worse_metrics": 0
+    },
+    "shortcut_drop_constraints": {
+      "audit_population_rank_gain": 0.3404594092224338,
+      "better_metrics": 12,
+      "equal_metrics": 12,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.2643703779754883,
+          "directional_delta": 4,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.3126750134762934,
+          "directional_delta": 50,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 4
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.34409992873261164,
+          "directional_delta": 40,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.1866015645295936,
+          "directional_delta": 2,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.30191908506845244,
+          "directional_delta": 30,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 4
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.30164173060911154,
+          "directional_delta": 17,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.5,
+          "directional_delta": -1.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.02844627935584563,
+          "directional_delta": 3,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.04612788108739188,
+          "directional_delta": 17,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 10
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.6666666666666667,
+          "directional_delta": -1.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.06045033221208916,
+          "directional_delta": 12,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.07540206934194148,
+          "directional_delta": 67,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 16
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.5,
+          "directional_delta": -1.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.03737046593418298,
+          "directional_delta": 3,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.048021347566098736,
+          "directional_delta": 6.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 3.0
+        }
+      ],
+      "two_attempt_rank_gain": 1.4999999999999998,
+      "worse_metrics": 3
+    },
+    "shortcut_empty_results": {
+      "audit_population_rank_gain": 0.0,
+      "better_metrics": 0,
+      "equal_metrics": 0,
+      "missing_scored_metrics": 27,
+      "terms": [],
+      "two_attempt_rank_gain": 0.0,
+      "worse_metrics": 0
+    },
+    "shortcut_known_plan": {
+      "audit_population_rank_gain": 1.4224302768217452,
+      "better_metrics": 15,
+      "equal_metrics": 12,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.19827778348161623,
+          "directional_delta": 3,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 4
+        },
+        {
+          "audit_rank_contribution": 0.20011200862482775,
+          "directional_delta": 32,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 22
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.25807494654945873,
+          "directional_delta": 30,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 16
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0933007822647968,
+          "directional_delta": 1,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 4
+        },
+        {
+          "audit_rank_contribution": 0.12076763402738097,
+          "directional_delta": 12,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 22
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.12420541848610474,
+          "directional_delta": 7,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 16
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.025264557631995567,
+          "directional_delta": 1,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 2
+        },
+        {
+          "audit_rank_contribution": 0.037928372474460834,
+          "directional_delta": 4,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 4
+        },
+        {
+          "audit_rank_contribution": 0.05155469062708504,
+          "directional_delta": 19,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.037777713001233525,
+          "directional_delta": 3,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.05037527684340764,
+          "directional_delta": 10,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 10
+        },
+        {
+          "audit_rank_contribution": 0.07090045326182556,
+          "directional_delta": 63,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.04803844614152614,
+          "directional_delta": 2,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.04982728791224398,
+          "directional_delta": 4,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 2
+        },
+        {
+          "audit_rank_contribution": 0.056024905493781856,
+          "directional_delta": 7.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 2.0
+        }
+      ],
+      "two_attempt_rank_gain": 2.7,
+      "worse_metrics": 0
+    },
+    "shortcut_null_artifact": {
+      "failed": true,
+      "rank": null
+    },
+    "shortcut_registration": {
+      "audit_population_rank_gain": 4.517524644980865,
+      "better_metrics": 10,
+      "equal_metrics": 2,
+      "missing_scored_metrics": 15,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.4626481614571045,
+          "directional_delta": 7,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.3376890145543968,
+          "directional_delta": 54,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.39571491804250336,
+          "directional_delta": 46,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.466503911323984,
+          "directional_delta": 5,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.34217496307757944,
+          "directional_delta": 34,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.40810351788291555,
+          "directional_delta": 23,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        }
+      ],
+      "two_attempt_rank_gain": 4.0,
+      "worse_metrics": 0
+    },
+    "shortcut_reject_everything": {
+      "audit_population_rank_gain": 1.850247889634669,
+      "better_metrics": 19,
+      "equal_metrics": 3,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.4626481614571045,
+          "directional_delta": 7,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.3376890145543968,
+          "directional_delta": 54,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": -0.8696263565463044,
+          "directional_delta": -1.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.39571491804250336,
+          "directional_delta": 46,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.5613413993878117,
+          "directional_delta": 1,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.466503911323984,
+          "directional_delta": 5,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.34217496307757944,
+          "directional_delta": 34,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": -0.8696263565463044,
+          "directional_delta": -1.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.40810351788291555,
+          "directional_delta": 23,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.49100367993337907,
+          "directional_delta": 4.555393586005831e-05,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": -0.5,
+          "directional_delta": -1.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.07579367289598671,
+          "directional_delta": 3,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07585674494892167,
+          "directional_delta": 8,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07326192878585769,
+          "directional_delta": 27,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": -0.6666666666666667,
+          "directional_delta": -1.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.1007405680032894,
+          "directional_delta": 8,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.10075055368681528,
+          "directional_delta": 20,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.09340853366240512,
+          "directional_delta": 83,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": -0.5,
+          "directional_delta": -1.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 0.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0720576692122892,
+          "directional_delta": 3,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.07474093186836596,
+          "directional_delta": 6,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 0
+        },
+        {
+          "audit_rank_contribution": 0.0720320213491481,
+          "directional_delta": 9.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 0.0
+        }
+      ],
+      "two_attempt_rank_gain": 2.600000000000001,
+      "worse_metrics": 5
+    },
+    "shortcut_replace_baseline": {
+      "audit_population_rank_gain": 0.7664371042288074,
+      "better_metrics": 2,
+      "equal_metrics": 25,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 54
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 46
+        },
+        {
+          "audit_rank_contribution": 0.3832185521144037,
+          "directional_delta": 3.555393586005831e-05,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 1e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 34
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 23
+        },
+        {
+          "audit_rank_contribution": 0.3832185521144037,
+          "directional_delta": 3.555393586005831e-05,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 1e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 27
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": 0.9,
+      "worse_metrics": 0
+    },
+    "shortcut_self_report_fields": {
+      "audit_population_rank_gain": 0.0,
+      "better_metrics": 0,
+      "equal_metrics": 27,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 7
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 54
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 46
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 1
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 5
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 34
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 23
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 4.555393586005831e-05
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 27
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": 0.0,
+      "worse_metrics": 0
+    }
+  },
+  "normalization": "Population standard deviation across successful audit attempts, excluding missing values; zero-variance terms contribute zero.",
+  "population": [
+    "reference_seed_0",
+    "reference_seed_1",
+    "reference_seed_2",
+    "better_boolean_optimizer",
+    "shortcut_drop_constraints",
+    "shortcut_known_plan",
+    "shortcut_constant_empty",
+    "shortcut_reject_everything",
+    "shortcut_self_report_fields",
+    "shortcut_replace_baseline",
+    "shortcut_empty_results",
+    "shortcut_registration"
+  ],
+  "reference": "original scoring/scores_test.json, lifted_tcore",
+  "reference_at_bound": [
+    "ground_constraints_size/actions=1: minimum for a nonempty compiled task and fixed baseline",
+    "ground_constraints_size/plan_valid_rate=1",
+    "ground_constraints_size/action_ratio_vs_ground=4.555393586005831e-05: minimum for a nonempty compiled task and fixed baseline",
+    "nonground_constraints_size/actions=1: minimum for a nonempty compiled task and fixed baseline",
+    "nonground_constraints_size/plan_valid_rate=1",
+    "nonground_constraints_size/action_ratio_vs_ground=4.555393586005831e-05: minimum for a nonempty compiled task and fixed baseline",
+    "constraint_semantics/valid_plan_accepted=1",
+    "constraint_semantics/invalid_plan_rejected=1",
+    "constraint_type_suite/valid_accept_rate=1",
+    "constraint_type_suite/invalid_reject_rate=1",
+    "initial_monitoring_edge_cases/valid_accept_rate=1",
+    "initial_monitoring_edge_cases/invalid_reject_rate=1"
+  ],
+  "reference_seed_spread": {
+    "constraint_semantics/actions": {
+      "max": 3,
+      "min": 3,
+      "range": 0
+    },
+    "constraint_semantics/effects": {
+      "max": 8,
+      "min": 8,
+      "range": 0
+    },
+    "constraint_semantics/invalid_plan_rejected": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "constraint_semantics/slice_structural_units": {
+      "max": 27,
+      "min": 27,
+      "range": 0
+    },
+    "constraint_semantics/valid_plan_accepted": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "constraint_type_suite/actions": {
+      "max": 8,
+      "min": 8,
+      "range": 0
+    },
+    "constraint_type_suite/effects": {
+      "max": 20,
+      "min": 20,
+      "range": 0
+    },
+    "constraint_type_suite/invalid_reject_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "constraint_type_suite/slice_structural_units": {
+      "max": 83,
+      "min": 83,
+      "range": 0
+    },
+    "constraint_type_suite/valid_accept_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "ground_constraints_size/action_ratio_vs_ground": {
+      "max": 4.555393586005831e-05,
+      "min": 4.555393586005831e-05,
+      "range": 0.0
+    },
+    "ground_constraints_size/actions": {
+      "max": 1,
+      "min": 1,
+      "range": 0
+    },
+    "ground_constraints_size/effects": {
+      "max": 7,
+      "min": 7,
+      "range": 0
+    },
+    "ground_constraints_size/formula_atoms": {
+      "max": 54,
+      "min": 54,
+      "range": 0
+    },
+    "ground_constraints_size/plan_valid_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "ground_constraints_size/slice_structural_units": {
+      "max": 46,
+      "min": 46,
+      "range": 0
+    },
+    "initial_monitoring_edge_cases/actions": {
+      "max": 3,
+      "min": 3,
+      "range": 0
+    },
+    "initial_monitoring_edge_cases/effects": {
+      "max": 6,
+      "min": 6,
+      "range": 0
+    },
+    "initial_monitoring_edge_cases/invalid_reject_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "initial_monitoring_edge_cases/slice_structural_units": {
+      "max": 9.0,
+      "min": 9.0,
+      "range": 0.0
+    },
+    "initial_monitoring_edge_cases/valid_accept_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "nonground_constraints_size/action_ratio_vs_ground": {
+      "max": 4.555393586005831e-05,
+      "min": 4.555393586005831e-05,
+      "range": 0.0
+    },
+    "nonground_constraints_size/actions": {
+      "max": 1,
+      "min": 1,
+      "range": 0
+    },
+    "nonground_constraints_size/effects": {
+      "max": 5,
+      "min": 5,
+      "range": 0
+    },
+    "nonground_constraints_size/formula_atoms": {
+      "max": 34,
+      "min": 34,
+      "range": 0
+    },
+    "nonground_constraints_size/plan_valid_rate": {
+      "max": 1.0,
+      "min": 1.0,
+      "range": 0.0
+    },
+    "nonground_constraints_size/slice_structural_units": {
+      "max": 23,
+      "min": 23,
+      "range": 0
+    }
+  },
+  "sigmas": {
+    "constraint_semantics/actions": 1.1874342087037917,
+    "constraint_semantics/effects": 3.163858403911275,
+    "constraint_semantics/invalid_plan_rejected": 0.3,
+    "constraint_semantics/slice_structural_units": 11.056219968868202,
+    "constraint_semantics/valid_plan_accepted": 0.3,
+    "constraint_type_suite/actions": 3.176476034853718,
+    "constraint_type_suite/effects": 7.940403012442126,
+    "constraint_type_suite/invalid_reject_rate": 0.3,
+    "constraint_type_suite/slice_structural_units": 35.54279111156016,
+    "constraint_type_suite/valid_accept_rate": 0.3,
+    "ground_constraints_size/action_ratio_vs_ground": 2.087486507209849e-05,
+    "ground_constraints_size/actions": 0.4453617714151233,
+    "ground_constraints_size/effects": 3.0260576321987704,
+    "ground_constraints_size/formula_atoms": 23.986566488366492,
+    "ground_constraints_size/plan_valid_rate": 0.28747978728803447,
+    "ground_constraints_size/slice_structural_units": 20.342927782003297,
+    "initial_monitoring_edge_cases/actions": 1.2489995996796797,
+    "initial_monitoring_edge_cases/effects": 2.4083189157584592,
+    "initial_monitoring_edge_cases/invalid_reject_rate": 0.3,
+    "initial_monitoring_edge_cases/slice_structural_units": 3.7483329627982624,
+    "initial_monitoring_edge_cases/valid_accept_rate": 0.3,
+    "nonground_constraints_size/action_ratio_vs_ground": 2.087486507209849e-05,
+    "nonground_constraints_size/actions": 0.4453617714151233,
+    "nonground_constraints_size/effects": 2.143604749554836,
+    "nonground_constraints_size/formula_atoms": 14.904655659577598,
+    "nonground_constraints_size/plan_valid_rate": 0.28747978728803447,
+    "nonground_constraints_size/slice_structural_units": 9.862693712811286
+  }
+}

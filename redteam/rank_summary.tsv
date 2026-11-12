@@ -1,0 +1,15 @@
+name	audit_population_gain	two_attempt_gain	better/worse/equal/missing
+reference_seed_0	0.000000	0.000000	0/0/27/0
+reference_seed_1	0.000000	0.000000	0/0/27/0
+reference_seed_2	0.000000	0.000000	0/0/27/0
+better_boolean_optimizer	0.614098	1.640000	9/0/18/0
+shortcut_drop_constraints	0.340459	1.500000	12/3/12/0
+shortcut_known_plan	1.422430	2.700000	15/0/12/0
+shortcut_constant_empty	5.256167	4.600000	19/0/8/0
+shortcut_reject_everything	1.850248	2.600000	19/5/3/0
+shortcut_self_report_fields	0.000000	0.000000	0/0/27/0
+shortcut_replace_baseline	0.766437	0.900000	2/0/25/0
+shortcut_empty_results	0.000000	0.000000	0/0/0/27
+shortcut_registration	4.517525	4.000000	10/0/2/15
+bruteforce_ground	FAILED	FAILED	no worst-value record
+shortcut_null_artifact	FAILED	FAILED	no worst-value record

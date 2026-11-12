@@ -1,0 +1,1 @@
+{"candidate_key":"lifted_tcore","name":"shortcut_empty_results","stage":{"needs_reference_artifact":false,"staged":"shortcut_empty_results"},"test":{"returncode":0,"seconds":0.36811723597929813},"test_wrote_scores":true,"train":{"returncode":0,"seconds":0.2757038139970973}}
