@@ -3,6 +3,6 @@
 # only after your turn ends.
 action: submit
 gpus: 0
-test: false
+test: true
 milestone: core_claim
-notes: "Hardening job: unit tests; all variants/shortcuts through the no-argument train/test evaluators (redteam/hardening/run_hardening.sh); then reference-only scores_train/test, summary and validate."
+notes: "Private-search pruning attack through the no-argument hidden test (redteam/hardening/run_private_search.sh), then the restored reference-only scripts/run.sh end to end (unit tests, registration, train/test scoring, validate)."
