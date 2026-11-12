@@ -22,7 +22,10 @@ def main():
             shutil.copy2(ROOT / name, target)
     failures = []
     try:
-        for name in NAMES:
+        selected = sys.argv[1:] or NAMES
+        if any(name not in NAMES for name in selected):
+            raise ValueError(selected)
+        for name in selected:
             # Separate method/scoring interpreters; no persistent monkeypatches.
             result = subprocess.run(["bash", f"redteam/{name}/run.sh"])
             if result.returncode:
@@ -30,7 +33,8 @@ def main():
         result = subprocess.run([sys.executable, "redteam/summarize.py"])
         if result.returncode:
             failures.append({"name": "summarize", "returncode": result.returncode})
-        (ROOT / "redteam/job_status.json").write_text(json.dumps({"unexpected_failures": failures}, indent=2))
+        (ROOT / "redteam/job_status.json").write_text(json.dumps({
+            "last_job_trials": selected, "unexpected_failures": failures}, indent=2))
     finally:
         for name in changed:
             if (backup / name).exists():

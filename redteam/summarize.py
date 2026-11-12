@@ -4,7 +4,6 @@ Future-attempt variances are unknown: report an explicitly defined audit
 population AND the exact two-attempt comparison, not an invented global rank.
 """
 import json
-import math
 from pathlib import Path
 import statistics
 
@@ -64,6 +63,24 @@ def main():
         report["attempts"][name] = {"audit_population_rank_gain": total, "two_attempt_rank_gain": pairwise,
             "better_metrics": improvements, "worse_metrics": worsens, "equal_metrics": equal,
             "missing_scored_metrics": missing, "terms": terms}
+    # Also show the original honest comparators. These were scored by all three
+    # actual reference runs; do not add extra hypothetical attempts to sigmas.
+    report["reference_comparators"] = {}
+    for method in ("ground_tcore", "lcc"):
+        total = pairwise = 0.0
+        for exp, conf in CONFIG.items():
+            for metric, mc in conf["metrics"].items():
+                coefficient = abs(mc["coefficient"])
+                if not coefficient:
+                    continue
+                value = REFERENCE[exp]["results"][method][metric]
+                ref = REFERENCE[exp]["results"]["lifted_tcore"][metric]
+                delta = (value - ref) * (1 if mc["higher_is_better"] else -1)
+                sigma = sigmas[exp, metric]
+                total += conf["weight"] * coefficient * delta / sigma if sigma else 0.0
+                pairwise += conf["weight"] * coefficient * (2 if delta > 0 else -2 if delta < 0 else 0)
+        report["reference_comparators"][method] = {
+            "audit_population_rank_gain": total, "two_attempt_rank_gain": pairwise}
     for exp, conf in CONFIG.items():
         for metric, mc in conf["metrics"].items():
             if not abs(mc["coefficient"]):

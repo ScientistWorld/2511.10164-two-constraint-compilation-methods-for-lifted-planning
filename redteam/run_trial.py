@@ -163,8 +163,9 @@ def stage(name, folder):
     if name != "bruteforce_ground":
         dump(folder / "candidate_artifacts.json", candidate)
     else:
-        dump(folder / "candidate_summary.json", {e: {
-            "actions": len(v["compiled_problem"]["actions"])} for e, v in candidate.items()})
+        dump(folder / "candidate_summary.json", {
+            f"{e}/{case or '-'}": {"actions": len(item["compiled_problem"]["actions"])}
+            for e, case, item in each_item(raw)})
     return {"staged": name}
 
 
