@@ -8,9 +8,6 @@
 set -euo pipefail
 cd /home/user
 
-# JOB-ONLY (hardening): private-search audit on the hidden test
-mkdir -p outputs/compilers && bash scripts/method.sh >/dev/null && bash redteam/hardening/run_private_search.sh
-
 echo "planning regression tests"
 PYTHONPATH=method python3 method/test_planning.py
 

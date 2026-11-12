@@ -1,8 +1,6 @@
 # Once you set action to 'submit' or 'done', STOP immediately.
 # Do NOT sleep, poll, or wait for jobs. The system reads this file
 # only after your turn ends.
-action: submit
-gpus: 0
-test: true
+action: done
 milestone: core_claim
-notes: "Private-search pruning attack through the no-argument hidden test (redteam/hardening/run_private_search.sh), then the restored reference-only scripts/run.sh end to end (unit tests, registration, train/test scoring, validate)."
+notes: "Hardened gym: compiler interface on evaluator-generated hidden tasks, exact-plan-preservation gate with worst values, analytic ground comparator, paper's R=phi omission restored, many-constraints experiment; all shortcuts fail, better variant ranks higher, weaker lower (HARDENING.md)."

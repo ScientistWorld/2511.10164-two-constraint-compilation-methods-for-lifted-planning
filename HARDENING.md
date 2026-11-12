@@ -2,7 +2,7 @@
 
 **Better results now score higher, worse results lower, and every shortcut from the audit (`REDTEAM.md`) is closed: each one now fails the run and gets the worst value in every metric.** This required replacing the gym's design. The old evaluator scored artifacts the method wrote itself: its own compiled tasks for one fixed visible task, its own "valid/invalid" plans, its own ground comparator, and the method keys listed in the train scores. The method now registers a *compiler command*. The evaluator generates the constrained tasks itself (the held-out ones only at test time) and runs every registered compiler on them. It checks that each compiled task accepts exactly the plans the constrained task accepts, and measures the compiled task's size against a ground-first comparator it computes itself.
 
-All numbers below come from actual runs of the unmodified, no-argument `scripts/evaluate_test.sh` / `scripts/evaluate_train.sh` in CPU job `7214d826-e8c`. Raw files: `redteam/hardening/results/` (`scores_test_all.json`, `scores_train_all.json`, `scores_test_empty.json`, `summary.json`, logs). The private-search row comes from job `PRIVATE_SEARCH_JOB`.
+All numbers below come from actual runs of the unmodified, no-argument `scripts/evaluate_test.sh` / `scripts/evaluate_train.sh` in CPU job `7214d826-e8c`. Raw files: `redteam/hardening/results/` (`scores_test_all.json`, `scores_train_all.json`, `scores_test_empty.json`, `summary.json`, logs). The private-search row comes from job `5d061b9e-644` (`results/scores_test_private_search.json`). That job also reran the reference-only `scripts/run.sh` end to end and reproduced `scoring/scores_train.json` and `scoring/scores_test.json` exactly.
 
 **How the ranks are computed.** Each scored metric contributes `weight × |coefficient| × improvement` over `lifted_tcore` in its better direction, divided by the metric's population standard deviation; zero-spread terms add 0. Population **A** is all 16 attempts in the hidden-test run. Population **P** is just the reference and the one attempt.
 
@@ -76,7 +76,7 @@ Coefficients: 1.0 / −1.0 / −0.2 / −0.8 / −0.4. Weights: ground and non-g
 | Null artifact | crashed, no scores | Per-method error capture | **fails cleanly**: "malformed compiled task", worst values, the other methods are still scored |
 | Exhaustive grounding | −7.549 / −4.18, while passing every check | Scale + per-task limits | **fails**: full grounding (`--max-ground-actions 0`) times out on the first task. −6.80 / −6.80 |
 | Invalid registration | — | — | **fails**: scored with worst values |
-| Private search: prune monitoring that the method's own sampled trajectories never need, using a copy of the public simulator; small tasks left exact | — | Hidden goal-reaching near-miss probes on large tasks; complete checks on small tasks | PRIVATE_SEARCH_RESULT |
+| Private search: prune monitoring that the method's own sampled trajectories never need, using a copy of the public simulator; small tasks left exact | — | Hidden goal-reaching near-miss probes on large tasks; complete checks on small tasks | **fails**: its pruning survives the first large hidden task, but on the second it no longer preserves the valid plans (a hidden near-miss probe disagrees), so the run gets worst values: A/P −6.80 (`redteam/hardening/prune_attack.py`) |
 
 ## Reference before and after
 
