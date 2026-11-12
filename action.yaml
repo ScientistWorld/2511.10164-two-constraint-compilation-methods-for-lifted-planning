@@ -1,4 +1,4 @@
 action: submit
 gpus: 0
 test: false
-notes: "Audit gym ranking: 3 full-size reference seeds, real Boolean compiler optimization, weaker constraint removal, exhaustive grounding, and file-only shortcut trials; restore outputs and runner afterwards."
+notes: "Finish gym audit: rerun only exhaustive-grounding trial after fixing summary handling of case suites; retain all completed trials and recompute explicit rank populations."
