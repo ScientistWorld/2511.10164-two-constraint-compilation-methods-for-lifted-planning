@@ -1,8 +1,6 @@
 {
-  "unexpected_failures": [
-    {
-      "name": "bruteforce_ground",
-      "returncode": 1
-    }
-  ]
+  "last_job_trials": [
+    "bruteforce_ground"
+  ],
+  "unexpected_failures": []
 }

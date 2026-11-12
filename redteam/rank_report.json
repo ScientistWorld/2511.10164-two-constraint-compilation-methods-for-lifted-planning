@@ -1,7 +1,7 @@
 {
   "attempts": {
     "better_boolean_optimizer": {
-      "audit_population_rank_gain": 0.6140976464981569,
+      "audit_population_rank_gain": 0.11152796750253749,
       "better_metrics": 9,
       "equal_metrics": 18,
       "missing_scored_metrics": 0,
@@ -23,7 +23,7 @@
           "value": 7
         },
         {
-          "audit_rank_contribution": 0.13132350566004322,
+          "audit_rank_contribution": 1.4200435431554487e-05,
           "directional_delta": 21,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -39,7 +39,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.12903747327472936,
+          "audit_rank_contribution": 1.4107432860917797e-05,
           "directional_delta": 15,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -71,7 +71,7 @@
           "value": 5
         },
         {
-          "audit_rank_contribution": 0.12076763402738097,
+          "audit_rank_contribution": 1.0638097166806214e-05,
           "directional_delta": 12,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -87,7 +87,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.10646178727380405,
+          "audit_rank_contribution": 9.110633178081498e-06,
           "directional_delta": 6,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -135,7 +135,7 @@
           "value": 8
         },
         {
-          "audit_rank_contribution": 0.01628042861907949,
+          "audit_rank_contribution": 7.444475136553826e-05,
           "directional_delta": 6,
           "experiment": "constraint_semantics",
           "metric": "slice_structural_units",
@@ -167,7 +167,7 @@
           "value": 8
         },
         {
-          "audit_rank_contribution": 0.01511258305302229,
+          "audit_rank_contribution": 0.015388420295998748,
           "directional_delta": 3,
           "experiment": "constraint_type_suite",
           "metric": "effects",
@@ -175,7 +175,7 @@
           "value": 17
         },
         {
-          "audit_rank_contribution": 0.05064318090130397,
+          "audit_rank_contribution": 0.0510231331542236,
           "directional_delta": 45,
           "experiment": "constraint_type_suite",
           "metric": "slice_structural_units",
@@ -207,7 +207,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.012456821978060995,
+          "audit_rank_contribution": 0.012673573648602382,
           "directional_delta": 1,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "effects",
@@ -215,7 +215,7 @@
           "value": 5
         },
         {
-          "audit_rank_contribution": 0.03201423171073249,
+          "audit_rank_contribution": 0.03232033905370986,
           "directional_delta": 4.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "slice_structural_units",
@@ -227,8 +227,230 @@
       "worse_metrics": 0
     },
     "bruteforce_ground": {
-      "failed": true,
-      "rank": null
+      "audit_population_rank_gain": -7.5489249603194715,
+      "better_metrics": 0,
+      "equal_metrics": 14,
+      "missing_scored_metrics": 0,
+      "terms": [
+        {
+          "audit_rank_contribution": -0.9045227933764494,
+          "directional_delta": -21951,
+          "experiment": "ground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 21952
+        },
+        {
+          "audit_rank_contribution": -0.7236152380213987,
+          "directional_delta": -153657,
+          "experiment": "ground_constraints_size",
+          "metric": "effects",
+          "reference": 7,
+          "value": 153664
+        },
+        {
+          "audit_rank_contribution": -0.542704126788617,
+          "directional_delta": -802566,
+          "experiment": "ground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 54,
+          "value": 802620
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "ground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.6331547537353276,
+          "directional_delta": -673214,
+          "experiment": "ground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 46,
+          "value": 673260
+        },
+        {
+          "audit_rank_contribution": -0.814067882622976,
+          "directional_delta": -0.99995444606414,
+          "experiment": "ground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.9045227933764494,
+          "directional_delta": -21951,
+          "experiment": "nonground_constraints_size",
+          "metric": "actions",
+          "reference": 1,
+          "value": 21952
+        },
+        {
+          "audit_rank_contribution": -0.7236164367593797,
+          "directional_delta": -109755,
+          "experiment": "nonground_constraints_size",
+          "metric": "effects",
+          "reference": 5,
+          "value": 109760
+        },
+        {
+          "audit_rank_contribution": -0.5427078460132024,
+          "directional_delta": -612186,
+          "experiment": "nonground_constraints_size",
+          "metric": "formula_atoms",
+          "reference": 34,
+          "value": 612220
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "nonground_constraints_size",
+          "metric": "plan_valid_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.6331601555382669,
+          "directional_delta": -416981,
+          "experiment": "nonground_constraints_size",
+          "metric": "slice_structural_units",
+          "reference": 23,
+          "value": 417004
+        },
+        {
+          "audit_rank_contribution": -0.814067882622976,
+          "directional_delta": -0.99995444606414,
+          "experiment": "nonground_constraints_size",
+          "metric": "action_ratio_vs_ground",
+          "reference": 4.555393586005831e-05,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "valid_plan_accepted",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_semantics",
+          "metric": "invalid_plan_rejected",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": -0.10428324664994668,
+          "directional_delta": -1026,
+          "experiment": "constraint_semantics",
+          "metric": "actions",
+          "reference": 3,
+          "value": 1029
+        },
+        {
+          "audit_rank_contribution": -0.10426674544416767,
+          "directional_delta": -2736,
+          "experiment": "constraint_semantics",
+          "metric": "effects",
+          "reference": 8,
+          "value": 2744
+        },
+        {
+          "audit_rank_contribution": -0.1042350593703145,
+          "directional_delta": -8401,
+          "experiment": "constraint_semantics",
+          "metric": "slice_structural_units",
+          "reference": 27,
+          "value": 8428
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "constraint_type_suite",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "actions",
+          "reference": 8,
+          "value": 8
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "effects",
+          "reference": 20,
+          "value": 20
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "constraint_type_suite",
+          "metric": "slice_structural_units",
+          "reference": 83,
+          "value": 83
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "valid_accept_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "invalid_reject_rate",
+          "reference": 1.0,
+          "value": 1.0
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "actions",
+          "reference": 3,
+          "value": 3
+        },
+        {
+          "audit_rank_contribution": 0.0,
+          "directional_delta": 0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "effects",
+          "reference": 6,
+          "value": 6
+        },
+        {
+          "audit_rank_contribution": -0.0,
+          "directional_delta": -0.0,
+          "experiment": "initial_monitoring_edge_cases",
+          "metric": "slice_structural_units",
+          "reference": 9.0,
+          "value": 9.0
+        }
+      ],
+      "two_attempt_rank_gain": -4.179999999999999,
+      "worse_metrics": 13
     },
     "reference_seed_0": {
       "audit_population_rank_gain": 0.0,
@@ -909,13 +1131,13 @@
       "worse_metrics": 0
     },
     "shortcut_constant_empty": {
-      "audit_population_rank_gain": 5.256167269393945,
+      "audit_population_rank_gain": 0.5249569293830258,
       "better_metrics": 19,
       "equal_metrics": 8,
       "missing_scored_metrics": 0,
       "terms": [
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "ground_constraints_size",
           "metric": "actions",
@@ -923,7 +1145,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.4626481614571045,
+          "audit_rank_contribution": 3.2965023826768656e-05,
           "directional_delta": 7,
           "experiment": "ground_constraints_size",
           "metric": "effects",
@@ -931,7 +1153,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.3376890145543968,
+          "audit_rank_contribution": 3.651540539542582e-05,
           "directional_delta": 54,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -947,7 +1169,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.39571491804250336,
+          "audit_rank_contribution": 4.3262794106814574e-05,
           "directional_delta": 46,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -955,7 +1177,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "ground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -963,7 +1185,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "nonground_constraints_size",
           "metric": "actions",
@@ -971,7 +1193,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.466503911323984,
+          "audit_rank_contribution": 3.296507843648944e-05,
           "directional_delta": 5,
           "experiment": "nonground_constraints_size",
           "metric": "effects",
@@ -979,7 +1201,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.34217496307757944,
+          "audit_rank_contribution": 3.014127530595094e-05,
           "directional_delta": 34,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -995,7 +1217,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.40810351788291555,
+          "audit_rank_contribution": 3.492409384931241e-05,
           "directional_delta": 23,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -1003,7 +1225,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "nonground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -1027,7 +1249,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.07579367289598671,
+          "audit_rank_contribution": 0.00030492177383025345,
           "directional_delta": 3,
           "experiment": "constraint_semantics",
           "metric": "actions",
@@ -1035,7 +1257,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07585674494892167,
+          "audit_rank_contribution": 0.00030487352469054876,
           "directional_delta": 8,
           "experiment": "constraint_semantics",
           "metric": "effects",
@@ -1043,7 +1265,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07326192878585769,
+          "audit_rank_contribution": 0.0003350013811449222,
           "directional_delta": 27,
           "experiment": "constraint_semantics",
           "metric": "slice_structural_units",
@@ -1067,7 +1289,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.1007405680032894,
+          "audit_rank_contribution": 0.10398012966306086,
           "directional_delta": 8,
           "experiment": "constraint_type_suite",
           "metric": "actions",
@@ -1075,7 +1297,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.10075055368681528,
+          "audit_rank_contribution": 0.10258946863999165,
           "directional_delta": 20,
           "experiment": "constraint_type_suite",
           "metric": "effects",
@@ -1083,7 +1305,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.09340853366240512,
+          "audit_rank_contribution": 0.09410933448445687,
           "directional_delta": 83,
           "experiment": "constraint_type_suite",
           "metric": "slice_structural_units",
@@ -1107,7 +1329,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.0720576692122892,
+          "audit_rank_contribution": 0.07420363721059028,
           "directional_delta": 3,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "actions",
@@ -1115,7 +1337,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07474093186836596,
+          "audit_rank_contribution": 0.07604144189161428,
           "directional_delta": 6,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "effects",
@@ -1123,7 +1345,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.0720320213491481,
+          "audit_rank_contribution": 0.07272076287084718,
           "directional_delta": 9.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "slice_structural_units",
@@ -1135,7 +1357,7 @@
       "worse_metrics": 0
     },
     "shortcut_drop_constraints": {
-      "audit_population_rank_gain": 0.3404594092224338,
+      "audit_population_rank_gain": -1.514748909712376,
       "better_metrics": 12,
       "equal_metrics": 12,
       "missing_scored_metrics": 0,
@@ -1149,7 +1371,7 @@
           "value": 1
         },
         {
-          "audit_rank_contribution": 0.2643703779754883,
+          "audit_rank_contribution": 1.883715647243923e-05,
           "directional_delta": 4,
           "experiment": "ground_constraints_size",
           "metric": "effects",
@@ -1157,7 +1379,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.3126750134762934,
+          "audit_rank_contribution": 3.381056055132021e-05,
           "directional_delta": 50,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -1173,7 +1395,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.34409992873261164,
+          "audit_rank_contribution": 3.761982096244746e-05,
           "directional_delta": 40,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -1197,7 +1419,7 @@
           "value": 1
         },
         {
-          "audit_rank_contribution": 0.1866015645295936,
+          "audit_rank_contribution": 1.3186031374595778e-05,
           "directional_delta": 2,
           "experiment": "nonground_constraints_size",
           "metric": "effects",
@@ -1205,7 +1427,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.30191908506845244,
+          "audit_rank_contribution": 2.659524291701554e-05,
           "directional_delta": 30,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -1221,7 +1443,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.30164173060911154,
+          "audit_rank_contribution": 2.5813460671230913e-05,
           "directional_delta": 17,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -1245,7 +1467,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": -0.5,
+          "audit_rank_contribution": -0.5217758139277826,
           "directional_delta": -1.0,
           "experiment": "constraint_semantics",
           "metric": "invalid_plan_rejected",
@@ -1261,7 +1483,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.02844627935584563,
+          "audit_rank_contribution": 0.00011432757175895578,
           "directional_delta": 3,
           "experiment": "constraint_semantics",
           "metric": "effects",
@@ -1269,7 +1491,7 @@
           "value": 5
         },
         {
-          "audit_rank_contribution": 0.04612788108739188,
+          "audit_rank_contribution": 0.00021092679553569177,
           "directional_delta": 17,
           "experiment": "constraint_semantics",
           "metric": "slice_structural_units",
@@ -1285,7 +1507,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": -0.6666666666666667,
+          "audit_rank_contribution": -0.6957010852370435,
           "directional_delta": -1.0,
           "experiment": "constraint_type_suite",
           "metric": "invalid_reject_rate",
@@ -1301,7 +1523,7 @@
           "value": 8
         },
         {
-          "audit_rank_contribution": 0.06045033221208916,
+          "audit_rank_contribution": 0.06155368118399499,
           "directional_delta": 12,
           "experiment": "constraint_type_suite",
           "metric": "effects",
@@ -1309,7 +1531,7 @@
           "value": 8
         },
         {
-          "audit_rank_contribution": 0.07540206934194148,
+          "audit_rank_contribution": 0.0759677760296218,
           "directional_delta": 67,
           "experiment": "constraint_type_suite",
           "metric": "slice_structural_units",
@@ -1325,7 +1547,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": -0.5,
+          "audit_rank_contribution": -0.5217758139277826,
           "directional_delta": -1.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "invalid_reject_rate",
@@ -1341,7 +1563,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.03737046593418298,
+          "audit_rank_contribution": 0.03802072094580714,
           "directional_delta": 3,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "effects",
@@ -1349,7 +1571,7 @@
           "value": 3
         },
         {
-          "audit_rank_contribution": 0.048021347566098736,
+          "audit_rank_contribution": 0.04848050858056478,
           "directional_delta": 6.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "slice_structural_units",
@@ -1370,7 +1592,7 @@
       "worse_metrics": 0
     },
     "shortcut_known_plan": {
-      "audit_population_rank_gain": 1.4224302768217452,
+      "audit_population_rank_gain": 0.3190253095146891,
       "better_metrics": 15,
       "equal_metrics": 12,
       "missing_scored_metrics": 0,
@@ -1384,7 +1606,7 @@
           "value": 1
         },
         {
-          "audit_rank_contribution": 0.19827778348161623,
+          "audit_rank_contribution": 1.4127867354329424e-05,
           "directional_delta": 3,
           "experiment": "ground_constraints_size",
           "metric": "effects",
@@ -1392,7 +1614,7 @@
           "value": 4
         },
         {
-          "audit_rank_contribution": 0.20011200862482775,
+          "audit_rank_contribution": 2.1638758752844932e-05,
           "directional_delta": 32,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -1408,7 +1630,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.25807494654945873,
+          "audit_rank_contribution": 2.8214865721835593e-05,
           "directional_delta": 30,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -1432,7 +1654,7 @@
           "value": 1
         },
         {
-          "audit_rank_contribution": 0.0933007822647968,
+          "audit_rank_contribution": 6.593015687297889e-06,
           "directional_delta": 1,
           "experiment": "nonground_constraints_size",
           "metric": "effects",
@@ -1440,7 +1662,7 @@
           "value": 4
         },
         {
-          "audit_rank_contribution": 0.12076763402738097,
+          "audit_rank_contribution": 1.0638097166806214e-05,
           "directional_delta": 12,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -1456,7 +1678,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.12420541848610474,
+          "audit_rank_contribution": 1.0629072041095082e-05,
           "directional_delta": 7,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -1488,7 +1710,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.025264557631995567,
+          "audit_rank_contribution": 0.00010164059127675115,
           "directional_delta": 1,
           "experiment": "constraint_semantics",
           "metric": "actions",
@@ -1496,7 +1718,7 @@
           "value": 2
         },
         {
-          "audit_rank_contribution": 0.037928372474460834,
+          "audit_rank_contribution": 0.00015243676234527438,
           "directional_delta": 4,
           "experiment": "constraint_semantics",
           "metric": "effects",
@@ -1504,7 +1726,7 @@
           "value": 4
         },
         {
-          "audit_rank_contribution": 0.05155469062708504,
+          "audit_rank_contribution": 0.00023574171265753783,
           "directional_delta": 19,
           "experiment": "constraint_semantics",
           "metric": "slice_structural_units",
@@ -1528,7 +1750,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.037777713001233525,
+          "audit_rank_contribution": 0.03899254862364782,
           "directional_delta": 3,
           "experiment": "constraint_type_suite",
           "metric": "actions",
@@ -1536,7 +1758,7 @@
           "value": 5
         },
         {
-          "audit_rank_contribution": 0.05037527684340764,
+          "audit_rank_contribution": 0.05129473431999582,
           "directional_delta": 10,
           "experiment": "constraint_type_suite",
           "metric": "effects",
@@ -1544,7 +1766,7 @@
           "value": 10
         },
         {
-          "audit_rank_contribution": 0.07090045326182556,
+          "audit_rank_contribution": 0.07143238641591304,
           "directional_delta": 63,
           "experiment": "constraint_type_suite",
           "metric": "slice_structural_units",
@@ -1568,7 +1790,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.04803844614152614,
+          "audit_rank_contribution": 0.04946909147372685,
           "directional_delta": 2,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "actions",
@@ -1576,7 +1798,7 @@
           "value": 1
         },
         {
-          "audit_rank_contribution": 0.04982728791224398,
+          "audit_rank_contribution": 0.05069429459440953,
           "directional_delta": 4,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "effects",
@@ -1584,7 +1806,7 @@
           "value": 2
         },
         {
-          "audit_rank_contribution": 0.056024905493781856,
+          "audit_rank_contribution": 0.05656059334399225,
           "directional_delta": 7.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "slice_structural_units",
@@ -1600,13 +1822,13 @@
       "rank": null
     },
     "shortcut_registration": {
-      "audit_population_rank_gain": 4.517524644980865,
+      "audit_population_rank_gain": 0.00036735794279898386,
       "better_metrics": 10,
       "equal_metrics": 2,
       "missing_scored_metrics": 15,
       "terms": [
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "ground_constraints_size",
           "metric": "actions",
@@ -1614,7 +1836,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.4626481614571045,
+          "audit_rank_contribution": 3.2965023826768656e-05,
           "directional_delta": 7,
           "experiment": "ground_constraints_size",
           "metric": "effects",
@@ -1622,7 +1844,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.3376890145543968,
+          "audit_rank_contribution": 3.651540539542582e-05,
           "directional_delta": 54,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -1638,7 +1860,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.39571491804250336,
+          "audit_rank_contribution": 4.3262794106814574e-05,
           "directional_delta": 46,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -1646,7 +1868,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "ground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -1654,7 +1876,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "nonground_constraints_size",
           "metric": "actions",
@@ -1662,7 +1884,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.466503911323984,
+          "audit_rank_contribution": 3.296507843648944e-05,
           "directional_delta": 5,
           "experiment": "nonground_constraints_size",
           "metric": "effects",
@@ -1670,7 +1892,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.34217496307757944,
+          "audit_rank_contribution": 3.014127530595094e-05,
           "directional_delta": 34,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -1686,7 +1908,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.40810351788291555,
+          "audit_rank_contribution": 3.492409384931241e-05,
           "directional_delta": 23,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -1694,7 +1916,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "nonground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -1706,13 +1928,13 @@
       "worse_metrics": 0
     },
     "shortcut_reject_everything": {
-      "audit_population_rank_gain": 1.850247889634669,
+      "audit_population_rank_gain": -3.0233638511761645,
       "better_metrics": 19,
       "equal_metrics": 3,
       "missing_scored_metrics": 0,
       "terms": [
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "ground_constraints_size",
           "metric": "actions",
@@ -1720,7 +1942,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.4626481614571045,
+          "audit_rank_contribution": 3.2965023826768656e-05,
           "directional_delta": 7,
           "experiment": "ground_constraints_size",
           "metric": "effects",
@@ -1728,7 +1950,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.3376890145543968,
+          "audit_rank_contribution": 3.651540539542582e-05,
           "directional_delta": 54,
           "experiment": "ground_constraints_size",
           "metric": "formula_atoms",
@@ -1736,7 +1958,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": -0.8696263565463044,
+          "audit_rank_contribution": -0.9045340337332909,
           "directional_delta": -1.0,
           "experiment": "ground_constraints_size",
           "metric": "plan_valid_rate",
@@ -1744,7 +1966,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": 0.39571491804250336,
+          "audit_rank_contribution": 4.3262794106814574e-05,
           "directional_delta": 46,
           "experiment": "ground_constraints_size",
           "metric": "slice_structural_units",
@@ -1752,7 +1974,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "ground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -1760,7 +1982,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": 0.5613413993878117,
+          "audit_rank_contribution": 4.120645042943143e-05,
           "directional_delta": 1,
           "experiment": "nonground_constraints_size",
           "metric": "actions",
@@ -1768,7 +1990,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.466503911323984,
+          "audit_rank_contribution": 3.296507843648944e-05,
           "directional_delta": 5,
           "experiment": "nonground_constraints_size",
           "metric": "effects",
@@ -1776,7 +1998,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.34217496307757944,
+          "audit_rank_contribution": 3.014127530595094e-05,
           "directional_delta": 34,
           "experiment": "nonground_constraints_size",
           "metric": "formula_atoms",
@@ -1784,7 +2006,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": -0.8696263565463044,
+          "audit_rank_contribution": -0.9045340337332909,
           "directional_delta": -1.0,
           "experiment": "nonground_constraints_size",
           "metric": "plan_valid_rate",
@@ -1792,7 +2014,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": 0.40810351788291555,
+          "audit_rank_contribution": 3.492409384931241e-05,
           "directional_delta": 23,
           "experiment": "nonground_constraints_size",
           "metric": "slice_structural_units",
@@ -1800,7 +2022,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.49100367993337907,
+          "audit_rank_contribution": 3.708568550967956e-05,
           "directional_delta": 4.555393586005831e-05,
           "experiment": "nonground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -1808,7 +2030,7 @@
           "value": 0.0
         },
         {
-          "audit_rank_contribution": -0.5,
+          "audit_rank_contribution": -0.5217758139277826,
           "directional_delta": -1.0,
           "experiment": "constraint_semantics",
           "metric": "valid_plan_accepted",
@@ -1824,7 +2046,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.07579367289598671,
+          "audit_rank_contribution": 0.00030492177383025345,
           "directional_delta": 3,
           "experiment": "constraint_semantics",
           "metric": "actions",
@@ -1832,7 +2054,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07585674494892167,
+          "audit_rank_contribution": 0.00030487352469054876,
           "directional_delta": 8,
           "experiment": "constraint_semantics",
           "metric": "effects",
@@ -1840,7 +2062,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07326192878585769,
+          "audit_rank_contribution": 0.0003350013811449222,
           "directional_delta": 27,
           "experiment": "constraint_semantics",
           "metric": "slice_structural_units",
@@ -1848,7 +2070,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": -0.6666666666666667,
+          "audit_rank_contribution": -0.6957010852370435,
           "directional_delta": -1.0,
           "experiment": "constraint_type_suite",
           "metric": "valid_accept_rate",
@@ -1864,7 +2086,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.1007405680032894,
+          "audit_rank_contribution": 0.10398012966306086,
           "directional_delta": 8,
           "experiment": "constraint_type_suite",
           "metric": "actions",
@@ -1872,7 +2094,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.10075055368681528,
+          "audit_rank_contribution": 0.10258946863999165,
           "directional_delta": 20,
           "experiment": "constraint_type_suite",
           "metric": "effects",
@@ -1880,7 +2102,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.09340853366240512,
+          "audit_rank_contribution": 0.09410933448445687,
           "directional_delta": 83,
           "experiment": "constraint_type_suite",
           "metric": "slice_structural_units",
@@ -1888,7 +2110,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": -0.5,
+          "audit_rank_contribution": -0.5217758139277826,
           "directional_delta": -1.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "valid_accept_rate",
@@ -1904,7 +2126,7 @@
           "value": 1.0
         },
         {
-          "audit_rank_contribution": 0.0720576692122892,
+          "audit_rank_contribution": 0.07420363721059028,
           "directional_delta": 3,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "actions",
@@ -1912,7 +2134,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.07474093186836596,
+          "audit_rank_contribution": 0.07604144189161428,
           "directional_delta": 6,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "effects",
@@ -1920,7 +2142,7 @@
           "value": 0
         },
         {
-          "audit_rank_contribution": 0.0720320213491481,
+          "audit_rank_contribution": 0.07272076287084718,
           "directional_delta": 9.0,
           "experiment": "initial_monitoring_edge_cases",
           "metric": "slice_structural_units",
@@ -1932,7 +2154,7 @@
       "worse_metrics": 5
     },
     "shortcut_replace_baseline": {
-      "audit_population_rank_gain": 0.7664371042288074,
+      "audit_population_rank_gain": 5.78892716531894e-05,
       "better_metrics": 2,
       "equal_metrics": 25,
       "missing_scored_metrics": 0,
@@ -1978,7 +2200,7 @@
           "value": 46
         },
         {
-          "audit_rank_contribution": 0.3832185521144037,
+          "audit_rank_contribution": 2.89446358265947e-05,
           "directional_delta": 3.555393586005831e-05,
           "experiment": "ground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -2026,7 +2248,7 @@
           "value": 23
         },
         {
-          "audit_rank_contribution": 0.3832185521144037,
+          "audit_rank_contribution": 2.89446358265947e-05,
           "directional_delta": 3.555393586005831e-05,
           "experiment": "nonground_constraints_size",
           "metric": "action_ratio_vs_ground",
@@ -2391,6 +2613,7 @@
     "reference_seed_2",
     "better_boolean_optimizer",
     "shortcut_drop_constraints",
+    "bruteforce_ground",
     "shortcut_known_plan",
     "shortcut_constant_empty",
     "shortcut_reject_everything",
@@ -2414,6 +2637,16 @@
     "initial_monitoring_edge_cases/valid_accept_rate=1",
     "initial_monitoring_edge_cases/invalid_reject_rate=1"
   ],
+  "reference_comparators": {
+    "ground_tcore": {
+      "audit_population_rank_gain": -7.5489249603194715,
+      "two_attempt_rank_gain": -4.179999999999999
+    },
+    "lcc": {
+      "audit_population_rank_gain": -0.2053814785978202,
+      "two_attempt_rank_gain": -1.8400000000000005
+    }
+  },
   "reference_seed_spread": {
     "constraint_semantics/actions": {
       "max": 3,
@@ -2552,32 +2785,32 @@
     }
   },
   "sigmas": {
-    "constraint_semantics/actions": 1.1874342087037917,
-    "constraint_semantics/effects": 3.163858403911275,
-    "constraint_semantics/invalid_plan_rejected": 0.3,
-    "constraint_semantics/slice_structural_units": 11.056219968868202,
-    "constraint_semantics/valid_plan_accepted": 0.3,
-    "constraint_type_suite/actions": 3.176476034853718,
-    "constraint_type_suite/effects": 7.940403012442126,
-    "constraint_type_suite/invalid_reject_rate": 0.3,
-    "constraint_type_suite/slice_structural_units": 35.54279111156016,
-    "constraint_type_suite/valid_accept_rate": 0.3,
-    "ground_constraints_size/action_ratio_vs_ground": 2.087486507209849e-05,
-    "ground_constraints_size/actions": 0.4453617714151233,
-    "ground_constraints_size/effects": 3.0260576321987704,
-    "ground_constraints_size/formula_atoms": 23.986566488366492,
-    "ground_constraints_size/plan_valid_rate": 0.28747978728803447,
-    "ground_constraints_size/slice_structural_units": 20.342927782003297,
-    "initial_monitoring_edge_cases/actions": 1.2489995996796797,
-    "initial_monitoring_edge_cases/effects": 2.4083189157584592,
-    "initial_monitoring_edge_cases/invalid_reject_rate": 0.3,
-    "initial_monitoring_edge_cases/slice_structural_units": 3.7483329627982624,
-    "initial_monitoring_edge_cases/valid_accept_rate": 0.3,
-    "nonground_constraints_size/action_ratio_vs_ground": 2.087486507209849e-05,
-    "nonground_constraints_size/actions": 0.4453617714151233,
-    "nonground_constraints_size/effects": 2.143604749554836,
-    "nonground_constraints_size/formula_atoms": 14.904655659577598,
-    "nonground_constraints_size/plan_valid_rate": 0.28747978728803447,
-    "nonground_constraints_size/slice_structural_units": 9.862693712811286
+    "constraint_semantics/actions": 295.1576690292442,
+    "constraint_semantics/effects": 787.2116814459492,
+    "constraint_semantics/invalid_plan_rejected": 0.28747978728803447,
+    "constraint_semantics/slice_structural_units": 2417.9004791911366,
+    "constraint_semantics/valid_plan_accepted": 0.28747978728803447,
+    "constraint_type_suite/actions": 3.0775110690565013,
+    "constraint_type_suite/effects": 7.79807138691176,
+    "constraint_type_suite/invalid_reject_rate": 0.28747978728803447,
+    "constraint_type_suite/slice_structural_units": 35.278115802086916,
+    "constraint_type_suite/valid_accept_rate": 0.28747978728803447,
+    "ground_constraints_size/action_ratio_vs_ground": 0.276377136559547,
+    "ground_constraints_size/actions": 6067.011290577923,
+    "ground_constraints_size/effects": 42469.25490959771,
+    "ground_constraints_size/formula_atoms": 221824.1838556902,
+    "ground_constraints_size/plan_valid_rate": 0.2763853991962833,
+    "ground_constraints_size/slice_structural_units": 186072.12423970547,
+    "initial_monitoring_edge_cases/actions": 1.2128785512842122,
+    "initial_monitoring_edge_cases/effects": 2.3671302847802793,
+    "initial_monitoring_edge_cases/invalid_reject_rate": 0.28747978728803447,
+    "initial_monitoring_edge_cases/slice_structural_units": 3.712832337574934,
+    "initial_monitoring_edge_cases/valid_accept_rate": 0.28747978728803447,
+    "nonground_constraints_size/action_ratio_vs_ground": 0.276377136559547,
+    "nonground_constraints_size/actions": 6067.011290577923,
+    "nonground_constraints_size/effects": 30335.131825231394,
+    "nonground_constraints_size/formula_atoms": 169203.19224160636,
+    "nonground_constraints_size/plan_valid_rate": 0.2763853991962833,
+    "nonground_constraints_size/slice_structural_units": 115249.94799769856
   }
 }
