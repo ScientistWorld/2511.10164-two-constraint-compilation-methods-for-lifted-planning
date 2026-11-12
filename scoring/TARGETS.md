@@ -1,36 +1,23 @@
 # Evaluation Targets
 
-## Primary: ground_constraints_size
+All experiments share the same metrics (definitions in `briefing/evaluation.md`). Primary metric of every experiment: `effects_vs_ground_log10` (lower is better).
 
-Tests whether a compiler keeps the constraint-free planning specification compact on tasks with ground constraints.
-- **Primary metric**: `slice_structural_units` (lower is better; local generated-benchmark proxy, not a paper-reported table value)
-- **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
-- **Semantic gate**: `plan_valid_rate` must remain 1.0
+## Constraint (gate): exact plan preservation
 
-## Primary: nonground_constraints_size
+`semantic_agreement` must be 1.0 in every experiment. Any disagreement on any task, or a crash, timeout, oversized or malformed compiled task, fails the run: every metric of every experiment gets its worst value.
 
-Tests whether compactness is maintained when constraints contain quantifiers.
-- **Primary metric**: `slice_structural_units` (lower is better; local generated-benchmark proxy, not a paper-reported table value)
-- **Compactness metrics**: `actions`, `effects`, `formula_atoms`, and `action_ratio_vs_ground` (lower is better)
-- **Semantic gate**: `plan_valid_rate` must remain 1.0
+## Benefit: succinctness
 
-## Constraint: constraint_semantics
+| experiment | metrics | reference (LiftedTCORE, held-out test) |
+|---|---|---|
+| ground_constraints_size | effects / actions vs ground (log10), formula nodes, largest formula | -6.95 / -6.89 / 2.32 / 1.45 |
+| nonground_constraints_size | same | -7.13 / -6.83 / 2.48 / 1.51 |
+| many_constraints_size | same | -5.94 / -6.36 / 3.38 / 2.39 |
+| constraint_type_suite | same, exhaustive check | -0.88 / -0.94 / 2.06 / 1.36 |
+| initial_monitoring_edge_cases | same, exhaustive check | -0.85 / -0.93 / 2.12 / 1.43 |
 
-Tests whether the transformed task preserves trajectory-constraint meaning.
-- **Metric**: `valid_plan_accepted` and `invalid_plan_rejected` (higher is better)
+Paper reference points (Table 3, IPC scale, TCORE grounded by reachability): LiftedTCORE 7 actions / 58-60 effects, LCC 8 / 63-67, TCORE 21K / 95-96K; largest introduced formula (non-ground) 26 vs 18 atoms. They are kept under `_paper_reported` in `reference.json`; the gym's comparator is the full grounding, so gym ratios are 3-4 orders of magnitude smaller.
 
-## Constraint: constraint_type_suite
+## Not scored
 
-Tests semantic preservation across every supported qualitative constraint family.
-- **Metric**: `valid_accept_rate` and `invalid_reject_rate` (higher is better)
-- **Coverage metric**: `constraint_types_tested` should remain at 5
-
-## Constraint: initial_monitoring_edge_cases
-
-Tests semantic preservation when a required condition is already true in the initial state.
-- **Metric**: `valid_accept_rate` and `invalid_reject_rate` (higher is better)
-- **Coverage metric**: `edge_cases_tested` should remain at 2
-
-## Audit-Only Metrics
-
-`compile_seconds` may be reported for traceability, but it has zero scoring weight because wall-clock timing is not portable across hardware.
+Compilation time (hardware dependent) and planner coverage/expansions (the paper's LAMA experiments) are not measured.

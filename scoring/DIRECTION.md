@@ -2,12 +2,12 @@
 
 ## Research Problem
 
-The research problem is constraint compilation for lifted planning: transforming planning tasks with qualitative trajectory constraints into constraint-free tasks while preserving valid plans and controlling specification growth.
+Constraint compilation for lifted planning: transforming planning tasks with qualitative trajectory constraints into constraint-free lifted tasks with exactly the same valid plans, while controlling the size of the compiled specification.
 
 ## Core Contribution Scope
 
-Future work should improve lifted or otherwise structure-preserving constraint compilation for PDDL-style planning. Improvements should target compactness, semantic preservation, or planner-friendliness of the compiled specification.
+Improve lifted (or otherwise grounding-free) constraint compilation: fewer added conditional effects, smaller and simpler monitoring formulas, better scaling with the number of constraints, exploiting what is provably known about the reachable states of the compiled task, sharing monitoring between constraints, or choosing encodings per constraint -- always exact.
 
 ## Out of Bounds
 
-Replacing the task with direct trajectory search, learning a policy, or using a planner that natively enforces the constraints without producing a constraint-free compiled task is outside this benchmark's direction. Dropping support for the listed trajectory constraint types or quantified formulas is also out of scope.
+Grounding the task; returning tasks that are only correct on sampled trajectories; solving the planning task inside the compiler; reading the evaluator's held-out instances; dropping support for any constraint family or for quantified formulas.

@@ -2,21 +2,23 @@
 
 ## Problem Representation
 
-Use the provided symbolic planning task format and generated benchmark settings. Do not replace the benchmark with an easier task family or remove quantified constraints.
+A method is a compiler registered in `outputs/compilers/<name>.json`; it receives one constrained task (JSON) per call and must return a constraint-free task in the same format. It must work for any task in the format: no hard-coding of instances, seeds or generator internals.
 
 ## Evaluation
 
-Use `scripts/evaluate.sh` and write the same `outputs/method_results.json` artifact format. Evaluation must read method outputs; it must not recompute the submitted method internally.
+Use `scripts/evaluate_train.sh` / `scripts/evaluate.sh` for development. Do not read, import or modify anything under `eval/test/`, and do not have the compiler read evaluator files at run time. Do not edit `eval/` or the scoring files to change how compiled tasks are checked or measured.
+
+## Exactness
+
+The compiled task must accept exactly the plans the constrained task accepts (original action names and arities, optional parameterless auxiliary actions). Shrinking a compiled task by dropping monitoring that is only "rarely" needed, or by testing removals against sampled trajectories, is not an improvement: it must be exact for every plan, not only for the plans the evaluator happens to replay.
 
 ## Resources
 
-Do not improve scores by reducing object counts, omitting high-arity actions, or dropping the ground baseline comparison. Changes must preserve the setting that exposes grounding growth.
+Per task: 30 s, 4 GB, 32 MB of output. Compilers must not ground the task's high-arity actions over all objects.
 
 ## Compliance Checklist
 
-- [ ] Uses the provided benchmark task families and constraint types
-- [ ] Reports all metrics required by `scoring/reference.json`
-- [ ] Keeps semantic-preservation checks enabled
-- [ ] Keeps all five constraint-family checks in `constraint_type_suite`
-- [ ] Keeps initial-state edge-case checks in `initial_monitoring_edge_cases`
-- [ ] Does not edit `eval/` to import from `method/`
+- [ ] Registers a compiler command; does not write score files itself
+- [ ] Keeps the original action names and parameter counts
+- [ ] Exact on every constraint family, ground and quantified, including formulas true in the initial state
+- [ ] Never touches `eval/test/`

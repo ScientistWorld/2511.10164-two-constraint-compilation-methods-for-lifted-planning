@@ -1,5 +1,16 @@
 # Progress
 
+## Current state (hardening iteration)
+
+See `HARDENING.md` for the full report and `briefing/evaluation.md` for the interface. In short: a method is a compiler command (`outputs/compilers/<name>.json`); `eval/train/` and `eval/test/` generate the constrained tasks, run every registered compiler, gate on exact plan preservation and measure compiled size against the full grounding. The reference (LiftedTCORE with the paper's omission of unchanged regressions) and LCC pass every gate on all train and held-out tasks; ground-first TCORE cannot compile tasks of this scale.
+
+Remaining deviations from the paper: synthetic random lifted domains instead of IPC-2023, no LAMA planning experiments (coverage, expansions, runtime), compile time not scored.
+
+---
+
+# Earlier progress log
+
+
 ## What Works
 
 Implemented a self-contained symbolic planning reproduction of the paper's two lifted compilers:

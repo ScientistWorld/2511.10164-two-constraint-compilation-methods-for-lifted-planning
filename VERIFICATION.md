@@ -1,28 +1,8 @@
 # Verification Report
 
-## Initial Assessment
+Superseded by the hardening iteration; see `HARDENING.md`.
 
-The workspace started with `core_claim` recorded in `MILESTONES.md`. The implementation is a real symbolic reproduction of the paper's lifted constraint compilers, not a surrogate: method code constructs compiled planning tasks, and evaluation code replays serialized compiled-task artifacts without importing from `method/`.
-
-The claimed milestone is justified. The final CPU validation job regenerated artifacts with the 28-object size setting, ran the full reproduction flow, and passed `python validate.py --compare`.
-
-## Issues Found
-
-- Minor: generated `jobs/` logs and `trajectory/` session files were tracked despite being excluded by `.gitignore`.
-- Minor: validator paper-consistency checks initially treated `slice_structural_units` as a paper-reported size value, but it is a local generated-benchmark proxy.
-
-## Fixes Applied
-
-- Removed tracked generated `jobs/` and `trajectory/` files from version control so they stay ignored.
-- Verified `scripts/run.sh` regenerates the reproduction artifacts and fails unless both size experiments produce at least 20K ground-first baseline actions.
-- Reviewed job `50dd2235-44c`: it completed with exit code 0, produced 21,952 ground-first actions for both size experiments, regenerated train/test scores, and passed all validation checks.
-- Documented the `slice_structural_units` proxy in `reference.json` and calibrated its ground-first reference values to the local 28-object benchmark while preserving the paper-reported action/effect counts.
-
-## Final Judgment
-
-The workspace is ready to serve as a research gym for the reproduced core claim. Improve-mode agents can build on the implemented compiler code and compare against `scores.json`; from-scratch agents can use the method-agnostic problem statement, artifact format, and evaluator without importing from `method/`. Higher milestones would require the full IPC/LAMA evaluation stack or broader reproduced paper tables.
-
-- Milestone: core_claim
-- Ready for gym use: yes
-- Confidence: medium
-- Key limitation: generated symbolic benchmarks rather than the full IPC/LAMA suite
+* Reproduction: LiftedTCORE (Algorithm 1, lifted gamma/regression with unification against forall effects, omission of R(phi,a)=phi updates) and LCC (Algorithm 2, shared monitoring + `fin`) in `method/planning.py`.
+* Correctness: both compilers pass the evaluator's semantic gate on every train and held-out task (hidden probes on 40 large tasks, complete product exploration on 40 small tasks per slice).
+* Paper direction: both lifted compilers are 6-7 orders of magnitude smaller than full grounding; LiftedTCORE adds fewer effects than LCC, LCC has smaller largest formulas (paper: 58 vs 63 effects; 26 vs 18 largest-formula atoms).
+* Jobs: `7214d826-e8c` (hardening audit + reference runs, exit 0).

@@ -1,3 +1,5 @@
+> **Historical.** This folder (except `redteam/hardening/`) audits the *previous* gym design (method-written `outputs/method_results.json` artifacts). That design was replaced in the hardening iteration; these trial scripts depend on removed files and are kept as evidence only. The current audit lives in `redteam/hardening/` and is reported in `HARDENING.md`.
+
 This audit batches trials into CPU jobs. `python3 redteam/run_all.py` runs every individual
 `redteam/<name>/run.sh`, then computes `rank_report.json` from actual hidden-test
 output. Heavy work must run through the scheduler, not on the login node.

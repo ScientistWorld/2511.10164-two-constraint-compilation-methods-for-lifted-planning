@@ -39,5 +39,10 @@
 - The job regenerated `scoring/scores.json` at the 28-object size setting and confirmed both size benchmarks produce 21,952 ground-first baseline actions.
 - Train/test scoring and `python validate.py --compare` passed inside the compute container.
 
+### [2026-11-12] - core_claim (hardening iteration)
+- Restored the paper's Section 3.2 omission of R^L(phi,a)=phi updates in LiftedTCORE; constraint variables renamed apart.
+- Replaced the artifact-based evaluator with evaluator-owned generated tasks (held-out ones generated at test time), a compiler-command interface, an exact-plan-preservation gate (hidden probes + complete product exploration), worst values for failed/missing runs, and analytic ground-first comparators.
+- Added the many-constraints experiment (paper's stated limitation). Job 7214d826-e8c: reference passes every gate; paper direction reproduced (lifted >> grounded; LiftedTCORE fewer effects, LCC smaller formulas); all shortcuts fail; better variant scores higher, weaker lower. See HARDENING.md.
+
 ## Stop Justification
 - Completed at milestone `core_claim`.

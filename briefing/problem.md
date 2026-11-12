@@ -2,14 +2,15 @@
 
 ## Research Question
 
-How can qualitative PDDL state-trajectory constraints be removed from a planning task while preserving exactly the same valid plans and avoiding explosive growth in the planning specification?
+How can qualitative PDDL state-trajectory constraints be removed from a lifted planning task so that the resulting constraint-free task has exactly the same valid plans, while the compiled specification stays small even when actions have high arity and there are many objects?
 
-The constraints considered here are `always`, `sometime`, `at_most_once`, `sometime_before`, and `sometime_after`, including formulas with quantifiers. A solution must transform constrained planning tasks into constraint-free tasks that ordinary planners can consume.
+The constraint families are `always(phi)`, `sometime(phi)`, `at_most_once(phi)`, `sometime_before(phi, psi)` and `sometime_after(phi, psi)` (PDDL3 semantics over the whole state trajectory, initial state included); `phi` and `psi` may contain quantifiers. A solution is a compiler: constrained task in, constraint-free task out, consumable by an ordinary planner that knows nothing about trajectory constraints.
 
 ## Why It Matters
 
-Many planners do not natively support trajectory constraints. A good transformation lets those planners handle safety requirements, intermediate goals, and ordering requirements without first generating an enormous grounded action set.
+Many planners do not support trajectory constraints. Compiling them away lets standard planners handle safety requirements, intermediate goals and ordering requirements. If the compiler must first ground the task, high-arity actions over many objects make the compiled task explode (millions of ground actions), so a useful compiler must work on the lifted representation.
 
 ## Success Criteria
 
-A successful system preserves constraint semantics, accepts plans that satisfy the original constrained task, rejects plans that violate the original constraints, and keeps the compiled specification compact as object counts and action arities grow.
+* **Exactness (hard constraint):** every plan valid for the constrained task is valid for the compiled task and vice versa. A compiler that accepts a violating plan, rejects a valid one, fails, or produces a malformed task fails the benchmark outright.
+* **Succinctness:** among exact compilers, fewer conditional effects and actions, and smaller (total and largest) precondition/effect-condition formulas, are better, including on tasks with many constraints.
