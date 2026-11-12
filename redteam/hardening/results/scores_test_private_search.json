@@ -1,0 +1,731 @@
+{
+  "_metadata": {
+    "experiments": {
+      "constraint_type_suite": {
+        "constraint_kinds": {
+          "always": 9,
+          "at_most_once": 8,
+          "sometime": 12,
+          "sometime_after": 11,
+          "sometime_before": 10
+        },
+        "instances": 24,
+        "mean_constraints": 2.0833333333333335,
+        "mean_ground_actions": 31.5,
+        "mean_objects": 3.4166666666666665,
+        "mode": "exhaustive",
+        "quantified_constraints": 28
+      },
+      "ground_constraints_size": {
+        "constraint_kinds": {
+          "always": 19,
+          "at_most_once": 6,
+          "sometime": 5,
+          "sometime_after": 17,
+          "sometime_before": 17
+        },
+        "instances": 16,
+        "mean_constraints": 4.0,
+        "mean_ground_actions": 44733251.0625,
+        "mean_invalid_probes": 12.1875,
+        "mean_objects": 28.5625,
+        "mean_probes": 23.1875,
+        "mode": "probes",
+        "quantified_constraints": 0
+      },
+      "initial_monitoring_edge_cases": {
+        "constraint_kinds": {
+          "always": 0,
+          "at_most_once": 4,
+          "sometime": 6,
+          "sometime_after": 13,
+          "sometime_before": 1
+        },
+        "instances": 16,
+        "mean_constraints": 1.5,
+        "mean_ground_actions": 32.25,
+        "mean_objects": 3.375,
+        "mode": "exhaustive",
+        "quantified_constraints": 15
+      },
+      "many_constraints_size": {
+        "constraint_kinds": {
+          "always": 71,
+          "at_most_once": 33,
+          "sometime": 32,
+          "sometime_after": 73,
+          "sometime_before": 71
+        },
+        "instances": 8,
+        "mean_constraints": 35.0,
+        "mean_ground_actions": 13869897.125,
+        "mean_invalid_probes": 40.25,
+        "mean_objects": 22.625,
+        "mean_probes": 51.25,
+        "mode": "probes",
+        "quantified_constraints": 142
+      },
+      "nonground_constraints_size": {
+        "constraint_kinds": {
+          "always": 15,
+          "at_most_once": 8,
+          "sometime": 5,
+          "sometime_after": 18,
+          "sometime_before": 18
+        },
+        "instances": 16,
+        "mean_constraints": 4.0,
+        "mean_ground_actions": 43714133.375,
+        "mean_invalid_probes": 11.9375,
+        "mean_objects": 28.125,
+        "mean_probes": 22.9375,
+        "mode": "probes",
+        "quantified_constraints": 64
+      }
+    },
+    "methods": {
+      "lifted_tcore": {
+        "diagnostics": {
+          "constraint_type_suite": {
+            "_actions": 3.5416666666666665,
+            "_effects": 16.041666666666668,
+            "_formula_nodes": 138.58333333333334,
+            "_max_formula_nodes": 24.916666666666668,
+            "checks": 10863,
+            "per_instance": [
+              [
+                -0.477121,
+                -0.69897,
+                2.089905,
+                1.322219
+              ],
+              [
+                -1.179296,
+                -1.20412,
+                2.222716,
+                1.568202
+              ],
+              [
+                -0.764363,
+                -0.778151,
+                2.178977,
+                1.447158
+              ],
+              [
+                -0.716003,
+                -0.778151,
+                2.155336,
+                1.361728
+              ],
+              [
+                -0.639849,
+                -0.778151,
+                2.209515,
+                1.342423
+              ],
+              [
+                -1.311754,
+                -1.079181,
+                1.579784,
+                0.90309
+              ],
+              [
+                -1.0,
+                -1.113943,
+                1.812913,
+                1.322219
+              ],
+              [
+                -0.732394,
+                -0.954243,
+                2.326336,
+                1.39794
+              ],
+              [
+                -1.329059,
+                -1.20412,
+                1.778151,
+                1.230449
+              ],
+              [
+                -0.556303,
+                -0.778151,
+                2.222716,
+                1.322219
+              ],
+              [
+                -0.916454,
+                -0.778151,
+                1.845098,
+                1.255273
+              ],
+              [
+                -0.798355,
+                -1.079181,
+                2.136721,
+                1.447158
+              ],
+              [
+                -0.674932,
+                -0.875061,
+                2.545307,
+                1.579784
+              ],
+              [
+                -0.896251,
+                -0.954243,
+                2.285557,
+                1.716003
+              ],
+              [
+                -0.714034,
+                -0.90309,
+                2.089905,
+                1.477121
+              ],
+              [
+                -1.264818,
+                -1.079181,
+                1.70757,
+                1.322219
+              ],
+              [
+                -1.170262,
+                -1.079181,
+                1.643453,
+                1.041393
+              ],
+              [
+                -0.929419,
+                -0.845098,
+                1.716003,
+                1.30103
+              ],
+              [
+                -1.087614,
+                -1.0,
+                2.318063,
+                1.672098
+              ],
+              [
+                -0.942599,
+                -1.0,
+                2.143015,
+                1.255273
+              ],
+              [
+                -1.092545,
+                -0.954243,
+                1.556303,
+                1.0
+              ],
+              [
+                -0.660766,
+                -0.875061,
+                2.294466,
+                1.477121
+              ],
+              [
+                -0.667936,
+                -0.875061,
+                2.49276,
+                1.518514
+              ],
+              [
+                -0.634729,
+                -0.778151,
+                2.100371,
+                1.278754
+              ]
+            ],
+            "truncated_explorations": 0
+          },
+          "ground_constraints_size": {
+            "_actions": 4.9375,
+            "_effects": 25.5,
+            "_formula_nodes": 246.75,
+            "_max_formula_nodes": 31.5625,
+            "checks": 371,
+            "per_instance": [
+              [
+                -7.304042,
+                -7.400953,
+                1.653213,
+                0.845098
+              ],
+              [
+                -6.20974,
+                -6.43329,
+                2.552668,
+                1.591065
+              ],
+              [
+                -6.346768,
+                -6.628277,
+                2.489958,
+                1.633468
+              ],
+              [
+                -6.831829,
+                -7.074867,
+                2.161368,
+                1.322219
+              ],
+              [
+                -6.420313,
+                -6.642017,
+                2.274158,
+                1.462398
+              ],
+              [
+                -7.606586,
+                -6.824939,
+                2.227887,
+                1.431364
+              ],
+              [
+                -6.453852,
+                -6.767151,
+                2.555094,
+                1.80618
+              ],
+              [
+                -6.730648,
+                -7.110858,
+                2.501059,
+                1.491362
+              ],
+              [
+                -7.871144,
+                -7.160433,
+                2.294466,
+                1.380211
+              ],
+              [
+                -6.387678,
+                -6.748486,
+                2.209515,
+                1.491362
+              ],
+              [
+                -7.77816,
+                -7.163924,
+                1.924279,
+                1.255273
+              ],
+              [
+                -6.254855,
+                -6.60935,
+                2.556303,
+                1.579784
+              ],
+              [
+                -7.216974,
+                -6.512968,
+                2.451786,
+                1.431364
+              ],
+              [
+                -6.940043,
+                -7.163924,
+                2.466868,
+                1.623249
+              ],
+              [
+                -7.275302,
+                -6.914077,
+                2.739572,
+                1.690196
+              ],
+              [
+                -7.633378,
+                -7.059327,
+                2.117271,
+                1.176091
+              ]
+            ],
+            "truncated_explorations": 0
+          },
+          "initial_monitoring_edge_cases": {
+            "_actions": 3.6875,
+            "_effects": 17.6875,
+            "_formula_nodes": 147.6875,
+            "_max_formula_nodes": 29.0625,
+            "checks": 8128,
+            "per_instance": [
+              [
+                -0.875061,
+                -1.0,
+                2.222716,
+                1.568202
+              ],
+              [
+                -0.865301,
+                -0.90309,
+                1.612784,
+                1.113943
+              ],
+              [
+                -0.849844,
+                -1.0,
+                2.338456,
+                1.414973
+              ],
+              [
+                -0.723794,
+                -0.875061,
+                2.170262,
+                1.623249
+              ],
+              [
+                -0.924279,
+                -0.875061,
+                2.212188,
+                1.50515
+              ],
+              [
+                -0.85158,
+                -0.954243,
+                2.444045,
+                1.770852
+              ],
+              [
+                -1.113943,
+                -1.20412,
+                2.20412,
+                1.60206
+              ],
+              [
+                -0.535113,
+                -0.778151,
+                1.959041,
+                1.255273
+              ],
+              [
+                -0.989005,
+                -0.954243,
+                2.093422,
+                1.477121
+              ],
+              [
+                -1.181844,
+                -1.079181,
+                1.579784,
+                1.113943
+              ],
+              [
+                -0.625184,
+                -0.778151,
+                2.342423,
+                1.322219
+              ],
+              [
+                -0.69383,
+                -0.778151,
+                2.0,
+                1.342423
+              ],
+              [
+                -1.353882,
+                -1.20412,
+                2.167317,
+                1.591065
+              ],
+              [
+                -0.716003,
+                -0.778151,
+                2.100371,
+                1.342423
+              ],
+              [
+                -0.686381,
+                -0.778151,
+                2.09691,
+                1.361728
+              ],
+              [
+                -0.676694,
+                -0.875061,
+                2.33646,
+                1.447158
+              ]
+            ],
+            "truncated_explorations": 0
+          },
+          "many_constraints_size": {
+            "_actions": 5.375,
+            "_effects": 147.25,
+            "_formula_nodes": 2502.875,
+            "_max_formula_nodes": 256.5,
+            "checks": 410,
+            "per_instance": [
+              [
+                -5.700714,
+                -6.04927,
+                3.435048,
+                2.313867
+              ],
+              [
+                -5.374688,
+                -6.310582,
+                3.371806,
+                2.542825
+              ],
+              [
+                -5.890363,
+                -6.134538,
+                3.477411,
+                2.511883
+              ],
+              [
+                -5.561526,
+                -6.243546,
+                3.099335,
+                2.143015
+              ],
+              [
+                -6.235519,
+                -6.606275,
+                3.45667,
+                2.414973
+              ],
+              [
+                -6.497305,
+                -6.606357,
+                3.375664,
+                2.478566
+              ],
+              [
+                -6.1483,
+                -6.601041,
+                3.497897,
+                2.495544
+              ],
+              [
+                -6.126745,
+                -6.316937,
+                3.362294,
+                2.201397
+              ]
+            ],
+            "truncated_explorations": 0
+          },
+          "nonground_constraints_size": {
+            "_actions": 5.0625,
+            "_effects": 30.4375,
+            "_formula_nodes": 324.9375,
+            "_max_formula_nodes": 34.6875,
+            "checks": 367,
+            "per_instance": [
+              [
+                -6.980133,
+                -6.261412,
+                2.326336,
+                1.431364
+              ],
+              [
+                -7.568602,
+                -7.160577,
+                2.344392,
+                1.414973
+              ],
+              [
+                -7.278044,
+                -6.842564,
+                2.559907,
+                1.361728
+              ],
+              [
+                -7.807991,
+                -7.16295,
+                2.525045,
+                1.732394
+              ],
+              [
+                -7.406574,
+                -6.898788,
+                2.638489,
+                1.556303
+              ],
+              [
+                -7.081215,
+                -6.307844,
+                2.396199,
+                1.778151
+              ],
+              [
+                -7.233878,
+                -6.622659,
+                2.70757,
+                1.50515
+              ],
+              [
+                -7.585943,
+                -7.156012,
+                2.622214,
+                1.732394
+              ],
+              [
+                -7.134248,
+                -6.592135,
+                2.735599,
+                1.672098
+              ],
+              [
+                -6.303286,
+                -6.649008,
+                2.440909,
+                1.491362
+              ],
+              [
+                -7.677788,
+                -7.356392,
+                2.487138,
+                1.380211
+              ],
+              [
+                -6.409429,
+                -6.608996,
+                2.201397,
+                1.30103
+              ],
+              [
+                -6.716683,
+                -7.156012,
+                2.290035,
+                1.30103
+              ],
+              [
+                -7.430557,
+                -7.095111,
+                2.535294,
+                1.568202
+              ],
+              [
+                -6.97739,
+                -6.858559,
+                2.698101,
+                1.633468
+              ],
+              [
+                -6.555714,
+                -6.503626,
+                2.120574,
+                1.322219
+              ]
+            ],
+            "truncated_explorations": 0
+          }
+        },
+        "status": "ok"
+      },
+      "shortcut_probe_pruning": {
+        "experiment": "ground_constraints_size",
+        "instance": 1,
+        "reason": "compiled task does not preserve the constrained task's valid plans",
+        "status": "failed"
+      }
+    },
+    "registry": "/home/user/outputs/compilers",
+    "slice": "test",
+    "worst_values": {
+      "actions_vs_ground_log10": 1.0,
+      "effects_vs_ground_log10": 1.0,
+      "formula_nodes_log10": 7.0,
+      "max_formula_nodes_log10": 7.0,
+      "semantic_agreement": 0.0
+    }
+  },
+  "experiments": {
+    "constraint_type_suite": {
+      "results": {
+        "lifted_tcore": {
+          "actions_vs_ground_log10": -0.9351202147477643,
+          "effects_vs_ground_log10": -0.8815355484151083,
+          "formula_nodes_log10": 2.060455927258342,
+          "max_formula_nodes_log10": 1.3566411224606398,
+          "semantic_agreement": 1.0
+        },
+        "shortcut_probe_pruning": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "ground_constraints_size": {
+      "results": {
+        "lifted_tcore": {
+          "actions_vs_ground_log10": -6.888427408925454,
+          "effects_vs_ground_log10": -6.953831973698861,
+          "formula_nodes_log10": 2.323466637483651,
+          "max_formula_nodes_log10": 1.4506677036335904,
+          "semantic_agreement": 1.0
+        },
+        "shortcut_probe_pruning": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "initial_monitoring_edge_cases": {
+      "results": {
+        "lifted_tcore": {
+          "actions_vs_ground_log10": -0.9259335162077118,
+          "effects_vs_ground_log10": -0.8538587032488248,
+          "formula_nodes_log10": 2.1175186188430946,
+          "max_formula_nodes_log10": 1.4282363711829384,
+          "semantic_agreement": 1.0
+        },
+        "shortcut_probe_pruning": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "many_constraints_size": {
+      "results": {
+        "lifted_tcore": {
+          "actions_vs_ground_log10": -6.358568115762562,
+          "effects_vs_ground_log10": -5.941894979409762,
+          "formula_nodes_log10": 3.3845154987128354,
+          "max_formula_nodes_log10": 2.3877590142491076,
+          "semantic_agreement": 1.0
+        },
+        "shortcut_probe_pruning": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    },
+    "nonground_constraints_size": {
+      "results": {
+        "lifted_tcore": {
+          "actions_vs_ground_log10": -6.827040238082851,
+          "effects_vs_ground_log10": -7.134217178754913,
+          "formula_nodes_log10": 2.4768249412248116,
+          "max_formula_nodes_log10": 1.5113797785283896,
+          "semantic_agreement": 1.0
+        },
+        "shortcut_probe_pruning": {
+          "actions_vs_ground_log10": 1.0,
+          "effects_vs_ground_log10": 1.0,
+          "formula_nodes_log10": 7.0,
+          "max_formula_nodes_log10": 7.0,
+          "semantic_agreement": 0.0
+        }
+      }
+    }
+  }
+}

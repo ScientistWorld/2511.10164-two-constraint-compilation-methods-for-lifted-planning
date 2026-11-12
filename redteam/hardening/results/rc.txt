@@ -1,3 +1,4 @@
 test_all rc=0
 train_all rc=0
 test_empty rc=0
+test_private_search rc=0
